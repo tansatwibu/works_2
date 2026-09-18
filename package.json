@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "setup-db": "node setup_db.js",
+    "import-baseline": "node import_baseline.js",
+    "sync-daily": "node sync_daily.js",
+    "stats": "node dashboard_stats.js",
+    "daily": "powershell -ExecutionPolicy Bypass -File .\\run_daily.ps1",
+    "dashboard": "node server.js",
+    "crawl": "node crawl.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.0",
+    "mongodb": "^7.6.0",
+    "puppeteer": "^25.11.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

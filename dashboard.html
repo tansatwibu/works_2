@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharmacy Dashboard</title>
+  <link rel="stylesheet" href="/dashboard.css">
+</head>
+<body>
+  <div class="browser-frame">
+    <div class="dashboard-layout">
+      <aside class="module-sidebar">
+        <div class="sidebar-title">Pharmacy</div>
+        <nav class="module-nav" aria-label="Thương hiệu">
+          <button class="module-link active" data-module="longchau">Nhà thuốc long châu</button>
+          <button class="module-link module-link-future" disabled>Nhà thuốc an khang</button>
+          <button class="module-link module-link-future" disabled>Pharmacy</button>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div><p class="eyebrow">PHARMACY / STORE NETWORK</p><h1 id="page-title">Dashboard</h1></div>
+          <div class="sync-state"><span class="status-dot"></span><span id="last-sync">Đang tải dữ liệu</span></div>
+        </header>
+
+        <section class="module-view" data-module-view="longchau">
+          <section class="charts-grid" aria-label="Biểu đồ thống kê cửa hàng">
+            <article class="chart-card">
+              <div class="chart-filter"><label>Tháng <input id="daily-month" type="month"></label><button class="chart-refresh" data-chart-refresh="daily">↻</button></div>
+              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
+              <div id="daily-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+              <div class="chart-caption">THEO NGÀY</div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-filter"><label>Năm <input id="monthly-year" type="number" min="2000" max="2100"></label><button class="chart-refresh" data-chart-refresh="monthly">↻</button></div>
+              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
+              <div id="monthly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+              <div class="chart-caption">THEO THÁNG</div>
+            </article>
+            <article class="chart-card">
+              <div class="chart-filter"><label>Từ <input id="yearly-from" type="number" min="2000" max="2100"></label><label>Đến <input id="yearly-to" type="number" min="2000" max="2100"></label><button class="chart-refresh" data-chart-refresh="yearly">↻</button></div>
+              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
+              <div id="yearly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+              <div class="chart-caption">THEO NĂM</div>
+            </article>
+          </section>
+
+          <section class="filter-bar">
+            <span class="filter-label">Kỳ bảng tỉnh/thành</span>
+            <label><span>Từ</span><input id="from-date" type="date"></label>
+            <span class="filter-arrow">→</span>
+            <label><span>Đến</span><input id="to-date" type="date"></label>
+            <button id="refresh-button" class="refresh-button">Cập nhật bảng</button>
+          </section>
+          <section class="summary-table-section">
+            <div class="table-title-row"><h2>Thống kê theo Tỉnh - Thành phố</h2><span id="province-count">0 tỉnh</span></div>
+            <div class="table-wrap"><table class="summary-table"><thead><tr><th>Tỉnh - Thành phố</th><th>Số lượng cửa hàng</th><th>% tỷ trọng</th><th>Tăng giảm</th></tr></thead><tbody id="province-table"><tr><td colspan="4" class="empty-cell">Chưa có dữ liệu.</td></tr></tbody></table></div>
+          </section>
+        </section>
+
+        <section class="secondary-views" data-view-target="stores" hidden>
+          <section class="panel directory-panel"><div class="table-title-row"><h2>Danh sách nhà thuốc</h2><span class="table-count" id="store-count">0 cửa hàng</span></div><div class="filter-row"><input id="store-search" type="search" placeholder="Tìm theo mã hoặc tên"><select id="store-province"><option value="">Tất cả tỉnh / thành</option></select><select id="store-status"><option value="all">Tất cả trạng thái</option><option value="active">Đang hoạt động</option><option value="closed">Đã đóng</option></select><button id="store-search-button" class="refresh-button">Lọc</button></div><div class="table-wrap"><table><thead><tr><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Phường / xã</th><th>Trạng thái</th><th>Ngày khai trương</th></tr></thead><tbody id="store-table"></tbody></table></div></section>
+        </section>
+        <section class="secondary-views" data-view-target="events" hidden>
+          <section class="panel directory-panel"><div class="table-title-row"><h2>Lịch sử mở và đóng cửa hàng</h2><span class="table-count" id="event-count">0 sự kiện</span></div><div class="filter-row"><select id="event-type"><option value="all">Tất cả biến động</option><option value="opened">Mở mới</option><option value="closed">Đóng / gỡ</option></select></div><div class="table-wrap"><table><thead><tr><th>Ngày</th><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Loại biến động</th></tr></thead><tbody id="change-table"></tbody></table></div></section>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="/frontend/dashboardController.js"></script>
+</body>
+</html>
