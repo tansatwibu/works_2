@@ -17,4 +17,8 @@ async function events(requestUrl) {
     return dashboardModel.listEvents(queryParams(requestUrl));
 }
 
-module.exports = { stats, pharmacies, events };
+async function syncStatus() {
+    return dashboardModel.getSyncStatus();
+}
+
+module.exports = { stats, pharmacies, events, syncStatus };

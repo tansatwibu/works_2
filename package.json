@@ -5,7 +5,9 @@
     "sync-daily": "node sync_daily.js",
     "stats": "node dashboard_stats.js",
     "daily": "powershell -ExecutionPolicy Bypass -File .\\run_daily.ps1",
+    "schedule-end-of-day": "powershell -ExecutionPolicy Bypass -File .\\schedule_end_of_day.ps1",
     "dashboard": "node server.js",
+    "start": "node server.js",
     "crawl": "node crawl.js"
   },
   "dependencies": {

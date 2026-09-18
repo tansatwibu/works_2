@@ -7,66 +7,229 @@
   <link rel="stylesheet" href="/dashboard.css">
 </head>
 <body>
-  <div class="browser-frame">
-    <div class="dashboard-layout">
-      <aside class="module-sidebar">
-        <div class="sidebar-title">Pharmacy</div>
-        <nav class="module-nav" aria-label="Thương hiệu">
-          <button class="module-link active" data-module="longchau">Nhà thuốc long châu</button>
-          <button class="module-link module-link-future" disabled>Nhà thuốc an khang</button>
-          <button class="module-link module-link-future" disabled>Pharmacy</button>
-        </nav>
-      </aside>
+  <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Mở menu">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-      <main class="dashboard-main">
-        <header class="dashboard-header">
-          <div><p class="eyebrow">PHARMACY / STORE NETWORK</p><h1 id="page-title">Dashboard</h1></div>
-          <div class="sync-state"><span class="status-dot"></span><span id="last-sync">Đang tải dữ liệu</span></div>
-        </header>
+  <div class="dashboard-layout">
+    <aside class="module-sidebar" id="module-sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 15-3-3 3-3"/><path d="M16 18a4 4 0 0 0 0-8"/><path d="M3 12h10"/><path d="M16 6a4 4 0 0 1 0 8"/><path d="M3 6h10"/><path d="M3 18h10"/></svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Pharmacy</span>
+          <span class="brand-sub">Store Intelligence</span>
+        </div>
+      </div>
 
-        <section class="module-view" data-module-view="longchau">
-          <section class="charts-grid" aria-label="Biểu đồ thống kê cửa hàng">
-            <article class="chart-card">
-              <div class="chart-filter"><label>Tháng <input id="daily-month" type="month"></label><button class="chart-refresh" data-chart-refresh="daily">↻</button></div>
-              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
-              <div id="daily-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
-              <div class="chart-caption">THEO NGÀY</div>
-            </article>
-            <article class="chart-card">
-              <div class="chart-filter"><label>Năm <input id="monthly-year" type="number" min="2000" max="2100"></label><button class="chart-refresh" data-chart-refresh="monthly">↻</button></div>
-              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
-              <div id="monthly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
-              <div class="chart-caption">THEO THÁNG</div>
-            </article>
-            <article class="chart-card">
-              <div class="chart-filter"><label>Từ <input id="yearly-from" type="number" min="2000" max="2100"></label><label>Đến <input id="yearly-to" type="number" min="2000" max="2100"></label><button class="chart-refresh" data-chart-refresh="yearly">↻</button></div>
-              <div class="chart-heading"><span>Mở mới</span><span>Đóng / gỡ</span></div>
-              <div id="yearly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
-              <div class="chart-caption">THEO NĂM</div>
-            </article>
-          </section>
+      <div class="sidebar-section-label">Thương hiệu</div>
+      <nav class="module-nav" aria-label="Thương hiệu">
+        <button class="module-link active" data-module="longchau">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          Nhà thuốc Long Châu
+        </button>
+        <button class="module-link module-link-future" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          Nhà thuốc An Khang
+        </button>
+        <button class="module-link module-link-future" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          Pharmacy
+        </button>
+      </nav>
 
-          <section class="filter-bar">
-            <span class="filter-label">Kỳ bảng tỉnh/thành</span>
+      <div class="sidebar-footer">v1.0 · Long Châu</div>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">PHARMACY / STORE NETWORK</p>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="sync-badge" title="Dữ liệu được cập nhật một lần vào cuối ngày"><span class="status-dot"></span><span id="last-sync">Đang tải snapshot cuối ngày</span></div>
+      </header>
+
+      <div class="view-tabs" role="tablist">
+        <button class="view-tab active" data-view="overview" role="tab">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+          Tổng quan
+        </button>
+        <button class="view-tab" data-view="stores" role="tab">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/></svg>
+          Danh sách nhà thuốc
+        </button>
+        <button class="view-tab" data-view="events" role="tab">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+          Biến động
+        </button>
+      </div>
+
+      <section class="module-view" data-module-view="longchau">
+        <div class="kpi-grid" id="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon teal"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/></svg></div>
+            <div class="kpi-label">Tổng nhà thuốc đang hoạt động</div>
+            <div class="kpi-value" id="kpi-active">—</div>
+            <div class="kpi-meta">Đang hoạt động</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon blue"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="kpi-label">Tỉnh / Thành phố</div>
+            <div class="kpi-value" id="kpi-provinces">—</div>
+            <div class="kpi-meta">Có cửa hàng</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg></div>
+            <div class="kpi-label">Mở mới (kỳ hiện tại)</div>
+            <div class="kpi-value" id="kpi-opened">—</div>
+            <div class="kpi-meta">Trong khoảng đã chọn</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-icon amber"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 17 5-5 5 5"/><path d="M7 7l5 5 5-5"/></svg></div>
+            <div class="kpi-label">Đóng / gỡ (kỳ hiện tại)</div>
+            <div class="kpi-value" id="kpi-closed">—</div>
+            <div class="kpi-meta">Trong khoảng đã chọn</div>
+          </div>
+        </div>
+
+        <section class="charts-grid" aria-label="Biểu đồ thống kê cửa hàng">
+          <article class="chart-card">
+            <div class="chart-card-header">
+              <div class="chart-title-block">
+                <div class="chart-title">Nhà thuốc mở mới</div>
+                <div class="chart-subtitle">Số lượng cửa hàng mở theo ngày</div>
+              </div>
+              <div class="chart-controls">
+                <label>Tháng <input id="daily-month" type="month"></label>
+                <button class="chart-refresh" data-chart-refresh="daily" aria-label="Làm mới">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <div class="chart-legend-item"><span class="chart-legend-dot opened"></span> Mở mới</div>
+              <div class="chart-legend-item"><span class="chart-legend-dot closed"></span> Đóng / gỡ</div>
+            </div>
+            <div id="daily-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+            <div class="chart-caption">Theo ngày</div>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-card-header">
+              <div class="chart-title-block">
+                <div class="chart-title">Thống kê theo tháng</div>
+                <div class="chart-subtitle">Số lượng cửa hàng theo tháng trong năm</div>
+              </div>
+              <div class="chart-controls">
+                <label>Năm <input id="monthly-year" type="number" min="2000" max="2100"></label>
+                <button class="chart-refresh" data-chart-refresh="monthly" aria-label="Làm mới">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <div class="chart-legend-item"><span class="chart-legend-dot opened"></span> Mở mới</div>
+              <div class="chart-legend-item"><span class="chart-legend-dot closed"></span> Đóng / gỡ</div>
+            </div>
+            <div id="monthly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+            <div class="chart-caption">Theo tháng</div>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-card-header">
+              <div class="chart-title-block">
+                <div class="chart-title">Xu hướng theo năm</div>
+                <div class="chart-subtitle">So sánh số lượng nhà thuốc theo từng năm</div>
+              </div>
+              <div class="chart-controls">
+                <label>Từ <input id="yearly-from" type="number" min="2000" max="2100"></label>
+                <label>Đến <input id="yearly-to" type="number" min="2000" max="2100"></label>
+                <button class="chart-refresh" data-chart-refresh="yearly" aria-label="Làm mới">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="chart-legend">
+              <div class="chart-legend-item"><span class="chart-legend-dot opened"></span> Mở mới</div>
+              <div class="chart-legend-item"><span class="chart-legend-dot closed"></span> Đóng / gỡ</div>
+            </div>
+            <div id="yearly-chart" class="bar-chart"><div class="empty-state">Đang tải...</div></div>
+            <div class="chart-caption">Theo năm</div>
+          </article>
+        </section>
+
+        <section class="filter-card">
+          <div class="filter-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            <span class="filter-card-title">Bộ lọc thống kê</span>
+          </div>
+          <div class="filter-bar">
             <label><span>Từ</span><input id="from-date" type="date"></label>
             <span class="filter-arrow">→</span>
             <label><span>Đến</span><input id="to-date" type="date"></label>
-            <button id="refresh-button" class="refresh-button">Cập nhật bảng</button>
-          </section>
-          <section class="summary-table-section">
-            <div class="table-title-row"><h2>Thống kê theo Tỉnh - Thành phố</h2><span id="province-count">0 tỉnh</span></div>
-            <div class="table-wrap"><table class="summary-table"><thead><tr><th>Tỉnh - Thành phố</th><th>Số lượng cửa hàng</th><th>% tỷ trọng</th><th>Tăng giảm</th></tr></thead><tbody id="province-table"><tr><td colspan="4" class="empty-cell">Chưa có dữ liệu.</td></tr></tbody></table></div>
-          </section>
+            <button id="refresh-button" class="refresh-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+              Cập nhật bảng
+            </button>
+          </div>
         </section>
 
-        <section class="secondary-views" data-view-target="stores" hidden>
-          <section class="panel directory-panel"><div class="table-title-row"><h2>Danh sách nhà thuốc</h2><span class="table-count" id="store-count">0 cửa hàng</span></div><div class="filter-row"><input id="store-search" type="search" placeholder="Tìm theo mã hoặc tên"><select id="store-province"><option value="">Tất cả tỉnh / thành</option></select><select id="store-status"><option value="all">Tất cả trạng thái</option><option value="active">Đang hoạt động</option><option value="closed">Đã đóng</option></select><button id="store-search-button" class="refresh-button">Lọc</button></div><div class="table-wrap"><table><thead><tr><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Phường / xã</th><th>Trạng thái</th><th>Ngày khai trương</th></tr></thead><tbody id="store-table"></tbody></table></div></section>
+        <section class="data-card">
+          <div class="data-card-header">
+            <h2>Thống kê theo Tỉnh - Thành phố</h2>
+            <span class="badge-neutral" id="province-count">0 tỉnh</span>
+          </div>
+          <div class="table-wrap">
+            <table class="summary-table">
+              <thead><tr><th>Tỉnh - Thành phố</th><th>Mở mới</th><th>Đóng / gỡ</th><th>Tăng giảm</th><th>% tỷ trọng</th></tr></thead>
+              <tbody id="province-table"><tr><td colspan="5" class="empty-cell">Chưa có dữ liệu.</td></tr></tbody>
+            </table>
+          </div>
         </section>
-        <section class="secondary-views" data-view-target="events" hidden>
-          <section class="panel directory-panel"><div class="table-title-row"><h2>Lịch sử mở và đóng cửa hàng</h2><span class="table-count" id="event-count">0 sự kiện</span></div><div class="filter-row"><select id="event-type"><option value="all">Tất cả biến động</option><option value="opened">Mở mới</option><option value="closed">Đóng / gỡ</option></select></div><div class="table-wrap"><table><thead><tr><th>Ngày</th><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Loại biến động</th></tr></thead><tbody id="change-table"></tbody></table></div></section>
-        </section>
-      </main>
-    </div>
+      </section>
+
+      <section class="secondary-views" data-view-target="stores" hidden>
+        <div class="data-card">
+          <div class="data-card-header">
+            <h2>Danh sách nhà thuốc</h2>
+            <span class="badge-neutral" id="store-count">0 cửa hàng</span>
+          </div>
+          <div class="filter-row">
+            <input id="store-search" type="search" placeholder="Tìm theo mã hoặc tên">
+            <select id="store-province"><option value="">Tất cả tỉnh / thành</option></select>
+            <select id="store-status"><option value="all">Tất cả trạng thái</option><option value="active">Đang hoạt động</option><option value="closed">Đã đóng</option></select>
+            <button id="store-search-button" class="refresh-button">Lọc</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Phường / xã</th><th>Trạng thái</th><th>Ngày khai trương</th></tr></thead>
+              <tbody id="store-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="secondary-views" data-view-target="events" hidden>
+        <div class="data-card">
+          <div class="data-card-header">
+            <h2>Lịch sử mở và đóng cửa hàng</h2>
+            <span class="badge-neutral" id="event-count">0 sự kiện</span>
+          </div>
+          <div class="filter-row">
+            <select id="event-type"><option value="all">Tất cả biến động</option><option value="opened">Mở mới</option><option value="closed">Đóng / gỡ</option></select>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Ngày</th><th>Mã cửa hàng</th><th>Tỉnh / thành</th><th>Loại biến động</th></tr></thead>
+              <tbody id="change-table"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
   <script type="module" src="/frontend/dashboardController.js"></script>
 </body>

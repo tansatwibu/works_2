@@ -4,7 +4,7 @@ const formatDate = (value) => new Intl.DateTimeFormat('vi-VN', { day: '2-digit',
 export function setActiveView(viewName) {
     document.querySelectorAll('[data-view-target]').forEach((element) => element.hidden = element.dataset.viewTarget !== viewName);
     document.querySelectorAll('[data-view]').forEach((element) => element.classList.toggle('active', element.dataset.view === viewName));
-    document.querySelector('#page-title').textContent = viewName === 'stores' ? 'Store directory' : viewName === 'events' ? 'Change log' : 'Store pulse';
+    document.querySelector('#page-title').textContent = viewName === 'stores' ? 'Danh sách nhà thuốc' : viewName === 'events' ? 'Biến động cửa hàng' : 'Dashboard';
 }
 
 export function renderStats(data) {
@@ -17,6 +17,17 @@ export function renderStats(data) {
 
 export function renderChart(selector, daily, period) {
     renderMovementChart(selector, period === 'daily' ? daily : aggregateByPeriod(daily, period));
+}
+
+export function renderKpis(totals, provinceCount) {
+    if (document.querySelector('#kpi-active') && totals) {
+        document.querySelector('#kpi-active').textContent = formatNumber(totals.active);
+        document.querySelector('#kpi-opened').textContent = formatNumber(totals.opened);
+        document.querySelector('#kpi-closed').textContent = formatNumber(totals.closed);
+    }
+    if (document.querySelector('#kpi-provinces') && provinceCount != null) {
+        document.querySelector('#kpi-provinces').textContent = formatNumber(provinceCount);
+    }
 }
 
 export function renderProvinceStats(rows, openedTotal) {
@@ -48,8 +59,11 @@ function renderMovementChart(selector, daily) {
 function renderProvinceTable(rows, openedTotal) {
     const body = document.querySelector('#province-table');
     document.querySelector('#province-count').textContent = `${rows.length} tỉnh`;
-    if (!rows.length) { body.innerHTML = '<tr><td colspan="4" class="empty-cell">Chưa có dữ liệu biến động trong khoảng này.</td></tr>'; return; }
-    body.innerHTML = rows.map((row) => { const share = openedTotal ? ((row.opened / openedTotal) * 100).toFixed(1) : '0.0'; return `<tr><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.opened)}</td><td>${formatNumber(row.closed)}</td><td class="${row.net >= 0 ? 'positive' : 'negative'}">${row.net > 0 ? '+' : ''}${formatNumber(row.net)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`; }).join('');
+    if (!rows.length) { body.innerHTML = '<tr><td colspan="5" class="empty-cell">Chưa có dữ liệu biến động trong khoảng này.</td></tr>'; return; }
+    body.innerHTML = rows.map((row) => {
+        const share = openedTotal ? ((row.opened / openedTotal) * 100).toFixed(1) : '0.0';
+        return `<tr><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.opened)}</td><td>${formatNumber(row.closed)}</td><td class="${row.net >= 0 ? 'positive' : 'negative'}">${row.net > 0 ? '+' : ''}${formatNumber(row.net)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
+    }).join('');
 }
 
 function renderEvents(events) {

@@ -17,3 +17,7 @@ export function getPharmacies(filters) {
 export function getEvents(filters) {
     return requestJson('/api/events', filters);
 }
+
+export function getSyncStatus() {
+    return requestJson('/api/sync-status');
+}

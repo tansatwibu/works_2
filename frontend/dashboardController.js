@@ -1,5 +1,5 @@
-import { getEvents, getPharmacies, getStats } from './dashboardModel.js';
-import { renderChart, renderEventTable, renderPharmacies, renderProvinceStats, setActiveView, setLoading } from './dashboardView.js';
+import { getEvents, getPharmacies, getStats, getSyncStatus } from './dashboardModel.js';
+import { renderChart, renderEventTable, renderKpis, renderPharmacies, renderProvinceStats, setActiveView, setLoading } from './dashboardView.js';
 
 const state = { view: 'overview', page: 1 };
 const today = new Date();
@@ -36,11 +36,26 @@ async function loadOverview() {
         renderChart('#daily-chart', daily.daily, 'daily');
         renderChart('#monthly-chart', monthly.daily, 'month');
         renderChart('#yearly-chart', yearly.daily, 'year');
+        renderKpis(table.totals, table.byProvince.length);
         renderProvinceStats(table.byProvince, table.totals.opened);
-        document.querySelector('#last-sync').textContent = `Đồng bộ ${new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`;
+        await renderSyncStatus();
     }
     catch (error) { document.querySelector('#last-sync').textContent = error.message; }
     finally { setLoading(button, false); }
+}
+
+async function renderSyncStatus() {
+    const status = await getSyncStatus();
+    const label = document.querySelector('#last-sync');
+    if (!status.latestRun) {
+        label.textContent = 'Chưa có snapshot cuối ngày';
+        return;
+    }
+    const finishedAt = new Date(status.latestRun.finishedAt).toLocaleString('vi-VN', {
+        dateStyle: 'short',
+        timeStyle: 'short'
+    });
+    label.textContent = `Snapshot cuối ngày: ${finishedAt}`;
 }
 
 function monthRange(value) {
@@ -71,8 +86,20 @@ function switchModule(moduleName) {
     loadOverview();
 }
 
+function toggleSidebar() {
+    document.querySelector('#module-sidebar').classList.toggle('open');
+    document.querySelector('#sidebar-overlay').classList.toggle('active');
+}
+
+function closeSidebar() {
+    document.querySelector('#module-sidebar').classList.remove('open');
+    document.querySelector('#sidebar-overlay').classList.remove('active');
+}
+
 setDates();
-document.querySelectorAll('[data-module]').forEach((button) => button.addEventListener('click', () => switchModule(button.dataset.module)));
+document.querySelector('#sidebar-toggle').addEventListener('click', toggleSidebar);
+document.querySelector('#sidebar-overlay').addEventListener('click', closeSidebar);
+document.querySelectorAll('[data-module]').forEach((button) => button.addEventListener('click', () => { switchModule(button.dataset.module); closeSidebar(); }));
 document.querySelectorAll('[data-view]').forEach((button) => button.addEventListener('click', () => switchView(button.dataset.view)));
 document.querySelector('#refresh-button').addEventListener('click', loadOverview);
 document.querySelectorAll('[data-chart-refresh]').forEach((button) => button.addEventListener('click', loadOverview));

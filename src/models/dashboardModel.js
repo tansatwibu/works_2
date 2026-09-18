@@ -109,4 +109,20 @@ async function listEvents({ from, to, type = 'all', page = 1, limit = 30 }) {
     return { items, total, page: safePage, limit: safeLimit, pages: Math.ceil(total / safeLimit) };
 }
 
-module.exports = { getStats, listPharmacies, listEvents };
+async function getSyncStatus() {
+    const db = await getDatabase();
+    const latestRun = await db.collection('crawl_runs')
+        .find({ status: 'success' })
+        .sort({ finishedAt: -1, startedAt: -1 })
+        .limit(1)
+        .project({ _id: 0, type: 1, startedAt: 1, finishedAt: 1, fetchedCount: 1, expectedCount: 1, status: 1 })
+        .next();
+
+    return {
+        mode: 'end-of-day',
+        schedule: '23:00 Asia/Ho_Chi_Minh',
+        latestRun: latestRun || null
+    };
+}
+
+module.exports = { getStats, listPharmacies, listEvents, getSyncStatus };

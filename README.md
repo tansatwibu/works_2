@@ -8,6 +8,16 @@ npm run dashboard
 
 Mở `http://localhost:3000`.
 
+## Đồng bộ cuối ngày
+
+Dashboard không đồng bộ realtime. Crawler tạo một snapshot mỗi ngày lúc 23:00 theo múi giờ Việt Nam:
+
+```powershell
+npm run schedule-end-of-day
+```
+
+Lệnh trên đăng ký Windows Task Scheduler `LongChau-EndOfDay-Sync`. Dashboard đọc MongoDB và hiển thị thời điểm snapshot thành công gần nhất tại phần trạng thái trên đầu trang.
+
 ## Cấu trúc MVC
 
 ```text
