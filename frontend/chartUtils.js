@@ -8,9 +8,9 @@ export function aggregateByPeriod(daily, period) {
     const grouped = new Map();
     daily.forEach((item) => {
         const key = period === 'year' ? item.date.slice(0, 4) : item.date.slice(0, 7);
-        const current = grouped.get(key) || { date: key, opened: 0, closed: 0 };
-        current.opened += item.opened;
-        current.closed += item.closed;
+        const current = grouped.get(key) || { date: key, count: 0, delta: 0 };
+        current.count = item.count;
+        current.delta = item.delta;
         grouped.set(key, current);
     });
     return [...grouped.values()];

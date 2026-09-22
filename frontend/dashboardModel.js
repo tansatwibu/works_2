@@ -6,8 +6,8 @@ export async function requestJson(path, params = {}) {
     return data;
 }
 
-export function getStats(from, to) {
-    return requestJson('/api/stats', { from, to });
+export function getStats(from, to, province = '') {
+    return requestJson('/api/stats', { from, to, province });
 }
 
 export function getPharmacies(filters) {

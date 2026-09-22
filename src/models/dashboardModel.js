@@ -11,68 +11,57 @@ function buildRange(from, to) {
     return { start, end };
 }
 
-async function getStats(from, to) {
+async function getStats(from, to, province = '') {
     const db = await getDatabase();
     const range = buildRange(from, to);
-    const closedMatch = {
-        eventDate: { $gte: range.start, $lt: range.end },
-        eventType: 'closed'
-    };
-    const openedMatch = { openingDate: { $gte: range.start, $lt: range.end } };
+    const snapshotMatch = { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true };
+    if (province) snapshotMatch.provinceId = province;
+    const pharmacyMatch = { status: 'active' };
+    if (province) pharmacyMatch['address.province.id'] = province;
 
-    const [openedDaily, closedDaily, openedByProvince, closedByProvince, recentEvents, active] = await Promise.all([
-        db.collection('pharmacies').aggregate([
-            { $match: openedMatch },
-            { $group: { _id: { date: { $dateToString: { format: '%Y-%m-%d', date: '$openingDate', timezone: 'Asia/Ho_Chi_Minh' } } }, count: { $sum: 1 } } },
+    const [snapshotDaily, snapshotByProvince, provinces, active] = await Promise.all([
+        db.collection('pharmacy_daily_snapshots').aggregate([
+            { $match: snapshotMatch },
+            { $group: { _id: { date: { $dateToString: { format: '%Y-%m-%d', date: '$snapshotDate', timezone: 'Asia/Ho_Chi_Minh' } } }, count: { $sum: 1 } } },
             { $sort: { '_id.date': 1 } }
         ]).toArray(),
-        db.collection('pharmacy_events').aggregate([
-            { $match: closedMatch },
-            { $group: { _id: { date: { $dateToString: { format: '%Y-%m-%d', date: '$eventDate', timezone: 'Asia/Ho_Chi_Minh' } } }, count: { $sum: 1 } } },
+        db.collection('pharmacy_daily_snapshots').aggregate([
+            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true } },
+            { $group: { _id: { provinceId: '$provinceId', snapshotDate: '$snapshotDate' }, provinceName: { $first: '$provinceName' }, count: { $sum: 1 } } },
+            { $sort: { '_id.provinceId': 1, '_id.snapshotDate': -1 } },
+            { $group: { _id: '$_id.provinceId', provinceName: { $first: '$provinceName' }, counts: { $push: '$count' } } },
+            { $project: { _id: 1, provinceName: 1, count: { $arrayElemAt: ['$counts', 0] }, previousCount: { $ifNull: [{ $arrayElemAt: ['$counts', 1] }, 0] } } },
             { $sort: { count: -1 } }
         ]).toArray(),
-        db.collection('pharmacies').aggregate([
-            { $match: openedMatch },
-            { $group: { _id: { provinceId: '$address.province.id', provinceName: '$address.province.name' }, count: { $sum: 1 } } },
-            { $sort: { count: -1 } }
+        db.collection('pharmacy_daily_snapshots').aggregate([
+            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true } },
+            { $group: { _id: { id: '$provinceId', name: '$provinceName' } } },
+            { $sort: { '_id.name': 1 } }
         ]).toArray(),
-        db.collection('pharmacy_events').aggregate([
-            { $match: closedMatch },
-            { $group: { _id: { provinceId: '$provinceId', provinceName: '$provinceName' }, count: { $sum: 1 } } },
-            { $sort: { count: -1 } }
-        ]).toArray(),
-        db.collection('pharmacy_events').find(closedMatch).sort({ eventDate: -1 }).limit(20).project({ _id: 0, shopCode: 1, eventType: 1, eventDate: 1, provinceName: 1 }).toArray(),
-        db.collection('pharmacies').countDocuments({ status: 'active' })
+        db.collection('pharmacies').countDocuments(pharmacyMatch)
     ]);
 
-    const days = new Map();
-    for (const item of openedDaily) {
-        days.set(item._id.date, { date: item._id.date, opened: item.count, closed: 0 });
-    }
-    for (const item of closedDaily) {
-        if (!days.has(item._id.date)) days.set(item._id.date, { date: item._id.date, opened: 0, closed: 0 });
-        days.get(item._id.date).closed = item.count;
-    }
-
-    const provinceMap = new Map();
-    for (const item of openedByProvince) {
-        const key = item._id.provinceId || item._id.provinceName || 'unknown';
-        provinceMap.set(key, { provinceId: item._id.provinceId || 'unknown', provinceName: item._id.provinceName || 'Chưa xác định', opened: item.count, closed: 0 });
-    }
-    for (const item of closedByProvince) {
-        const key = item._id.provinceId || item._id.provinceName || 'unknown';
-        const province = provinceMap.get(key) || { provinceId: item._id.provinceId || 'unknown', provinceName: item._id.provinceName || 'Chưa xác định', opened: 0, closed: 0 };
-        province.closed = item.count;
-        provinceMap.set(key, province);
-    }
-    const byProvince = [...provinceMap.values()].map((item) => ({ ...item, net: item.opened - item.closed })).sort((left, right) => right.opened - left.opened);
+    const daily = snapshotDaily.map((item, index) => ({
+        date: item._id.date,
+        count: item.count,
+        delta: index === 0 ? 0 : item.count - snapshotDaily[index - 1].count
+    }));
+    const byProvince = snapshotByProvince.map((item) => ({
+        provinceId: item._id || 'unknown',
+        provinceName: item.provinceName || 'Chưa xác định',
+        count: item.count,
+        delta: item.count - item.previousCount
+    }));
+    const provinceOptions = provinces.map((item) => ({ provinceId: item._id.id || 'unknown', provinceName: item._id.name || 'Chưa xác định' }));
+    const latestCount = daily.at(-1)?.count || 0;
 
     return {
         range: { from: range.start.toISOString(), to: range.end.toISOString() },
-        totals: { active, opened: openedDaily.reduce((sum, item) => sum + item.count, 0), closed: closedDaily.reduce((sum, item) => sum + item.count, 0) },
-        daily: [...days.values()],
+        province,
+        totals: { active, current: latestCount },
+        daily,
         byProvince,
-        recentEvents
+        provinces: provinceOptions
     };
 }
 

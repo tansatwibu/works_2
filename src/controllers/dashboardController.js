@@ -6,7 +6,7 @@ function queryParams(requestUrl) {
 
 async function stats(requestUrl) {
     const query = queryParams(requestUrl);
-    return dashboardModel.getStats(query.from, query.to);
+    return dashboardModel.getStats(query.from, query.to, query.province);
 }
 
 async function pharmacies(requestUrl) {

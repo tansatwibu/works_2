@@ -9,60 +9,68 @@ export function setActiveView(viewName) {
 
 export function renderStats(data) {
     document.querySelector('#last-sync').textContent = `Đồng bộ ${new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`;
-    renderMovementChart('#daily-chart', data.daily);
-    renderMovementChart('#monthly-chart', aggregateByPeriod(data.daily, 'month'));
-    renderMovementChart('#yearly-chart', aggregateByPeriod(data.daily, 'year'));
-    renderProvinceTable(data.byProvince, data.totals.opened);
+    renderLineChart('#daily-chart', data.daily);
+    renderProvinceTable(data.byProvince);
 }
 
 export function renderChart(selector, daily, period) {
-    renderMovementChart(selector, period === 'daily' ? daily : aggregateByPeriod(daily, period));
+    renderLineChart(selector, daily);
 }
 
 export function renderKpis(totals, provinceCount) {
     if (document.querySelector('#kpi-active') && totals) {
         document.querySelector('#kpi-active').textContent = formatNumber(totals.active);
-        document.querySelector('#kpi-opened').textContent = formatNumber(totals.opened);
-        document.querySelector('#kpi-closed').textContent = formatNumber(totals.closed);
+        document.querySelector('#kpi-opened').textContent = formatNumber(totals.current);
+        document.querySelector('#kpi-closed').textContent = '—';
     }
     if (document.querySelector('#kpi-provinces') && provinceCount != null) {
         document.querySelector('#kpi-provinces').textContent = formatNumber(provinceCount);
     }
 }
 
-export function renderProvinceStats(rows, openedTotal) {
-    renderProvinceTable(rows, openedTotal);
+export function renderProvinceStats(rows) {
+    renderProvinceTable(rows);
 }
 
 function aggregateByPeriod(daily, period) {
     const grouped = new Map();
     daily.forEach((item) => {
         const key = period === 'year' ? item.date.slice(0, 4) : item.date.slice(0, 7);
-        const current = grouped.get(key) || { date: key, opened: 0, closed: 0 };
-        current.opened += item.opened;
-        current.closed += item.closed;
+        const current = grouped.get(key) || { date: key, count: 0, delta: 0 };
+        current.count = item.count;
+        current.delta = item.delta;
         grouped.set(key, current);
     });
     return [...grouped.values()];
 }
 
-function renderMovementChart(selector, daily) {
+function renderLineChart(selector, daily) {
     const chart = document.querySelector(selector);
-    if (!daily.length) { chart.innerHTML = '<div class="empty-state">Chưa có event mở hoặc đóng trong khoảng này.</div>'; return; }
-    const max = Math.max(...daily.flatMap((item) => [item.opened, item.closed]), 1);
-    const step = Math.max(Math.ceil(max / 4), 1);
-    const ticks = [step * 4, step * 3, step * 2, step, 0];
+    if (!daily.length) { chart.innerHTML = '<div class="empty-state">Chưa có snapshot crawl trong khoảng này.</div>'; return; }
+    const width = 1000;
+    const height = 300;
+    const padding = { top: 20, right: 24, bottom: 42, left: 54 };
+    const max = Math.max(...daily.map((item) => item.count), 1);
+    const chartWidth = width - padding.left - padding.right;
+    const chartHeight = height - padding.top - padding.bottom;
+    const x = (index) => padding.left + (daily.length === 1 ? chartWidth / 2 : (index / (daily.length - 1)) * chartWidth);
+    const y = (count) => padding.top + chartHeight - (count / max) * chartHeight;
     const labels = daily.map((item) => item.date.slice(5).replace('-', '/'));
-    chart.innerHTML = `<div class="chart-y-axis"><span class="axis-title">Số cửa hàng</span>${ticks.map((tick) => `<span>${tick}</span>`).join('')}</div><div class="chart-plot"><div class="plot-grid">${ticks.slice(0, -1).map(() => '<i></i>').join('')}</div><div class="chart-bars">${daily.map((item, index) => `<div class="bar-group" title="${item.date}: mở ${item.opened}, đóng ${item.closed}"><div class="bar-pair"><span class="bar opened" style="height:${Math.max((item.opened / (step * 4)) * 100, item.opened ? 5 : 1)}%"><b>${item.opened || ''}</b></span><span class="bar closed" style="height:${Math.max((item.closed / (step * 4)) * 100, item.closed ? 5 : 1)}%"><b>${item.closed || ''}</b></span></div><small>${labels[index]}</small></div>`).join('')}</div><span class="axis-label">${labels.length > 1 ? 'Thời gian' : labels[0]}</span></div>`;
+    const points = daily.map((item, index) => `${x(index)},${y(item.count)}`).join(' ');
+    const tickValues = [max, Math.round(max * 0.75), Math.round(max * 0.5), Math.round(max * 0.25), 0];
+    const grid = tickValues.map((tick) => `<line class="line-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"><title>${tick} cửa hàng</title></line><text class="line-y-label" x="${padding.left - 10}" y="${y(tick) + 4}">${tick}</text>`).join('');
+    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5"><title>${item.date}: ${item.count} cửa hàng (${item.delta >= 0 ? '+' : ''}${item.delta})</title></circle><text class="line-x-label" x="${x(index)}" y="${height - 14}">${labels[index]}</text>`).join('');
+    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="14" y="${height / 2}" transform="rotate(-90 14 ${height / 2})">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(0)}" y2="${y(0)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 1}">Ngày crawl</text></svg>`;
 }
 
-function renderProvinceTable(rows, openedTotal) {
+function renderProvinceTable(rows) {
     const body = document.querySelector('#province-table');
     document.querySelector('#province-count').textContent = `${rows.length} tỉnh`;
-    if (!rows.length) { body.innerHTML = '<tr><td colspan="5" class="empty-cell">Chưa có dữ liệu biến động trong khoảng này.</td></tr>'; return; }
+    if (!rows.length) { body.innerHTML = '<tr><td colspan="4" class="empty-cell">Chưa có snapshot crawl trong khoảng này.</td></tr>'; return; }
     body.innerHTML = rows.map((row) => {
-        const share = openedTotal ? ((row.opened / openedTotal) * 100).toFixed(1) : '0.0';
-        return `<tr><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.opened)}</td><td>${formatNumber(row.closed)}</td><td class="${row.net >= 0 ? 'positive' : 'negative'}">${row.net > 0 ? '+' : ''}${formatNumber(row.net)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
+        const total = rows.reduce((sum, item) => sum + item.count, 0);
+        const share = total ? ((row.count / total) * 100).toFixed(1) : '0.0';
+        return `<tr><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.count)}</td><td class="${row.delta >= 0 ? 'positive' : 'negative'}">${row.delta > 0 ? '+' : ''}${formatNumber(row.delta)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
     }).join('');
 }
 
