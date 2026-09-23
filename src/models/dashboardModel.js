@@ -112,10 +112,11 @@ async function getSnapshotRange(source = 'longchau') {
     };
 }
 
-async function getSyncStatus() {
+async function getSyncStatus(source = 'longchau') {
     const db = await getDatabase();
+    const sourceMatch = source === 'longchau' ? { $in: ['longchau', null] } : source;
     const latestRun = await db.collection('crawl_runs')
-        .find({ status: 'success' })
+        .find({ status: 'success', source: sourceMatch })
         .sort({ finishedAt: -1, startedAt: -1 })
         .limit(1)
         .project({ _id: 0, type: 1, startedAt: 1, finishedAt: 1, fetchedCount: 1, expectedCount: 1, status: 1 })

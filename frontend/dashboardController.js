@@ -84,7 +84,7 @@ function updateProvinceOptions(provinces) {
 }
 
 async function renderSyncStatus() {
-    const status = await getSyncStatus();
+    const status = await getSyncStatus(currentSource);
     const label = document.querySelector('#last-sync');
     if (!status.latestRun) {
         label.textContent = 'Chưa có snapshot cuối ngày';

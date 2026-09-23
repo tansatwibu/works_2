@@ -7,17 +7,17 @@ New-Item -ItemType Directory -Force -Path (Join-Path $PSScriptRoot 'logs') | Out
 $env:HEADLESS = 'true'
 $logPath = Join-Path $PSScriptRoot ("logs\crawl-{0}.log" -f (Get-Date -Format 'yyyy-MM-dd'))
 
-& npm run crawl -- --sync-mode=end-of-day *>> $logPath
+& cmd.exe /d /c "npm run crawl -- --sync-mode=end-of-day >> `"$logPath`" 2>&1"
 if ($LASTEXITCODE -ne 0) {
     throw "Daily crawl failed with exit code $LASTEXITCODE. See $logPath"
 }
 
-& npm run crawl-bhx *>> $logPath
+& cmd.exe /d /c "npm run crawl-bhx >> `"$logPath`" 2>&1"
 if ($LASTEXITCODE -ne 0) {
     throw "Bach Hoa Xanh crawl failed with exit code $LASTEXITCODE. See $logPath"
 }
 
-& npm run crawl-tiem-chung *>> $logPath
+& cmd.exe /d /c "npm run crawl-tiem-chung >> `"$logPath`" 2>&1"
 if ($LASTEXITCODE -ne 0) {
     throw "Tiem Chung Long Chau crawl failed with exit code $LASTEXITCODE. See $logPath"
 }

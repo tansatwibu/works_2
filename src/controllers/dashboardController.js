@@ -17,8 +17,8 @@ async function events(requestUrl) {
     return dashboardModel.listEvents(queryParams(requestUrl));
 }
 
-async function syncStatus() {
-    return dashboardModel.getSyncStatus();
+async function syncStatus(requestUrl) {
+    return dashboardModel.getSyncStatus(queryParams(requestUrl).source);
 }
 
 async function snapshotRange(requestUrl) {

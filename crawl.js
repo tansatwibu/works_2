@@ -1,12 +1,29 @@
 const fs = require('fs');
+const { closeDatabase } = require('./db');
 const { syncDaily } = require('./sync_daily');
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 puppeteer.use(StealthPlugin());
 
-(async () => {
+async function closeBrowser(browser) {
+    if (!browser) return;
+    try {
+        await Promise.race([
+            browser.close(),
+            new Promise((_, reject) => setTimeout(() => reject(new Error('Timeout khi đóng trình duyệt')), 10000))
+        ]);
+    } catch (error) {
+        console.error(`⚠️ ${error.message}`);
+        const browserProcess = browser.process();
+        if (browserProcess && !browserProcess.killed) browserProcess.kill();
+    }
+}
+
+let browser;
+
+async function main() {
     console.log("🚀 Khởi động trình duyệt...");
-    const browser = await puppeteer.launch({ 
+    browser = await puppeteer.launch({ 
         headless: process.env.HEADLESS === 'true',
         args: ['--no-sandbox', '--disable-setuid-sandbox'] 
     });
@@ -94,6 +111,14 @@ puppeteer.use(StealthPlugin());
     
     console.log("=======================================\n");
 
-    // Đóng trình duyệt (Bạn có thể thêm dấu // ở đầu để ngăn nó đóng nếu muốn xem kỹ)
-    await browser.close(); 
-})();
+}
+
+main()
+    .catch((error) => {
+        console.error('❌ Long Châu crawl failed:', error.message);
+        process.exitCode = 1;
+    })
+    .finally(async () => {
+        await closeBrowser(browser);
+        await closeDatabase();
+    });

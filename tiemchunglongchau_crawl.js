@@ -1,6 +1,6 @@
 const crypto = require('crypto');
 const fs = require('fs');
-const { closeDatabase, getDatabase } = require('./db');
+const { closeDatabase } = require('./db');
 const { syncDaily } = require('./sync_daily');
 
 const SITEMAP_URL = 'https://tiemchunglongchau.com.vn/sitemap_system.xml';
@@ -88,12 +88,6 @@ async function crawl() {
     }
     const payload = { totalCount: uniqueCenters.length, items: uniqueCenters };
     fs.writeFileSync(RAW_PATH, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
-    const db = await getDatabase();
-    await Promise.all([
-        db.collection('pharmacies').deleteMany({ source: 'tiemchunglongchau' }),
-        db.collection('pharmacy_daily_snapshots').deleteMany({ source: 'tiemchunglongchau' }),
-        db.collection('pharmacy_events').deleteMany({ source: 'tiemchunglongchau' })
-    ]);
     await syncDaily(payload, { source: 'tiemchunglongchau' });
     console.log(`Tiêm chủng Long Châu: ${uniqueCenters.length} trung tâm`);
 }

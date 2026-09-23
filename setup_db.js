@@ -3,6 +3,30 @@ const { closeDatabase, getDatabase, databaseName } = require('./db');
 async function setupDatabase() {
     const db = await getDatabase();
 
+    await db.collection('pharmacies').updateMany(
+        { source: { $exists: false } },
+        { $set: { source: 'longchau' } }
+    );
+    await db.collection('pharmacy_daily_snapshots').updateMany(
+        { source: { $exists: false } },
+        { $set: { source: 'longchau' } }
+    );
+    await db.collection('pharmacy_events').updateMany(
+        { source: { $exists: false } },
+        { $set: { source: 'longchau' } }
+    );
+
+    for (const [collectionName, indexName] of [
+        ['pharmacy_daily_snapshots', 'uq_snapshots_date_shop_code'],
+        ['pharmacy_events', 'uq_events_shop_type_date']
+    ]) {
+        try {
+            await db.collection(collectionName).dropIndex(indexName);
+        } catch (error) {
+            if (error.codeName !== 'IndexNotFound') throw error;
+        }
+    }
+
     await db.collection('pharmacies').createIndex(
         { shopCode: 1 },
         { unique: true, name: 'uq_pharmacies_shop_code' }
@@ -17,8 +41,8 @@ async function setupDatabase() {
     );
 
     await db.collection('pharmacy_daily_snapshots').createIndex(
-        { snapshotDate: 1, shopCode: 1 },
-        { unique: true, name: 'uq_snapshots_date_shop_code' }
+        { snapshotDate: 1, source: 1, shopCode: 1 },
+        { unique: true, name: 'uq_snapshots_date_source_shop_code' }
     );
     await db.collection('pharmacy_daily_snapshots').createIndex(
         { snapshotDate: 1, provinceId: 1 },
@@ -34,8 +58,8 @@ async function setupDatabase() {
         { name: 'idx_events_shop_code_type' }
     );
     await db.collection('pharmacy_events').createIndex(
-        { shopCode: 1, eventType: 1, eventDate: 1 },
-        { unique: true, name: 'uq_events_shop_type_date' }
+        { source: 1, shopCode: 1, eventType: 1, eventDate: 1 },
+        { unique: true, name: 'uq_events_source_shop_type_date' }
     );
 
     await db.collection('crawl_runs').createIndex(

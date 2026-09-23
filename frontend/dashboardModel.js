@@ -22,6 +22,6 @@ export function getEvents(filters) {
     return requestJson('/api/events', filters);
 }
 
-export function getSyncStatus() {
-    return requestJson('/api/sync-status');
+export function getSyncStatus(source = 'longchau') {
+    return requestJson('/api/sync-status', { source });
 }
