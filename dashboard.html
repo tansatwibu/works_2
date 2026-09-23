@@ -30,9 +30,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
           Nhà thuốc Long Châu
         </button>
-        <button class="module-link module-link-future" disabled>
+        <button class="module-link" data-module="bachhoaxanh">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
-          Nhà thuốc An Khang
+          Bách Hoá Xanh
         </button>
         <button class="module-link module-link-future" disabled>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
@@ -52,7 +52,7 @@
         <div class="sync-badge" title="Dữ liệu được cập nhật một lần vào cuối ngày"><span class="status-dot"></span><span id="last-sync">Đang tải snapshot cuối ngày</span></div>
       </header>
 
-      <section class="module-view" data-module-view="longchau">
+      <section class="module-view" data-module-view="dashboard">
         <section class="charts-grid" aria-label="Biểu đồ thống kê cửa hàng">
           <article class="chart-card">
             <div class="chart-card-header">
@@ -61,6 +61,7 @@
                 <div class="chart-subtitle">Số cửa hàng hiện có trong từng lần crawl</div>
               </div>
               <div class="chart-controls">
+                <label><span>Tháng</span><input id="chart-month" type="month"></label>
                 <label>Tỉnh <select id="chart-province"><option value="">Tất cả tỉnh / thành</option></select></label>
                 <button class="chart-refresh" id="chart-refresh" aria-label="Làm mới">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
@@ -75,18 +76,18 @@
           </article>
         </section>
 
-        <section class="filter-card">
+        <section class="filter-card table-filter-card">
           <div class="filter-card-header">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
-            <span class="filter-card-title">Bộ lọc thống kê</span>
+            <span class="filter-card-title">Bộ lọc bảng</span>
           </div>
-          <div class="filter-bar">
-            <label><span>Từ</span><input id="from-date" type="date"></label>
+          <div class="filter-bar table-filter-bar">
+            <label><span>Từ tháng</span><input id="from-month" type="month"></label>
             <span class="filter-arrow">→</span>
-            <label><span>Đến</span><input id="to-date" type="date"></label>
+            <label><span>Đến tháng</span><input id="to-month" type="month"></label>
             <button id="refresh-button" class="refresh-button">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
-              Cập nhật biểu đồ
+              Cập nhật bảng
             </button>
           </div>
         </section>

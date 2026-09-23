@@ -11,12 +11,13 @@ function buildRange(from, to) {
     return { start, end };
 }
 
-async function getStats(from, to, province = '') {
+async function getStats(from, to, province = '', source = 'longchau') {
     const db = await getDatabase();
     const range = buildRange(from, to);
-    const snapshotMatch = { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true };
+    const snapshotSource = source === 'longchau' ? { $in: ['longchau', null] } : source;
+    const snapshotMatch = { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource };
     if (province) snapshotMatch.provinceId = province;
-    const pharmacyMatch = { status: 'active' };
+    const pharmacyMatch = { status: 'active', source };
     if (province) pharmacyMatch['address.province.id'] = province;
 
     const [snapshotDaily, snapshotByProvince, provinces, active] = await Promise.all([
@@ -26,7 +27,7 @@ async function getStats(from, to, province = '') {
             { $sort: { '_id.date': 1 } }
         ]).toArray(),
         db.collection('pharmacy_daily_snapshots').aggregate([
-            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true } },
+            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource } },
             { $group: { _id: { provinceId: '$provinceId', snapshotDate: '$snapshotDate' }, provinceName: { $first: '$provinceName' }, count: { $sum: 1 } } },
             { $sort: { '_id.provinceId': 1, '_id.snapshotDate': -1 } },
             { $group: { _id: '$_id.provinceId', provinceName: { $first: '$provinceName' }, counts: { $push: '$count' } } },
@@ -34,7 +35,7 @@ async function getStats(from, to, province = '') {
             { $sort: { count: -1 } }
         ]).toArray(),
         db.collection('pharmacy_daily_snapshots').aggregate([
-            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true } },
+            { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource } },
             { $group: { _id: { id: '$provinceId', name: '$provinceName' } } },
             { $sort: { '_id.name': 1 } }
         ]).toArray(),
@@ -65,9 +66,9 @@ async function getStats(from, to, province = '') {
     };
 }
 
-async function listPharmacies({ search = '', status = 'all', province = '', page = 1, limit = 20 }) {
+async function listPharmacies({ search = '', status = 'all', province = '', source = 'longchau', page = 1, limit = 20 }) {
     const db = await getDatabase();
-    const query = {};
+    const query = { source: source === 'longchau' ? { $in: ['longchau', null] } : source };
     if (status !== 'all') query.status = status;
     if (province) query['address.province.name'] = province;
     if (search) query.$or = [{ shopCode: { $regex: search, $options: 'i' } }, { 'name.display': { $regex: search, $options: 'i' } }];
@@ -98,6 +99,19 @@ async function listEvents({ from, to, type = 'all', page = 1, limit = 30 }) {
     return { items, total, page: safePage, limit: safeLimit, pages: Math.ceil(total / safeLimit) };
 }
 
+async function getSnapshotRange(source = 'longchau') {
+    const db = await getDatabase();
+    const [first, last] = await Promise.all([
+        db.collection('pharmacy_daily_snapshots').find({ isPresent: true, source: source === 'longchau' ? { $in: ['longchau', null] } : source }).sort({ snapshotDate: 1 }).limit(1).project({ _id: 0, snapshotDate: 1 }).next(),
+        db.collection('pharmacy_daily_snapshots').find({ isPresent: true, source: source === 'longchau' ? { $in: ['longchau', null] } : source }).sort({ snapshotDate: -1 }).limit(1).project({ _id: 0, snapshotDate: 1 }).next()
+    ]);
+
+    return {
+        minDate: first ? first.snapshotDate : null,
+        maxDate: last ? last.snapshotDate : null
+    };
+}
+
 async function getSyncStatus() {
     const db = await getDatabase();
     const latestRun = await db.collection('crawl_runs')
@@ -114,4 +128,4 @@ async function getSyncStatus() {
     };
 }
 
-module.exports = { getStats, listPharmacies, listEvents, getSyncStatus };
+module.exports = { getStats, listPharmacies, listEvents, getSyncStatus, getSnapshotRange };

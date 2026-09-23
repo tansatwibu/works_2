@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { aggregateByPeriod, resolveChartData, getPeriodLabel } from './chartUtils.js';
+process.env.TZ = 'Asia/Ho_Chi_Minh';
+
+import { aggregateByPeriod, resolveChartData, getPeriodLabel, getMonthRange } from './chartUtils.js';
 
 test('aggregateByPeriod groups daily records into month buckets', () => {
   const rows = [
@@ -28,6 +30,12 @@ test('resolveChartData keeps daily data for day mode and aggregates for other mo
     { date: '2024-01', count: 20, delta: 2 },
     { date: '2024-02', count: 25, delta: 5 },
   ]);
+});
+
+test('getMonthRange converts a month input into an inclusive month range', () => {
+  assert.deepEqual(getMonthRange('2024-02'), { from: '2024-02-01', to: '2024-03-01' });
+  assert.deepEqual(getMonthRange('2024-12'), { from: '2024-12-01', to: '2025-01-01' });
+  assert.deepEqual(getMonthRange('2026-09'), { from: '2026-09-01', to: '2026-10-01' });
 });
 
 test('getPeriodLabel returns the display text for each time unit', () => {

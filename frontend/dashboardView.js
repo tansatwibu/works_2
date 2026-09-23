@@ -50,17 +50,24 @@ function renderLineChart(selector, daily) {
     const width = 1000;
     const height = 300;
     const padding = { top: 20, right: 24, bottom: 42, left: 54 };
-    const max = Math.max(...daily.map((item) => item.count), 1);
+    const counts = daily.map((item) => item.count);
+    const dataMin = Math.min(...counts);
+    const dataMax = Math.max(...counts);
+    const dataRange = Math.max(dataMax - dataMin, 1);
+    const domainPadding = Math.max(dataRange * 0.2, 1);
+    const domainMin = Math.max(0, dataMin - domainPadding);
+    const domainMax = dataMax + domainPadding;
     const chartWidth = width - padding.left - padding.right;
     const chartHeight = height - padding.top - padding.bottom;
     const x = (index) => padding.left + (daily.length === 1 ? chartWidth / 2 : (index / (daily.length - 1)) * chartWidth);
-    const y = (count) => padding.top + chartHeight - (count / max) * chartHeight;
+    const y = (count) => padding.top + chartHeight - ((count - domainMin) / (domainMax - domainMin)) * chartHeight;
     const labels = daily.map((item) => item.date.slice(5).replace('-', '/'));
     const points = daily.map((item, index) => `${x(index)},${y(item.count)}`).join(' ');
-    const tickValues = [max, Math.round(max * 0.75), Math.round(max * 0.5), Math.round(max * 0.25), 0];
+    const tickValues = [domainMax, domainMin + (domainMax - domainMin) * 0.75, domainMin + (domainMax - domainMin) * 0.5, domainMin + (domainMax - domainMin) * 0.25, domainMin]
+        .map((tick) => Math.round(tick));
     const grid = tickValues.map((tick) => `<line class="line-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"><title>${tick} cửa hàng</title></line><text class="line-y-label" x="${padding.left - 10}" y="${y(tick) + 4}">${tick}</text>`).join('');
     const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5"><title>${item.date}: ${item.count} cửa hàng (${item.delta >= 0 ? '+' : ''}${item.delta})</title></circle><text class="line-x-label" x="${x(index)}" y="${height - 14}">${labels[index]}</text>`).join('');
-    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="14" y="${height / 2}" transform="rotate(-90 14 ${height / 2})">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(0)}" y2="${y(0)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 1}">Ngày crawl</text></svg>`;
+    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="14" y="${height / 2}" transform="rotate(-90 14 ${height / 2})">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 1}">Ngày crawl</text></svg>`;
 }
 
 function renderProvinceTable(rows) {

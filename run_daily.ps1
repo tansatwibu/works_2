@@ -11,3 +11,8 @@ $logPath = Join-Path $PSScriptRoot ("logs\crawl-{0}.log" -f (Get-Date -Format 'y
 if ($LASTEXITCODE -ne 0) {
     throw "Daily crawl failed with exit code $LASTEXITCODE. See $logPath"
 }
+
+& npm run crawl-bhx *>> $logPath
+if ($LASTEXITCODE -ne 0) {
+    throw "Bach Hoa Xanh crawl failed with exit code $LASTEXITCODE. See $logPath"
+}

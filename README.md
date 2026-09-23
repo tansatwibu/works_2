@@ -18,6 +18,18 @@ npm run schedule-end-of-day
 
 Lệnh trên đăng ký Windows Task Scheduler `LongChau-EndOfDay-Sync`. Dashboard đọc MongoDB và hiển thị thời điểm snapshot thành công gần nhất tại phần trạng thái trên đầu trang.
 
+Crawler hiện dùng Python nhưng vẫn giữ `sync_daily.js` làm lớp ghi MongoDB:
+
+```powershell
+py -3 -m pip install -r requirements.txt
+py -3 -m playwright install chromium
+python crawl.py --validate-only  # Kiểm tra JSON hiện có, không gọi mạng
+python crawl.py --dry-run        # Gọi API và kiểm tra, không ghi file/database
+npm run crawl                    # Crawl và đồng bộ khi payload hợp lệ
+```
+
+Crawler ghi file JSON tạm rồi mới thay thế `longchau_raw.json`. Nếu API lỗi hoặc dữ liệu thiếu/trùng `shopCode`, file hiện tại và MongoDB không bị cập nhật.
+
 ## Cấu trúc MVC
 
 ```text

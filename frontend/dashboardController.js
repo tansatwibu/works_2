@@ -1,32 +1,79 @@
-import { getStats, getSyncStatus } from './dashboardModel.js';
+import { getStats, getSyncStatus, getSnapshotRange } from './dashboardModel.js';
 import { renderChart, renderProvinceStats, setLoading } from './dashboardView.js';
+import { getMonthRange } from './chartUtils.js';
 
 const today = new Date();
-const fromInput = document.querySelector('#from-date');
-const toInput = document.querySelector('#to-date');
+const fromMonthInput = document.querySelector('#from-month');
+const toMonthInput = document.querySelector('#to-month');
+const chartMonthInput = document.querySelector('#chart-month');
 const chartProvince = document.querySelector('#chart-province');
+let latestChartRequest = 0;
+let latestTableRequest = 0;
+let currentSource = 'longchau';
 
-function dateValue(date) { return date.toISOString().slice(0, 10); }
-function setDates() {
-    const year = today.getFullYear();
-    fromInput.value = `${year}-01-01`;
-    toInput.value = dateValue(today);
+function monthValue(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    return `${year}-${month}`;
 }
 
-function filters() { return { from: fromInput.value, to: toInput.value }; }
+async function setDates() {
+    const currentMonth = monthValue(today);
+    const range = await getSnapshotRange(currentSource);
+    const minDate = range.minDate ? new Date(range.minDate) : new Date(today.getFullYear(), 0, 1);
+    const minMonth = monthValue(minDate);
+    fromMonthInput.value = minMonth;
+    toMonthInput.value = currentMonth;
+    chartMonthInput.value = currentMonth;
+}
+
+function chartRangeFilters() {
+    const range = getMonthRange(chartMonthInput.value);
+    return { from: range.from, to: range.to };
+}
+
+function tableRangeFilters() {
+    const fromRange = getMonthRange(fromMonthInput.value);
+    const toRange = getMonthRange(toMonthInput.value);
+    return {
+        from: fromRange.from || '',
+        to: toRange.to || ''
+    };
+}
+
+async function loadChart() {
+    const requestId = ++latestChartRequest;
+    const button = document.querySelector('#chart-refresh');
+    setLoading(button, true);
+    try {
+        const { from, to } = chartRangeFilters();
+        const table = await getStats(from, to, chartProvince.value, currentSource);
+        if (requestId !== latestChartRequest) return;
+        renderChart('#daily-chart', table.daily, 'daily');
+        updateProvinceOptions(table.provinces);
+    }
+    catch (error) { document.querySelector('#last-sync').textContent = error.message; }
+    finally {
+        if (requestId === latestChartRequest) setLoading(button, false);
+    }
+}
 
 async function loadOverview() {
+    const requestId = ++latestTableRequest;
     const button = document.querySelector('#refresh-button');
     setLoading(button, true);
     try {
-        const table = await getStats(fromInput.value, toInput.value, chartProvince.value);
-        renderChart('#daily-chart', table.daily, 'daily');
+        const { from, to } = tableRangeFilters();
+        const table = await getStats(from, to, chartProvince.value, currentSource);
+        if (requestId !== latestTableRequest) return;
         renderProvinceStats(table.byProvince);
         updateProvinceOptions(table.provinces);
         await renderSyncStatus();
     }
     catch (error) { document.querySelector('#last-sync').textContent = error.message; }
-    finally { setLoading(button, false); }
+    finally {
+        if (requestId === latestTableRequest) setLoading(button, false);
+    }
 }
 
 function updateProvinceOptions(provinces) {
@@ -51,10 +98,12 @@ async function renderSyncStatus() {
 }
 
 function switchModule(moduleName) {
+    currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : 'longchau';
     document.querySelectorAll('[data-module]').forEach((button) => button.classList.toggle('active', button.dataset.module === moduleName));
-    document.querySelectorAll('[data-module-view]').forEach((view) => { view.hidden = view.dataset.moduleView !== 'longchau'; });
-    document.querySelector('#page-title').textContent = 'Dashboard';
-    loadOverview();
+    document.querySelectorAll('[data-module-view]').forEach((view) => { view.hidden = view.dataset.moduleView !== 'dashboard'; });
+    document.querySelector('#page-title').textContent = currentSource === 'bachhoaxanh' ? 'Bách Hoá Xanh' : 'Nhà thuốc Long Châu';
+    void loadChart();
+    void loadOverview();
 }
 
 function toggleSidebar() {
@@ -67,13 +116,18 @@ function closeSidebar() {
     document.querySelector('#sidebar-overlay').classList.remove('active');
 }
 
-setDates();
-document.querySelector('#sidebar-toggle').addEventListener('click', toggleSidebar);
-document.querySelector('#sidebar-overlay').addEventListener('click', closeSidebar);
-document.querySelectorAll('[data-module]').forEach((button) => button.addEventListener('click', () => { switchModule(button.dataset.module); closeSidebar(); }));
-document.querySelector('#refresh-button').addEventListener('click', loadOverview);
-document.querySelector('#chart-refresh').addEventListener('click', loadOverview);
-chartProvince.addEventListener('change', loadOverview);
-fromInput.addEventListener('change', loadOverview);
-toInput.addEventListener('change', loadOverview);
-switchModule('longchau');
+async function initializeDashboard() {
+    await setDates();
+    document.querySelector('#sidebar-toggle').addEventListener('click', toggleSidebar);
+    document.querySelector('#sidebar-overlay').addEventListener('click', closeSidebar);
+    document.querySelectorAll('[data-module]').forEach((button) => button.addEventListener('click', () => { switchModule(button.dataset.module); closeSidebar(); }));
+    document.querySelector('#refresh-button').addEventListener('click', loadOverview);
+    document.querySelector('#chart-refresh').addEventListener('click', loadChart);
+    chartProvince.addEventListener('change', loadChart);
+    fromMonthInput.addEventListener('change', loadOverview);
+    toMonthInput.addEventListener('change', loadOverview);
+    chartMonthInput.addEventListener('change', loadChart);
+    switchModule('longchau');
+}
+
+initializeDashboard();

@@ -21,6 +21,25 @@ export function resolveChartData(daily, period) {
     return aggregateByPeriod(daily, period);
 }
 
+function formatLocalDate(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+export function getMonthRange(monthValue) {
+    if (!monthValue) return { from: '', to: '' };
+    const [year, month] = monthValue.split('-').map(Number);
+    if (!year || !month) return { from: '', to: '' };
+    const from = new Date(year, month - 1, 1);
+    const to = new Date(year, month, 1);
+    return {
+        from: formatLocalDate(from),
+        to: formatLocalDate(to),
+    };
+}
+
 export function getPeriodLabel(period) {
     return CHART_CONFIG[period]?.label || 'THEO NGÀY';
 }

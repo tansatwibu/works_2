@@ -6,7 +6,7 @@ function queryParams(requestUrl) {
 
 async function stats(requestUrl) {
     const query = queryParams(requestUrl);
-    return dashboardModel.getStats(query.from, query.to, query.province);
+    return dashboardModel.getStats(query.from, query.to, query.province, query.source);
 }
 
 async function pharmacies(requestUrl) {
@@ -21,4 +21,8 @@ async function syncStatus() {
     return dashboardModel.getSyncStatus();
 }
 
-module.exports = { stats, pharmacies, events, syncStatus };
+async function snapshotRange(requestUrl) {
+    return dashboardModel.getSnapshotRange(queryParams(requestUrl).source);
+}
+
+module.exports = { stats, pharmacies, events, syncStatus, snapshotRange };

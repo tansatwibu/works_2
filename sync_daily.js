@@ -67,7 +67,8 @@ async function recordEvent(db, event) {
     );
 }
 
-async function syncDaily(payload) {
+async function syncDaily(payload, options = {}) {
+    const source = options.source || 'longchau';
     const items = payload.items;
     const expectedCount = Number(payload.totalCount) || 0;
 
@@ -100,22 +101,23 @@ async function syncDaily(payload) {
 
     try {
         const activePharmacies = await db.collection('pharmacies')
-            .find({ status: 'active' })
+            .find({ status: 'active', source })
             .project({ shopCode: 1, missingStreak: 1, missingSince: 1, status: 1 })
             .toArray();
         const existingCodes = new Set(activePharmacies.map((item) => item.shopCode));
         const previousPharmacies = await db.collection('pharmacies')
-            .find({ shopCode: { $in: [...todayCodes] } })
+            .find({ source, shopCode: { $in: [...todayCodes] } })
             .project({ shopCode: 1, status: 1 })
             .toArray();
         const previousByCode = new Map(previousPharmacies.map((item) => [item.shopCode, item]));
 
         await db.collection('pharmacy_daily_snapshots').bulkWrite(items.map((item) => ({
             updateOne: {
-                filter: { snapshotDate, shopCode: item.shopCode },
+                filter: { snapshotDate, source, shopCode: item.shopCode },
                 update: {
                     $set: {
                         runId,
+                        source,
                         provinceId: item.provinceIDStr || item.provinceID || null,
                         provinceName: item.provinceName || null,
                         isPresent: true,
@@ -131,12 +133,12 @@ async function syncDaily(payload) {
             const fields = pharmacyFields(item, observedAt);
 
             await db.collection('pharmacies').updateOne(
-                { shopCode: item.shopCode },
+                { source, shopCode: item.shopCode },
                 {
                     $set: fields,
                     $setOnInsert: {
                         shopCode: item.shopCode,
-                        source: 'longchau',
+                        source,
                         firstSeenAt: observedAt
                     }
                 },
@@ -145,6 +147,7 @@ async function syncDaily(payload) {
 
             if (!previous || previous.status === 'closed') {
                 await recordEvent(db, {
+                    source,
                     shopCode: item.shopCode,
                     eventType: previous?.status === 'closed' ? 'reopened' : 'opened',
                     eventDate: snapshotDate,
@@ -166,7 +169,7 @@ async function syncDaily(payload) {
             const nextStatus = missingStreak >= CLOSE_AFTER_MISSING_DAYS ? 'closed' : 'active';
 
             await db.collection('pharmacies').updateOne(
-                { shopCode: pharmacy.shopCode },
+                { source, shopCode: pharmacy.shopCode },
                 {
                     $set: {
                         status: nextStatus,
@@ -178,6 +181,7 @@ async function syncDaily(payload) {
             );
 
             await recordEvent(db, {
+                source,
                 shopCode: pharmacy.shopCode,
                 eventType: nextStatus === 'closed' ? 'closed' : 'missing',
                 eventDate: snapshotDate,
@@ -203,7 +207,7 @@ async function syncDaily(payload) {
 
 async function main() {
     const payload = JSON.parse(fs.readFileSync('longchau_raw.json', 'utf8'));
-    await syncDaily(payload);
+    await syncDaily(payload, { source: 'longchau' });
 }
 
 if (require.main === module) {
