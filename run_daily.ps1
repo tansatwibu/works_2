@@ -16,3 +16,8 @@ if ($LASTEXITCODE -ne 0) {
 if ($LASTEXITCODE -ne 0) {
     throw "Bach Hoa Xanh crawl failed with exit code $LASTEXITCODE. See $logPath"
 }
+
+& npm run crawl-tiem-chung *>> $logPath
+if ($LASTEXITCODE -ne 0) {
+    throw "Tiem Chung Long Chau crawl failed with exit code $LASTEXITCODE. See $logPath"
+}

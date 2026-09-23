@@ -10,6 +10,7 @@
     "start": "node server.js",
     "crawl": "node crawl.js",
     "crawl-bhx": "node bachhoaxanh_crawl.js"
+    ,"crawl-tiem-chung": "node tiemchunglongchau_crawl.js"
   },
   "dependencies": {
     "dotenv": "^18.0.0",

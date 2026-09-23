@@ -98,10 +98,15 @@ async function renderSyncStatus() {
 }
 
 function switchModule(moduleName) {
-    currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : 'longchau';
+    currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : moduleName === 'tiemchunglongchau' ? 'tiemchunglongchau' : 'longchau';
     document.querySelectorAll('[data-module]').forEach((button) => button.classList.toggle('active', button.dataset.module === moduleName));
     document.querySelectorAll('[data-module-view]').forEach((view) => { view.hidden = view.dataset.moduleView !== 'dashboard'; });
-    document.querySelector('#page-title').textContent = currentSource === 'bachhoaxanh' ? 'Bách Hoá Xanh' : 'Nhà thuốc Long Châu';
+    const titles = {
+        longchau: 'Nhà thuốc Long Châu',
+        bachhoaxanh: 'Bách Hoá Xanh',
+        tiemchunglongchau: 'Tiêm chủng Long Châu'
+    };
+    document.querySelector('#page-title').textContent = titles[currentSource];
     void loadChart();
     void loadOverview();
 }

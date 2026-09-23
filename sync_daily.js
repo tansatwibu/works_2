@@ -58,6 +58,7 @@ function pharmacyFields(item, observedAt) {
 async function recordEvent(db, event) {
     await db.collection('pharmacy_events').updateOne(
         {
+            source: event.source,
             shopCode: event.shopCode,
             eventType: event.eventType,
             eventDate: event.eventDate
@@ -93,6 +94,7 @@ async function syncDaily(payload, options = {}) {
     await db.collection('crawl_runs').insertOne({
         _id: runId,
         type: 'daily',
+        source,
         startedAt: observedAt,
         expectedCount,
         fetchedCount: items.length,
