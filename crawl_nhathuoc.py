@@ -2,10 +2,11 @@ import argparse
 import asyncio
 import json
 import os
-import subprocess
 import tempfile
 from pathlib import Path
 from typing import Any
+
+from sync_daily import sync_daily
 
 
 API_URL = os.getenv(
@@ -44,87 +45,45 @@ def validate_payload(payload: Any) -> dict[str, Any]:
 
 async def fetch_payload(headless: bool) -> dict[str, Any]:
     from playwright.async_api import async_playwright
-    from playwright_stealth import Stealth
 
     async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(
-            headless=headless,
-            args=["--no-sandbox", "--disable-setuid-sandbox"],
+        request_context = await playwright.request.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+            extra_http_headers={
+                "accept": "application/json, text/plain, */*",
+                "accept-language": "vi-VN,vi;q=0.9,en;q=0.6",
+                "content-type": "application/json",
+                "order-channel": "1",
+                "x-channel": "EStore",
+            },
+            timeout=60_000,
         )
         try:
-            page = await browser.new_page()
-            await Stealth().apply_stealth_async(page)
-            failed_requests: list[str] = []
-            api_responses: list[str] = []
-            page.on(
-                "requestfailed",
-                lambda request: failed_requests.append(
-                    f"{request.url}: {request.failure}"
-                ),
+            response = await request_context.post(
+                API_URL,
+                data={
+                    "maxResult": 3000,
+                    "skipCount": 0,
+                    "searchBy": {"byProvince": None, "byLocation": None},
+                },
             )
-            page.on(
-                "response",
-                lambda response: api_responses.append(
-                    f"{response.status} {response.url}"
-                )
-                if API_URL in response.url
-                else None,
-            )
-            await page.goto(STORE_URL, wait_until="networkidle", timeout=60_000)
-            await page.wait_for_timeout(3_000)
-            result = await page.evaluate(
-                """
-                async ({ apiUrl }) => {
-                    try {
-                        const response = await fetch(apiUrl, {
-                            headers: {
-                                accept: "application/json, text/plain, */*",
-                                "accept-language": "vi-VN,vi;q=0.9,en;q=0.6",
-                                "content-type": "application/json",
-                                "order-channel": "1",
-                                "x-channel": "EStore"
-                            },
-                            body: JSON.stringify({
-                                maxResult: 3000,
-                                skipCount: 0,
-                                searchBy: {
-                                    byProvince: null,
-                                    byLocation: null
-                                }
-                            }),
-                            method: "POST",
-                            credentials: "omit"
-                        });
-                        const text = await response.text();
-                        try {
-                            return { ok: response.ok, status: response.status, data: JSON.parse(text) };
-                        } catch {
-                            return {
-                                ok: false,
-                                status: response.status,
-                                error: "Phản hồi không phải là JSON",
-                                preview: text.substring(0, 500)
-                            };
-                        }
-                    } catch (error) {
-                        return { ok: false, error: error.message };
-                    }
+            text = await response.text()
+            try:
+                result = {"ok": response.ok, "status": response.status, "data": json.loads(text)}
+            except json.JSONDecodeError:
+                result = {
+                    "ok": False,
+                    "status": response.status,
+                    "error": "Phản hồi không phải là JSON",
+                    "preview": text[:500],
                 }
-                """,
-                {"apiUrl": API_URL},
-            )
         finally:
-            await browser.close()
+            await request_context.dispose()
 
     if not result.get("ok"):
         detail = result.get("error") or f"HTTP {result.get('status')}"
         if result.get("preview"):
             detail += f"; preview: {result['preview']}"
-        api_failures = [failure for failure in failed_requests if API_URL in failure]
-        if api_failures:
-            detail += f"; request failure: {api_failures[-1]}"
-        if api_responses:
-            detail += f"; response: {api_responses[-1]}"
         raise RuntimeError(detail)
 
     return validate_payload(result["data"])
@@ -147,7 +106,8 @@ def load_and_validate(path: Path) -> dict[str, Any]:
 
 
 def run_sync() -> None:
-    subprocess.run(["node", "sync_daily.js"], cwd=RAW_PATH.parent, check=True)
+    payload = load_and_validate(RAW_PATH)
+    sync_daily(payload)
 
 
 async def main() -> None:

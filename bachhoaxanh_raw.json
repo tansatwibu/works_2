@@ -2,6 +2,1056 @@
   "totalCount": 1266,
   "items": [
     {
+      "shopCode": "bhx-30101",
+      "shopName": "BHX - Nham Biền (Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Nham Biền (Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh",
+        "address": "BHX Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.24947,
+          "latitude": 21.198042
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102492",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30111",
+      "shopName": "BHX - Phù Khê (Khu phố Phù Khê Đông, Phường Phù Khê)",
+      "shopNameDisplay": "BHX - Phù Khê (Khu phố Phù Khê Đông, Phường Phù Khê)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 6+22, tờ bản đồ số 32, Khu phố Phù Khê Đông, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 6+22, tờ bản đồ số 32, Khu phố Phù Khê Đông, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.93689,
+          "latitude": 21.141472
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102481",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30117",
+      "shopName": "BHX - Trần Nguyên Hãn (Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Trần Nguyên Hãn (Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh",
+        "address": "BHX Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.196754,
+          "latitude": 21.285084
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102496",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30124",
+      "shopName": "BHX - Phượng Mao (Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Phượng Mao (Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.140526,
+          "latitude": 21.153452
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102473",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30215",
+      "shopName": "BHX - Nghiêm Xá (Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Nghiêm Xá (Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số: 212 và 213, tờ bản đồ số: 53, Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số: 212 và 213, tờ bản đồ số: 53, Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.95482,
+          "latitude": 21.19125
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102467",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30216",
+      "shopName": "BHX - Đại Đồng (Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đại Đồng (Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 99,420 tờ bản đồ số 76 và thửa đất số 95 tờ bản đồ số 37, Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 99,420 tờ bản đồ số 76 và thửa đất số 95 tờ bản đồ số 37, Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.98602,
+          "latitude": 21.090946
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102459",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30236",
+      "shopName": "BHX - Lãm Làng (Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Lãm Làng (Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 564 và 596, tờ bản đồ số 128, Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 564 và 596, tờ bản đồ số 128, Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.101616,
+          "latitude": 21.152431
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102485",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30239",
+      "shopName": "BHX - TDP Hương Mạc (TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - TDP Hương Mạc (TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 102, tờ bản đồ số 51 và Thửa đất số 172+173, tờ bản đồ số 05, TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 102, tờ bản đồ số 51 và Thửa đất số 172+173, tờ bản đồ số 05, TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.92814,
+          "latitude": 21.154755
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102481",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30266",
+      "shopName": "BHX - Thuận Thành (Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Thuận Thành (Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 717,718,719 tờ bản đồ số 124, Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh",
+        "address": "BHX Thửa đất số 717,718,719 tờ bản đồ số 124, Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.036995,
+          "latitude": 21.034044
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102476",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30332",
+      "shopName": "BHX - Văn Môn ( Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Văn Môn ( Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 928 và 929, tờ bản đồ số 17, Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 928 và 929, tờ bản đồ số 17, Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.93004,
+          "latitude": 21.169647
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102466",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30341",
+      "shopName": "BHX - Bắc Lý (Thôn Nội Thổ, Xã Xuân Cẩm, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Bắc Lý (Thôn Nội Thổ, Xã Xuân Cẩm, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 337 tờ bản đồ số: 77, Thôn Nội Thổ, xã Xuân Cẩm, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 337 tờ bản đồ số: 77, Thôn Nội Thổ, xã Xuân Cẩm, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.957214,
+          "latitude": 21.29312
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102502",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30355",
+      "shopName": "BHX - Chợ Đọ ( Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Chợ Đọ ( Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 392 và 577, tờ bản đồ số 7, Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 392 và 577, tờ bản đồ số 7, Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.06239,
+          "latitude": 21.178633
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102489",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30460",
+      "shopName": "BHX - Vân Cốc 3 (TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Vân Cốc 3 (TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 205, tờ bản đồ số 15, TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 205, tờ bản đồ số 15, TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.12821,
+          "latitude": 21.236868
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102499",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30785",
+      "shopName": "BHX - Liễu Ngạn (Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Liễu Ngạn (Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 216 và 217, tờ bản đồ số 44, Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 216 và 217, tờ bản đồ số 44, Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.94875,
+          "latitude": 21.374264
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102503",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30794",
+      "shopName": "BHX - Đồng Kỵ (Tổ dân phố Thanh Bình, Phường Đồng Nguyên, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đồng Kỵ (Tổ dân phố Thanh Bình, Phường Đồng Nguyên, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 84, tờ bản đồ số 14, Tổ dân phố Thanh Bình, phường Đồng Nguyên, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 84, tờ bản đồ số 14, Tổ dân phố Thanh Bình, phường Đồng Nguyên, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.94475,
+          "latitude": 21.13474
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102482",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30801",
+      "shopName": "BHX - Kim Bảng (Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Kim Bảng (Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 254, tờ bản đồ số 91, Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 254, tờ bản đồ số 91, Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.951294,
+          "latitude": 21.109283
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102484",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30820",
+      "shopName": "BHX - Trung Đồng (TDP Trung Đồng, Phường Nếnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Trung Đồng (TDP Trung Đồng, Phường Nếnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 13, tờ bản đồ số 87, TDP Trung Đồng, phường Nếnh, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 13, tờ bản đồ số 87, TDP Trung Đồng, phường Nếnh, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.127716,
+          "latitude": 21.226566
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102499",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30881",
+      "shopName": "BHX - An Châu (Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - An Châu (Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.84737,
+          "latitude": 21.334242
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102545",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30967",
+      "shopName": "BHX - Việt Đoàn (Chợ Sơn, Xã Liên Bão, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Việt Đoàn (Chợ Sơn, Xã Liên Bão, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 343 và 355, tờ bản đồ số 27, Chợ Sơn, xã Liên Bão, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 343 và 355, tờ bản đồ số 27, Chợ Sơn, xã Liên Bão, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.0384,
+          "latitude": 21.11558
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102461",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30998",
+      "shopName": "BHX - Tự Lạn (Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Tự Lạn (Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 521, tờ bản đồ số 03, Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 521, tờ bản đồ số 03, Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.06243,
+          "latitude": 21.29484
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102501",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31015",
+      "shopName": "BHX - Thị trấn Hồ (Tổ dân phố Lạc Thổ Nam, Phường Thuận Thành, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Thị trấn Hồ (Tổ dân phố Lạc Thổ Nam, Phường Thuận Thành, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 146+171, tờ bản đồ số 44, Tổ dân phố Lạc Thổ Nam, phường Thuận Thành, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 146+171, tờ bản đồ số 44, Tổ dân phố Lạc Thổ Nam, phường Thuận Thành, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.087204,
+          "latitude": 21.054602
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102480",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31016",
+      "shopName": "BHX - Mai Động (Khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Mai Động (Khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 27+28, tờ bản đồ số 40, khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 27+28, tờ bản đồ số 40, khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.94527,
+          "latitude": 21.148958
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102481",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31017",
+      "shopName": "BHX - Hiệp Hoà (Thôn Dinh Hương, Xã Hiệp Hoà, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Hiệp Hoà (Thôn Dinh Hương, Xã Hiệp Hoà, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 193+195, tờ bản đồ số 70, Thôn Dinh Hương, xã Hiệp Hoà, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 193+195, tờ bản đồ số 70, Thôn Dinh Hương, xã Hiệp Hoà, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.97673,
+          "latitude": 21.348194
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102504",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31077",
+      "shopName": "BHX - An Ninh (Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - An Ninh (Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 805 - 806, tờ bản đồ số 15, Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 805 - 806, tờ bản đồ số 15, Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.92563,
+          "latitude": 21.199099
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102466",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31078",
+      "shopName": "BHX - Đông Tiến (Thôn Thượng Thôn, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đông Tiến (Thôn Thượng Thôn, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 179, tờ bản đồ số 180 và Thửa đất số 180, tờ bản đồ số 22, Thôn Thượng Thôn, xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 179, tờ bản đồ số 180 và Thửa đất số 180, tờ bản đồ số 22, Thôn Thượng Thôn, xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.96402,
+          "latitude": 21.212008
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102467",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31079",
+      "shopName": "BHX - Trung Kênh (Thôn Cường Tráng, Xã Trung Kênh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Trung Kênh (Thôn Cường Tráng, Xã Trung Kênh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 214, tờ bản đồ số 31, Thôn Cường Tráng, xã Trung Kênh, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 214, tờ bản đồ số 31, Thôn Cường Tráng, xã Trung Kênh, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.27415,
+          "latitude": 21.045166
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102449",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31080",
+      "shopName": "BHX - Đông Yên ( Thôn Đông Yên, Xã Tam Đa, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đông Yên ( Thôn Đông Yên, Xã Tam Đa, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 250+251, tờ bản đồ số 21, Thôn Đông Yên, xã Tam Đa, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 250+251, tờ bản đồ số 21, Thôn Đông Yên, xã Tam Đa, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.01061,
+          "latitude": 21.189774
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102463",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31121",
+      "shopName": "BHX - Đông Ngàn (Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đông Ngàn (Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 15, tờ bản đồ số 4, Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 15, tờ bản đồ số 4, Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.96911,
+          "latitude": 21.12356
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102484",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31122",
+      "shopName": "BHX - Tân Lãng (Thôn Hữu Ái, Xã Lương Tài, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Tân Lãng (Thôn Hữu Ái, Xã Lương Tài, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 440 và 441, tờ bản đồ số 27, thôn Hữu Ái, Xã Lương Tài, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 440 và 441, tờ bản đồ số 27, thôn Hữu Ái, Xã Lương Tài, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.19557,
+          "latitude": 21.019588
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102452",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31135",
+      "shopName": "BHX - Tam Giang (Thôn Nguyệt Cầm, Xã Tam Giang, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Tam Giang (Thôn Nguyệt Cầm, Xã Tam Giang, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Nguyệt Cầm, xã Tam Giang, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thôn Nguyệt Cầm, xã Tam Giang, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.94538,
+          "latitude": 21.227623
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102465",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31139",
+      "shopName": "BHX - Đồng Nội (Thôn Đồng Nội, Xã Ngọc Thiện, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đồng Nội (Thôn Đồng Nội, Xã Ngọc Thiện, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 780 (Lô 02) + 781 (Lô 03) + 782 (Lô 04), tờ bản đồ số 20, thôn Đồng Nội, xã Ngọc Thiện, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 780 (Lô 02) + 781 (Lô 03) + 782 (Lô 04), tờ bản đồ số 20, thôn Đồng Nội, xã Ngọc Thiện, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.044106,
+          "latitude": 21.360174
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102509",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31151",
+      "shopName": "BHX - Phú Mẫn (Thôn Phú Mẫn, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Phú Mẫn (Thôn Phú Mẫn, Xã Yên Phong, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 96, tờ bản đồ số 37, Thôn Phú Mẫn, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 96, tờ bản đồ số 37, Thôn Phú Mẫn, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.951675,
+          "latitude": 21.195263
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102467",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31152",
+      "shopName": "BHX - Thị Cầu (Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Thị Cầu (Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 84 và 85, tờ bản đồ số 13, Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 84 và 85, tờ bản đồ số 13, Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.0854,
+          "latitude": 21.194519
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102487",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31216",
+      "shopName": "BHX - Hợp Thịnh (Thôn Bảo Tân, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Hợp Thịnh (Thôn Bảo Tân, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 389 và 770, tờ bản đồ số 5, thôn Bảo Tân, xã Hợp Thịnh, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 389 và 770, tờ bản đồ số 5, thôn Bảo Tân, xã Hợp Thịnh, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.91835,
+          "latitude": 21.334526
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102505",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31217",
+      "shopName": "BHX - Khám Lạng ( Thôn Giếng, Xã Bắc Lũng, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Khám Lạng ( Thôn Giếng, Xã Bắc Lũng, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 298, tờ bản đồ số 7, Thôn Giếng, xã Bắc Lũng, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 298, tờ bản đồ số 7, Thôn Giếng, xã Bắc Lũng, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.38103,
+          "latitude": 21.273108
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102522",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31230",
+      "shopName": "BHX - Võ Cường ( Khu 1, Xuân Ổ A, Phường Võ Cường, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Võ Cường ( Khu 1, Xuân Ổ A, Phường Võ Cường, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số: 202, tờ bản đồ số 27, Khu 1, Xuân Ổ A, phường Võ Cường, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số: 202, tờ bản đồ số 27, Khu 1, Xuân Ổ A, phường Võ Cường, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.03749,
+          "latitude": 21.154673
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102488",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31231",
+      "shopName": "BHX - Hạp Lĩnh (Khu Tiên Xá, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Hạp Lĩnh (Khu Tiên Xá, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 149 + 448 + 486, tờ bản đồ số 19, Khu Tiên Xá, phường Hạp Lĩnh, tỉnh Bắc Ninh",
+        "address": "BHX Thửa đất số 149 + 448 + 486, tờ bản đồ số 19, Khu Tiên Xá, phường Hạp Lĩnh, tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.07749,
+          "latitude": 21.133364
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102486",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31247",
+      "shopName": "BHX - Trung Nghĩa ( Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Trung Nghĩa ( Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất 703 và 704, tờ bản đồ số 14, Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất 703 và 704, tờ bản đồ số 14, Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.95949,
+          "latitude": 21.191149
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102467",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31266",
+      "shopName": "BHX - Biển Động ( thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Biển Động ( thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 1044, tờ bản đồ địa chính số 26, thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 1044, tờ bản đồ địa chính số 26, thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.75271,
+          "latitude": 21.388615
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102539",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31267",
+      "shopName": "BHX - Đào Viên ( TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Đào Viên ( TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 97, tờ bản đồ số 20, TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 97, tờ bản đồ số 20, TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.2017,
+          "latitude": 21.128931
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102471",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31268",
+      "shopName": "BHX - Tam Á ( TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Tam Á ( TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 520 và 521, tờ bản đồ số 23, TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 520 và 521, tờ bản đồ số 23, TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.06706,
+          "latitude": 21.03252
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102480",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31280",
+      "shopName": "BHX - Gò Pháo (Thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Gò Pháo (Thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 22, tờ bản đồ số 24, thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 22, tờ bản đồ số 24, thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 105.906235,
+          "latitude": 21.331566
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102505",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31281",
+      "shopName": "BHX - Lim (Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Lim (Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.01992,
+          "latitude": 21.144669
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102462",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31289",
+      "shopName": "BHX - Vạn An (TDP Đương Xá 3, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Vạn An (TDP Đương Xá 3, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX TDP Đương Xá 3, Phường Kinh Bắc, tỉnh Bắc Ninh",
+        "address": "BHX TDP Đương Xá 3, Phường Kinh Bắc, tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.0526,
+          "latitude": 21.191923
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102489",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31299",
+      "shopName": "BHX - Gia Bình (Thôn Nội Phú, Xã Gia Bình, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Gia Bình (Thôn Nội Phú, Xã Gia Bình, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Nội Phú, xã Gia Bình, tỉnh Bắc Ninh",
+        "address": "BHX Thôn Nội Phú, xã Gia Bình, tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.17659,
+          "latitude": 21.053553
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102457",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31300",
+      "shopName": "BHX - Bích Sơn (Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Bích Sơn (Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số: Lô số 8 – LO7 và Lô số 9 – LO7, tờ bản đồ: Sơ đồ phân lô, Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh",
+        "address": "BHX Thửa đất số: Lô số 8 – LO7 và Lô số 9 – LO7, tờ bản đồ: Sơ đồ phân lô, Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.088776,
+          "latitude": 21.280378
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102500",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31337",
+      "shopName": "BHX - Chàng 1 (thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Chàng 1 (thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số: Lô 30, Lô 31, Lô 32, tờ bản đồ: QHPL, thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số: Lô 30, Lô 31, Lô 32, tờ bản đồ: QHPL, thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.41253,
+          "latitude": 21.295904
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102523",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31356",
+      "shopName": "BHX - Nhân Thắng (Phố Ngụ, Xã Nhân Thắng, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Nhân Thắng (Phố Ngụ, Xã Nhân Thắng, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 822,823,824, tờ bản đồ số 32, Phố Ngụ, xã Nhân Thắng, tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 822,823,824, tờ bản đồ số 32, Phố Ngụ, xã Nhân Thắng, tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.23089,
+          "latitude": 21.066174
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102456",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31360",
+      "shopName": "BHX - Chợ Tiền (Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Chợ Tiền (Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số: 197, tờ bản đồ số 13, Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX Thửa đất số: 197, tờ bản đồ số 13, Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.05536,
+          "latitude": 21.139072
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102486",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31366",
+      "shopName": "BHX - Chũ (TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh)",
+      "shopNameDisplay": "BHX - Chũ (TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh)",
+      "location": {
+        "addressDisplay": "BHX TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh, Việt Nam",
+        "address": "BHX TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.574196,
+          "latitude": 21.375372
+        }
+      },
+      "provinceIDStr": "1010",
+      "provinceName": "Thành phố Bắc Ninh",
+      "districtIDStr": "10010",
+      "wardIDStr": "102530",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
       "shopCode": "bhx-4383",
       "shopName": "BHX 151/6 Trần Hoàng Na (151/6 Trần Hoàng Na, P. Hưng Lợi, Q, Ninh Kiều, TP. Cần Thơ (Đối diện trường mẫu giáo Trạng Tí 2))",
       "shopNameDisplay": "BHX 151/6 Trần Hoàng Na (151/6 Trần Hoàng Na, P. Hưng Lợi, Q, Ninh Kiều, TP. Cần Thơ (Đối diện trường mẫu giáo Trạng Tí 2))",
@@ -7226,6 +8276,720 @@
       "isEcom": true
     },
     {
+      "shopCode": "bhx-30053",
+      "shopName": "BHX - Phương Nam (Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Phương Nam (Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.69989,
+          "latitude": 21.01907
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102595",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30054",
+      "shopName": "BHX - Cửa Ông (Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cửa Ông (Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.30147,
+          "latitude": 21.005907
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102572",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30104",
+      "shopName": "BHX - Vàng Danh (Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Vàng Danh (Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.79824,
+          "latitude": 21.10032
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102594",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30231",
+      "shopName": "BHX - Chợ Hạ Long (Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Chợ Hạ Long (Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.08265,
+          "latitude": 20.950962
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102580",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30267",
+      "shopName": "BHX - Cẩm Bình (Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cẩm Bình (Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 37, 307, 308, tờ bản đồ số 17, Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 37, 307, 308, tờ bản đồ số 17, Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.28795,
+          "latitude": 21.007458
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102573",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30391",
+      "shopName": "BHX - Khu 7 (Khu nhà ở kết hợp dịch vụ, Tổ 1B khu 7, Phường Bãi Cháy, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Khu 7 (Khu nhà ở kết hợp dịch vụ, Tổ 1B khu 7, Phường Bãi Cháy, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Ô đất số 04 lô A và ô đất số 05 lô A, Khu nhà ở kết hợp dịch vụ, tổ 1B khu 7, phường Bãi Cháy, tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Ô đất số 04 lô A và ô đất số 05 lô A, Khu nhà ở kết hợp dịch vụ, tổ 1B khu 7, phường Bãi Cháy, tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.02323,
+          "latitude": 20.960033
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102584",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30434",
+      "shopName": "BHX - Xuân Quang (Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Xuân Quang (Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 466 và thửa đất số 467, tờ bản đồ số 21, Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 466 và thửa đất số 467, tờ bản đồ số 21, Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.60946,
+          "latitude": 21.053606
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102597",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30435",
+      "shopName": "BHX - Hoàng Hoa Thám (Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Hoàng Hoa Thám (Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.6006,
+          "latitude": 21.056349
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102597",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30443",
+      "shopName": "BHX - Hà Tu (Tổ 4 khu 7, Phường Hà Tu, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Hà Tu (Tổ 4 khu 7, Phường Hà Tu, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 147 và thửa đất số 189, tờ bản đồ số 38, tổ 4 khu 7, phường Hà Tu, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 147 và thửa đất số 189, tờ bản đồ số 38, tổ 4 khu 7, phường Hà Tu, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.13453,
+          "latitude": 20.955956
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102583",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30804",
+      "shopName": "BHX - Cẩm Thuỷ (Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cẩm Thuỷ (Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.26316,
+          "latitude": 21.0065
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102574",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30816",
+      "shopName": "BHX -  Đông Triều (Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam)",
+      "shopNameDisplay": "BHX -  Đông Triều (Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam)",
+      "location": {
+        "addressDisplay": "BHX Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.5198,
+          "latitude": 21.089437
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102599",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30937",
+      "shopName": "BHX - Cẩm Đông (Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cẩm Đông (Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.29193,
+          "latitude": 21.008675
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102573",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30947",
+      "shopName": "BHX - Đức Chính (Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Đức Chính (Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số nhà 352, Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số nhà 352, Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.51746,
+          "latitude": 21.078869
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102599",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-30957",
+      "shopName": "BHX - Lê Thanh Nghị (Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Lê Thanh Nghị (Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số nhà 101A và 103A, Chung cư 6 tầng cột 8, Tổ 14 Khu 4, Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số nhà 101A và 103A, Chung cư 6 tầng cột 8, Tổ 14 Khu 4, Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.12585,
+          "latitude": 20.93981
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102579",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31112",
+      "shopName": "BHX - Kim Sen (Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Kim Sen (Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 01 và 01 và 01, tờ bản đồ số 01, Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 01 và 01 và 01, tờ bản đồ số 01, Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.56676,
+          "latitude": 21.067965
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102597",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31125",
+      "shopName": "BHX - 8A Cẩm Phú (Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam)",
+      "shopNameDisplay": "BHX - 8A Cẩm Phú (Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam)",
+      "location": {
+        "addressDisplay": "BHX Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.33268,
+          "latitude": 21.010332
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102572",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31221",
+      "shopName": "BHX - Cao Xanh (Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cao Xanh (Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.08225,
+          "latitude": 20.971386
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102581",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31222",
+      "shopName": "BHX - Phong Cốc (Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Phong Cốc (Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 328, tờ bản đồ số 21, Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 328, tờ bản đồ số 21, Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.810585,
+          "latitude": 20.899332
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102588",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31223",
+      "shopName": "BHX - Khu Công Nông (Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Khu Công Nông (Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.60101,
+          "latitude": 21.069876
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102597",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31264",
+      "shopName": "BHX - Hà Lầm (Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Hà Lầm (Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 82, tờ bản đồ số 20, Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 82, tờ bản đồ số 20, Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.105515,
+          "latitude": 20.967607
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102582",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31309",
+      "shopName": "BHX - Trần Hưng Đạo (Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Trần Hưng Đạo (Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.79714,
+          "latitude": 20.942104
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102590",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31448",
+      "shopName": "BHX - Cái Rồng (Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cái Rồng (Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.42407,
+          "latitude": 21.068064
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102549",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31451",
+      "shopName": "BHX - Đông Xá (Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Đông Xá (Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.41426,
+          "latitude": 21.064606
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102549",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31505",
+      "shopName": "BHX - TĐC Hồng Hải (Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - TĐC Hồng Hải (Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.10374,
+          "latitude": 20.95102
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102579",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31512",
+      "shopName": "BHX - Quang Hanh (Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Quang Hanh (Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.20764,
+          "latitude": 20.994808
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102574",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31514",
+      "shopName": "BHX - Cao Sơn (Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cao Sơn (Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.3186,
+          "latitude": 21.002554
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102572",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31622",
+      "shopName": "BHX - Hà Khẩu",
+      "shopNameDisplay": "BHX - Hà Khẩu",
+      "location": {
+        "addressDisplay": "BHX Tổ 69, Khu Hà Khẩu 7, Phường Việt Hưng, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Tổ 69, Khu Hà Khẩu 7, Phường Việt Hưng, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.002975,
+          "latitude": 20.979637
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102585",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-31624",
+      "shopName": "BHX - Búi Tre (Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Búi Tre (Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.72442,
+          "latitude": 21.0297
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102595",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-34843",
+      "shopName": "BHX - Trần Nhân Tông (Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Trần Nhân Tông (Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thửa đất số 28, Tờ bản đồ số 73, Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Thửa đất số 28, Tờ bản đồ số 73, Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 106.762985,
+          "latitude": 21.033716
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102593",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-34927",
+      "shopName": "BHX - Cẩm Thạch (Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Cẩm Thạch (Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
+        "address": "BHX Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
+        "coordinates": {
+          "longitude": 107.249626,
+          "latitude": 21.009136
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102574",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-35523",
+      "shopName": "BHX - Mông Dương (Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Mông Dương (Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh",
+        "address": "BHX Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh",
+        "coordinates": {
+          "longitude": 107.32425,
+          "latitude": 21.06631
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102575",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-35526",
+      "shopName": "BHX - Tô Hiệu (Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Tô Hiệu (Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh",
+        "address": "BHX Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh",
+        "coordinates": {
+          "longitude": 107.2699,
+          "latitude": 21.00625
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102573",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-35702",
+      "shopName": "BHX - Lâm Xá (Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Lâm Xá (Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh",
+        "address": "BHX Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh",
+        "coordinates": {
+          "longitude": 106.662415,
+          "latitude": 21.04804
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102596",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
+      "shopCode": "bhx-35823",
+      "shopName": "BHX - Hà An (Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh)",
+      "shopNameDisplay": "BHX - Hà An (Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh)",
+      "location": {
+        "addressDisplay": "BHX Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh",
+        "address": "BHX Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh",
+        "coordinates": {
+          "longitude": 106.86232,
+          "latitude": 20.924696
+        }
+      },
+      "provinceIDStr": "1009",
+      "provinceName": "Thành phố Quảng Ninh",
+      "districtIDStr": "10009",
+      "wardIDStr": "102589",
+      "operation": {
+        "openStatus": true
+      },
+      "isEcom": true
+    },
+    {
       "shopCode": "bhx-4683",
       "shopName": "BHX 326 Thủ Khoa Nghĩa (218 Thủ Khoa Nghĩa, Phường Châu Phú A, TP. Châu Đốc, Tỉnh An Giang (cách ngã tư Thủ Khoa Nghĩa - Sương Nguyệt Ánh 40m))",
       "shopNameDisplay": "BHX 326 Thủ Khoa Nghĩa (218 Thủ Khoa Nghĩa, Phường Châu Phú A, TP. Châu Đốc, Tỉnh An Giang (cách ngã tư Thủ Khoa Nghĩa - Sương Nguyệt Ánh 40m))",
@@ -8270,1056 +10034,6 @@
       "provinceName": "Tỉnh An Giang",
       "districtIDStr": "10031",
       "wardIDStr": "100172",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30101",
-      "shopName": "BHX - Nham Biền (Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Nham Biền (Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh",
-        "address": "BHX Tổ dân phố 4, Phường Yên Dũng, Tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.24947,
-          "latitude": 21.198042
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102492",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30111",
-      "shopName": "BHX - Phù Khê (Khu phố Phù Khê Đông, Phường Phù Khê)",
-      "shopNameDisplay": "BHX - Phù Khê (Khu phố Phù Khê Đông, Phường Phù Khê)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 6+22, tờ bản đồ số 32, Khu phố Phù Khê Đông, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 6+22, tờ bản đồ số 32, Khu phố Phù Khê Đông, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.93689,
-          "latitude": 21.141472
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102481",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30117",
-      "shopName": "BHX - Trần Nguyên Hãn (Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Trần Nguyên Hãn (Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh",
-        "address": "BHX Đường Trần Nguyên Hãn, phường Bắc Giang, tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.196754,
-          "latitude": 21.285084
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102496",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30124",
-      "shopName": "BHX - Phượng Mao (Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Phượng Mao (Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thôn Mao Dộc, Phường Phương Liễu, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.140526,
-          "latitude": 21.153452
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102473",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30215",
-      "shopName": "BHX - Nghiêm Xá (Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Nghiêm Xá (Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số: 212 và 213, tờ bản đồ số: 53, Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số: 212 và 213, tờ bản đồ số: 53, Khu Phố Nghiêm Xá, Xã Yên Phong, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.95482,
-          "latitude": 21.19125
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102467",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30216",
-      "shopName": "BHX - Đại Đồng (Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đại Đồng (Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 99,420 tờ bản đồ số 76 và thửa đất số 95 tờ bản đồ số 37, Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 99,420 tờ bản đồ số 76 và thửa đất số 95 tờ bản đồ số 37, Xóm Giai, Thôn Đại Thượng, Xã Đại Đồng, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.98602,
-          "latitude": 21.090946
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102459",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30236",
-      "shopName": "BHX - Lãm Làng (Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Lãm Làng (Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 564 và 596, tờ bản đồ số 128, Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 564 và 596, tờ bản đồ số 128, Phố Lãm Làng, Phường Nam Sơn, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.101616,
-          "latitude": 21.152431
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102485",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30239",
-      "shopName": "BHX - TDP Hương Mạc (TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - TDP Hương Mạc (TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 102, tờ bản đồ số 51 và Thửa đất số 172+173, tờ bản đồ số 05, TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 102, tờ bản đồ số 51 và Thửa đất số 172+173, tờ bản đồ số 05, TDP Hương Mạc, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.92814,
-          "latitude": 21.154755
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102481",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30266",
-      "shopName": "BHX - Thuận Thành (Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Thuận Thành (Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 717,718,719 tờ bản đồ số 124, Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh",
-        "address": "BHX Thửa đất số 717,718,719 tờ bản đồ số 124, Tổ Dân Phố Công Hà, Phường Song Liễu, Tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.036995,
-          "latitude": 21.034044
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102476",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30332",
-      "shopName": "BHX - Văn Môn ( Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Văn Môn ( Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 928 và 929, tờ bản đồ số 17, Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 928 và 929, tờ bản đồ số 17, Thôn Tiền Thôn, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.93004,
-          "latitude": 21.169647
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102466",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30341",
-      "shopName": "BHX - Bắc Lý (Thôn Nội Thổ, Xã Xuân Cẩm, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Bắc Lý (Thôn Nội Thổ, Xã Xuân Cẩm, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 337 tờ bản đồ số: 77, Thôn Nội Thổ, xã Xuân Cẩm, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 337 tờ bản đồ số: 77, Thôn Nội Thổ, xã Xuân Cẩm, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.957214,
-          "latitude": 21.29312
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102502",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30355",
-      "shopName": "BHX - Chợ Đọ ( Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Chợ Đọ ( Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 392 và 577, tờ bản đồ số 7, Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 392 và 577, tờ bản đồ số 7, Khu Đọ Xá, Đường Huyền Quang, Phường Kinh Bắc, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.06239,
-          "latitude": 21.178633
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102489",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30460",
-      "shopName": "BHX - Vân Cốc 3 (TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Vân Cốc 3 (TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 205, tờ bản đồ số 15, TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 205, tờ bản đồ số 15, TDP Vân Cốc 3, phường Nếnh, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.12821,
-          "latitude": 21.236868
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102499",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30785",
-      "shopName": "BHX - Liễu Ngạn (Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Liễu Ngạn (Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 216 và 217, tờ bản đồ số 44, Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 216 và 217, tờ bản đồ số 44, Thôn Liễu Ngạn, Xã Hoàng Vân, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.94875,
-          "latitude": 21.374264
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102503",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30794",
-      "shopName": "BHX - Đồng Kỵ (Tổ dân phố Thanh Bình, Phường Đồng Nguyên, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đồng Kỵ (Tổ dân phố Thanh Bình, Phường Đồng Nguyên, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 84, tờ bản đồ số 14, Tổ dân phố Thanh Bình, phường Đồng Nguyên, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 84, tờ bản đồ số 14, Tổ dân phố Thanh Bình, phường Đồng Nguyên, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.94475,
-          "latitude": 21.13474
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102482",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30801",
-      "shopName": "BHX - Kim Bảng (Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Kim Bảng (Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 254, tờ bản đồ số 91, Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 254, tờ bản đồ số 91, Khu phố Thọ Môn, Phường Từ Sơn, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.951294,
-          "latitude": 21.109283
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102484",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30820",
-      "shopName": "BHX - Trung Đồng (TDP Trung Đồng, Phường Nếnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Trung Đồng (TDP Trung Đồng, Phường Nếnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 13, tờ bản đồ số 87, TDP Trung Đồng, phường Nếnh, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 13, tờ bản đồ số 87, TDP Trung Đồng, phường Nếnh, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.127716,
-          "latitude": 21.226566
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102499",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30881",
-      "shopName": "BHX - An Châu (Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - An Châu (Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thôn Thượng 2, Xã Sơn Động, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.84737,
-          "latitude": 21.334242
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102545",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30967",
-      "shopName": "BHX - Việt Đoàn (Chợ Sơn, Xã Liên Bão, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Việt Đoàn (Chợ Sơn, Xã Liên Bão, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 343 và 355, tờ bản đồ số 27, Chợ Sơn, xã Liên Bão, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 343 và 355, tờ bản đồ số 27, Chợ Sơn, xã Liên Bão, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.0384,
-          "latitude": 21.11558
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102461",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30998",
-      "shopName": "BHX - Tự Lạn (Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Tự Lạn (Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 521, tờ bản đồ số 03, Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 521, tờ bản đồ số 03, Tổ dân phố Rãnh, Phường Tự Lạn, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.06243,
-          "latitude": 21.29484
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102501",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31015",
-      "shopName": "BHX - Thị trấn Hồ (Tổ dân phố Lạc Thổ Nam, Phường Thuận Thành, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Thị trấn Hồ (Tổ dân phố Lạc Thổ Nam, Phường Thuận Thành, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 146+171, tờ bản đồ số 44, Tổ dân phố Lạc Thổ Nam, phường Thuận Thành, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 146+171, tờ bản đồ số 44, Tổ dân phố Lạc Thổ Nam, phường Thuận Thành, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.087204,
-          "latitude": 21.054602
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102480",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31016",
-      "shopName": "BHX - Mai Động (Khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Mai Động (Khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 27+28, tờ bản đồ số 40, khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 27+28, tờ bản đồ số 40, khu Phố Mai Động, Phường Phù Khê, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.94527,
-          "latitude": 21.148958
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102481",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31017",
-      "shopName": "BHX - Hiệp Hoà (Thôn Dinh Hương, Xã Hiệp Hoà, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Hiệp Hoà (Thôn Dinh Hương, Xã Hiệp Hoà, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 193+195, tờ bản đồ số 70, Thôn Dinh Hương, xã Hiệp Hoà, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 193+195, tờ bản đồ số 70, Thôn Dinh Hương, xã Hiệp Hoà, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.97673,
-          "latitude": 21.348194
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102504",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31077",
-      "shopName": "BHX - An Ninh (Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - An Ninh (Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 805 - 806, tờ bản đồ số 15, Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 805 - 806, tờ bản đồ số 15, Thôn An Ninh, Xã Văn Môn, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.92563,
-          "latitude": 21.199099
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102466",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31078",
-      "shopName": "BHX - Đông Tiến (Thôn Thượng Thôn, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đông Tiến (Thôn Thượng Thôn, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 179, tờ bản đồ số 180 và Thửa đất số 180, tờ bản đồ số 22, Thôn Thượng Thôn, xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 179, tờ bản đồ số 180 và Thửa đất số 180, tờ bản đồ số 22, Thôn Thượng Thôn, xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.96402,
-          "latitude": 21.212008
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102467",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31079",
-      "shopName": "BHX - Trung Kênh (Thôn Cường Tráng, Xã Trung Kênh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Trung Kênh (Thôn Cường Tráng, Xã Trung Kênh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 214, tờ bản đồ số 31, Thôn Cường Tráng, xã Trung Kênh, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 214, tờ bản đồ số 31, Thôn Cường Tráng, xã Trung Kênh, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.27415,
-          "latitude": 21.045166
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102449",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31080",
-      "shopName": "BHX - Đông Yên ( Thôn Đông Yên, Xã Tam Đa, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đông Yên ( Thôn Đông Yên, Xã Tam Đa, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 250+251, tờ bản đồ số 21, Thôn Đông Yên, xã Tam Đa, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 250+251, tờ bản đồ số 21, Thôn Đông Yên, xã Tam Đa, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.01061,
-          "latitude": 21.189774
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102463",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31121",
-      "shopName": "BHX - Đông Ngàn (Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đông Ngàn (Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 15, tờ bản đồ số 4, Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 15, tờ bản đồ số 4, Khu phố Xuân Thụ, Phường Từ Sơn, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.96911,
-          "latitude": 21.12356
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102484",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31122",
-      "shopName": "BHX - Tân Lãng (Thôn Hữu Ái, Xã Lương Tài, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Tân Lãng (Thôn Hữu Ái, Xã Lương Tài, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 440 và 441, tờ bản đồ số 27, thôn Hữu Ái, Xã Lương Tài, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 440 và 441, tờ bản đồ số 27, thôn Hữu Ái, Xã Lương Tài, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.19557,
-          "latitude": 21.019588
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102452",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31135",
-      "shopName": "BHX - Tam Giang (Thôn Nguyệt Cầm, Xã Tam Giang, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Tam Giang (Thôn Nguyệt Cầm, Xã Tam Giang, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Nguyệt Cầm, xã Tam Giang, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thôn Nguyệt Cầm, xã Tam Giang, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.94538,
-          "latitude": 21.227623
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102465",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31139",
-      "shopName": "BHX - Đồng Nội (Thôn Đồng Nội, Xã Ngọc Thiện, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đồng Nội (Thôn Đồng Nội, Xã Ngọc Thiện, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 780 (Lô 02) + 781 (Lô 03) + 782 (Lô 04), tờ bản đồ số 20, thôn Đồng Nội, xã Ngọc Thiện, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 780 (Lô 02) + 781 (Lô 03) + 782 (Lô 04), tờ bản đồ số 20, thôn Đồng Nội, xã Ngọc Thiện, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.044106,
-          "latitude": 21.360174
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102509",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31151",
-      "shopName": "BHX - Phú Mẫn (Thôn Phú Mẫn, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Phú Mẫn (Thôn Phú Mẫn, Xã Yên Phong, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 96, tờ bản đồ số 37, Thôn Phú Mẫn, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 96, tờ bản đồ số 37, Thôn Phú Mẫn, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.951675,
-          "latitude": 21.195263
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102467",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31152",
-      "shopName": "BHX - Thị Cầu (Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Thị Cầu (Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 84 và 85, tờ bản đồ số 13, Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 84 và 85, tờ bản đồ số 13, Khu 2, Phường Vũ Ninh, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.0854,
-          "latitude": 21.194519
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102487",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31216",
-      "shopName": "BHX - Hợp Thịnh (Thôn Bảo Tân, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Hợp Thịnh (Thôn Bảo Tân, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 389 và 770, tờ bản đồ số 5, thôn Bảo Tân, xã Hợp Thịnh, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 389 và 770, tờ bản đồ số 5, thôn Bảo Tân, xã Hợp Thịnh, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.91835,
-          "latitude": 21.334526
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102505",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31217",
-      "shopName": "BHX - Khám Lạng ( Thôn Giếng, Xã Bắc Lũng, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Khám Lạng ( Thôn Giếng, Xã Bắc Lũng, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 298, tờ bản đồ số 7, Thôn Giếng, xã Bắc Lũng, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 298, tờ bản đồ số 7, Thôn Giếng, xã Bắc Lũng, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.38103,
-          "latitude": 21.273108
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102522",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31230",
-      "shopName": "BHX - Võ Cường ( Khu 1, Xuân Ổ A, Phường Võ Cường, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Võ Cường ( Khu 1, Xuân Ổ A, Phường Võ Cường, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số: 202, tờ bản đồ số 27, Khu 1, Xuân Ổ A, phường Võ Cường, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số: 202, tờ bản đồ số 27, Khu 1, Xuân Ổ A, phường Võ Cường, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.03749,
-          "latitude": 21.154673
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102488",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31231",
-      "shopName": "BHX - Hạp Lĩnh (Khu Tiên Xá, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Hạp Lĩnh (Khu Tiên Xá, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 149 + 448 + 486, tờ bản đồ số 19, Khu Tiên Xá, phường Hạp Lĩnh, tỉnh Bắc Ninh",
-        "address": "BHX Thửa đất số 149 + 448 + 486, tờ bản đồ số 19, Khu Tiên Xá, phường Hạp Lĩnh, tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.07749,
-          "latitude": 21.133364
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102486",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31247",
-      "shopName": "BHX - Trung Nghĩa ( Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Trung Nghĩa ( Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất 703 và 704, tờ bản đồ số 14, Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất 703 và 704, tờ bản đồ số 14, Thôn Ngô Nội, Xã Yên Phong, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.95949,
-          "latitude": 21.191149
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102467",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31266",
-      "shopName": "BHX - Biển Động ( thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Biển Động ( thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 1044, tờ bản đồ địa chính số 26, thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 1044, tờ bản đồ địa chính số 26, thôn Phố Biển, Xã Biển Động, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.75271,
-          "latitude": 21.388615
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102539",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31267",
-      "shopName": "BHX - Đào Viên ( TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Đào Viên ( TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 97, tờ bản đồ số 20, TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 97, tờ bản đồ số 20, TDP Thành Dền, Phường Đào Viên, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.2017,
-          "latitude": 21.128931
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102471",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31268",
-      "shopName": "BHX - Tam Á ( TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Tam Á ( TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 520 và 521, tờ bản đồ số 23, TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 520 và 521, tờ bản đồ số 23, TDP Tam Á, Phường Thuận Thành, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.06706,
-          "latitude": 21.03252
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102480",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31280",
-      "shopName": "BHX - Gò Pháo (Thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Gò Pháo (Thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 22, tờ bản đồ số 24, thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 22, tờ bản đồ số 24, thôn Gò Pháo, Xã Hợp Thịnh, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 105.906235,
-          "latitude": 21.331566
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102505",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31281",
-      "shopName": "BHX - Lim (Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Lim (Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thôn Lũng Sơn, Xã Tiên Du, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.01992,
-          "latitude": 21.144669
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102462",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31289",
-      "shopName": "BHX - Vạn An (TDP Đương Xá 3, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Vạn An (TDP Đương Xá 3, Phường Kinh Bắc, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX TDP Đương Xá 3, Phường Kinh Bắc, tỉnh Bắc Ninh",
-        "address": "BHX TDP Đương Xá 3, Phường Kinh Bắc, tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.0526,
-          "latitude": 21.191923
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102489",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31299",
-      "shopName": "BHX - Gia Bình (Thôn Nội Phú, Xã Gia Bình, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Gia Bình (Thôn Nội Phú, Xã Gia Bình, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Nội Phú, xã Gia Bình, tỉnh Bắc Ninh",
-        "address": "BHX Thôn Nội Phú, xã Gia Bình, tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.17659,
-          "latitude": 21.053553
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102457",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31300",
-      "shopName": "BHX - Bích Sơn (Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Bích Sơn (Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số: Lô số 8 – LO7 và Lô số 9 – LO7, tờ bản đồ: Sơ đồ phân lô, Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh",
-        "address": "BHX Thửa đất số: Lô số 8 – LO7 và Lô số 9 – LO7, tờ bản đồ: Sơ đồ phân lô, Khu dân cư thương mại, phường Việt Yên, tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.088776,
-          "latitude": 21.280378
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102500",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31337",
-      "shopName": "BHX - Chàng 1 (thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Chàng 1 (thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số: Lô 30, Lô 31, Lô 32, tờ bản đồ: QHPL, thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số: Lô 30, Lô 31, Lô 32, tờ bản đồ: QHPL, thôn Chàng 1, xã Lục Nam, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.41253,
-          "latitude": 21.295904
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102523",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31356",
-      "shopName": "BHX - Nhân Thắng (Phố Ngụ, Xã Nhân Thắng, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Nhân Thắng (Phố Ngụ, Xã Nhân Thắng, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 822,823,824, tờ bản đồ số 32, Phố Ngụ, xã Nhân Thắng, tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 822,823,824, tờ bản đồ số 32, Phố Ngụ, xã Nhân Thắng, tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.23089,
-          "latitude": 21.066174
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102456",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31360",
-      "shopName": "BHX - Chợ Tiền (Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Chợ Tiền (Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số: 197, tờ bản đồ số 13, Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX Thửa đất số: 197, tờ bản đồ số 13, Khu Tiền Ngoài, Phường Hạp Lĩnh, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.05536,
-          "latitude": 21.139072
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102486",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31366",
-      "shopName": "BHX - Chũ (TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh)",
-      "shopNameDisplay": "BHX - Chũ (TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh)",
-      "location": {
-        "addressDisplay": "BHX TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh, Việt Nam",
-        "address": "BHX TDP Minh Khai, Phường Chũ, Tỉnh Bắc Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.574196,
-          "latitude": 21.375372
-        }
-      },
-      "provinceIDStr": "1010",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "10010",
-      "wardIDStr": "102530",
       "operation": {
         "openStatus": true
       },
@@ -21374,720 +22088,6 @@
       "provinceName": "Tỉnh Quảng Ngãi",
       "districtIDStr": "10021",
       "wardIDStr": "101372",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30053",
-      "shopName": "BHX - Phương Nam (Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Phương Nam (Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số 340, Tổ 1, Khu Bạch Đằng 1, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.69989,
-          "latitude": 21.01907
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102595",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30054",
-      "shopName": "BHX - Cửa Ông (Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cửa Ông (Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số 329, Tổ 2, Khu Nam Sơn 1, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.30147,
-          "latitude": 21.005907
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102572",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30104",
-      "shopName": "BHX - Vàng Danh (Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Vàng Danh (Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số 143, tổ 03, Khu phố Vàng Danh 4, Phường Vàng Danh, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.79824,
-          "latitude": 21.10032
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102594",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30231",
-      "shopName": "BHX - Chợ Hạ Long (Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Chợ Hạ Long (Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 104, Khu Bạch Đằng 6, Phường Hồng Gai, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.08265,
-          "latitude": 20.950962
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102580",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30267",
-      "shopName": "BHX - Cẩm Bình (Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cẩm Bình (Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 37, 307, 308, tờ bản đồ số 17, Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 37, 307, 308, tờ bản đồ số 17, Khu Diêm Thủy, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.28795,
-          "latitude": 21.007458
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102573",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30391",
-      "shopName": "BHX - Khu 7 (Khu nhà ở kết hợp dịch vụ, Tổ 1B khu 7, Phường Bãi Cháy, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Khu 7 (Khu nhà ở kết hợp dịch vụ, Tổ 1B khu 7, Phường Bãi Cháy, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Ô đất số 04 lô A và ô đất số 05 lô A, Khu nhà ở kết hợp dịch vụ, tổ 1B khu 7, phường Bãi Cháy, tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Ô đất số 04 lô A và ô đất số 05 lô A, Khu nhà ở kết hợp dịch vụ, tổ 1B khu 7, phường Bãi Cháy, tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.02323,
-          "latitude": 20.960033
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102584",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30434",
-      "shopName": "BHX - Xuân Quang (Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Xuân Quang (Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 466 và thửa đất số 467, tờ bản đồ số 21, Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 466 và thửa đất số 467, tờ bản đồ số 21, Khu Xuân Quang, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.60946,
-          "latitude": 21.053606
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102597",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30435",
-      "shopName": "BHX - Hoàng Hoa Thám (Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Hoàng Hoa Thám (Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số nhà 69-71, Khu Hoàng Hoa Thám, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.6006,
-          "latitude": 21.056349
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102597",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30443",
-      "shopName": "BHX - Hà Tu (Tổ 4 khu 7, Phường Hà Tu, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Hà Tu (Tổ 4 khu 7, Phường Hà Tu, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 147 và thửa đất số 189, tờ bản đồ số 38, tổ 4 khu 7, phường Hà Tu, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 147 và thửa đất số 189, tờ bản đồ số 38, tổ 4 khu 7, phường Hà Tu, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.13453,
-          "latitude": 20.955956
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102583",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30804",
-      "shopName": "BHX - Cẩm Thuỷ (Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cẩm Thuỷ (Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 3 khu Tân Lập 1, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.26316,
-          "latitude": 21.0065
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102574",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30816",
-      "shopName": "BHX -  Đông Triều (Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam)",
-      "shopNameDisplay": "BHX -  Đông Triều (Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam)",
-      "location": {
-        "addressDisplay": "BHX Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Khu Yên Lâm 3, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.5198,
-          "latitude": 21.089437
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102599",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30937",
-      "shopName": "BHX - Cẩm Đông (Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cẩm Đông (Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 34-35 Khu Đông Tiến 1, Phường Cẩm Phả, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.29193,
-          "latitude": 21.008675
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102573",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30947",
-      "shopName": "BHX - Đức Chính (Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Đức Chính (Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số nhà 352, Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số nhà 352, Tổ 01, Khu Trạo Hà, Phường Đông Triều, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.51746,
-          "latitude": 21.078869
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102599",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-30957",
-      "shopName": "BHX - Lê Thanh Nghị (Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Lê Thanh Nghị (Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số nhà 101A và 103A, Chung cư 6 tầng cột 8, Tổ 14 Khu 4, Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số nhà 101A và 103A, Chung cư 6 tầng cột 8, Tổ 14 Khu 4, Đường Điện Biên Phủ, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.12585,
-          "latitude": 20.93981
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102579",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31112",
-      "shopName": "BHX - Kim Sen (Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Kim Sen (Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 01 và 01 và 01, tờ bản đồ số 01, Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 01 và 01 và 01, tờ bản đồ số 01, Khu Kim Sen, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.56676,
-          "latitude": 21.067965
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102597",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31125",
-      "shopName": "BHX - 8A Cẩm Phú (Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam)",
-      "shopNameDisplay": "BHX - 8A Cẩm Phú (Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam)",
-      "location": {
-        "addressDisplay": "BHX Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 100 khu 8A Cẩm Phú, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.33268,
-          "latitude": 21.010332
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102572",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31221",
-      "shopName": "BHX - Cao Xanh (Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cao Xanh (Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số nhà 338 đường Trần Phú, Khu 4A, Phường Cao Xanh, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.08225,
-          "latitude": 20.971386
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102581",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31222",
-      "shopName": "BHX - Phong Cốc (Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Phong Cốc (Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 328, tờ bản đồ số 21, Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 328, tờ bản đồ số 21, Khu Phong Cốc 5, Phường Phong Cốc, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.810585,
-          "latitude": 20.899332
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102588",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31223",
-      "shopName": "BHX - Khu Công Nông (Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Khu Công Nông (Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Số 185-187, Khu Công Nông, Phường Mạo Khê, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.60101,
-          "latitude": 21.069876
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102597",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31264",
-      "shopName": "BHX - Hà Lầm (Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Hà Lầm (Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 82, tờ bản đồ số 20, Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 82, tờ bản đồ số 20, Tổ 4 Khu Phố Hà Lầm 5, Phường Hà Lầm, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.105515,
-          "latitude": 20.967607
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102582",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31309",
-      "shopName": "BHX - Trần Hưng Đạo (Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Trần Hưng Đạo (Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Khu Phố 2, Phường Quảng Yên, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.79714,
-          "latitude": 20.942104
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102590",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31448",
-      "shopName": "BHX - Cái Rồng (Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cái Rồng (Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Khu 8, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.42407,
-          "latitude": 21.068064
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102549",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31451",
-      "shopName": "BHX - Đông Xá (Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Đông Xá (Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thôn Đông Thịnh, Đặc Khu Vân Đồn, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.41426,
-          "latitude": 21.064606
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102549",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31505",
-      "shopName": "BHX - TĐC Hồng Hải (Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - TĐC Hồng Hải (Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 5, khu Hồng Hải 6A, Phường Hạ Long, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.10374,
-          "latitude": 20.95102
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102579",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31512",
-      "shopName": "BHX - Quang Hanh (Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Quang Hanh (Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 4, Khu 7A, Phường Quang Hanh, tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.20764,
-          "latitude": 20.994808
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102574",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31514",
-      "shopName": "BHX - Cao Sơn (Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cao Sơn (Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 6, Khu phố Cao Sơn 3, Phường Cửa Ông, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.3186,
-          "latitude": 21.002554
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102572",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31622",
-      "shopName": "BHX - Hà Khẩu",
-      "shopNameDisplay": "BHX - Hà Khẩu",
-      "location": {
-        "addressDisplay": "BHX Tổ 69, Khu Hà Khẩu 7, Phường Việt Hưng, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Tổ 69, Khu Hà Khẩu 7, Phường Việt Hưng, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.002975,
-          "latitude": 20.979637
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102585",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-31624",
-      "shopName": "BHX - Búi Tre (Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Búi Tre (Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Khu An Hải, Phường Yên Tử, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.72442,
-          "latitude": 21.0297
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102595",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-34843",
-      "shopName": "BHX - Trần Nhân Tông (Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Trần Nhân Tông (Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thửa đất số 28, Tờ bản đồ số 73, Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Thửa đất số 28, Tờ bản đồ số 73, Khu Phố Thanh Sơn 1, Phường Uông Bí, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 106.762985,
-          "latitude": 21.033716
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102593",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-34927",
-      "shopName": "BHX - Cẩm Thạch (Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Cẩm Thạch (Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
-        "address": "BHX Khu 8, Phường Quang Hanh, Tỉnh Quảng Ninh, Việt Nam",
-        "coordinates": {
-          "longitude": 107.249626,
-          "latitude": 21.009136
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102574",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-35523",
-      "shopName": "BHX - Mông Dương (Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Mông Dương (Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh",
-        "address": "BHX Tổ 02, Khu 03, Phường Mông Dương, Tỉnh Quảng Ninh",
-        "coordinates": {
-          "longitude": 107.32425,
-          "latitude": 21.06631
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102575",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-35526",
-      "shopName": "BHX - Tô Hiệu (Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Tô Hiệu (Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh",
-        "address": "BHX Tổ 1, Khu phố 9, Phường Cẩm Phả, Tỉnh Quảng Ninh",
-        "coordinates": {
-          "longitude": 107.2699,
-          "latitude": 21.00625
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102573",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-35702",
-      "shopName": "BHX - Lâm Xá (Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Lâm Xá (Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh",
-        "address": "BHX Thôn Lâm Xá 3, Phường Hoàng Quế, Tỉnh Quảng Ninh",
-        "coordinates": {
-          "longitude": 106.662415,
-          "latitude": 21.04804
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102596",
-      "operation": {
-        "openStatus": true
-      },
-      "isEcom": true
-    },
-    {
-      "shopCode": "bhx-35823",
-      "shopName": "BHX - Hà An (Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh)",
-      "shopNameDisplay": "BHX - Hà An (Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh)",
-      "location": {
-        "addressDisplay": "BHX Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh",
-        "address": "BHX Khu Phố Hà An 3, Phường Hà An, Tỉnh Quảng Ninh",
-        "coordinates": {
-          "longitude": 106.86232,
-          "latitude": 20.924696
-        }
-      },
-      "provinceIDStr": "1009",
-      "provinceName": "Tỉnh Quảng Ninh",
-      "districtIDStr": "10009",
-      "wardIDStr": "102589",
       "operation": {
         "openStatus": true
       },

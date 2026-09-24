@@ -8,9 +8,9 @@
     "schedule-end-of-day": "powershell -ExecutionPolicy Bypass -File .\\schedule_end_of_day.ps1",
     "dashboard": "node server.js",
     "start": "node server.js",
-    "crawl": "node crawl.js",
-    "crawl-bhx": "node bachhoaxanh_crawl.js"
-    ,"crawl-tiem-chung": "node tiemchunglongchau_crawl.js"
+    "crawl": "py -3 crawl_nhathuoc.py",
+    "crawl-bhx": "py -3 crawl_bhx.py",
+    "crawl-tiem-chung": "py -3 crawl_tiemchung.py"
   },
   "dependencies": {
     "dotenv": "^18.0.0",

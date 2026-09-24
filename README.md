@@ -62,18 +62,24 @@ Get-ScheduledTaskInfo -TaskName "LongChau-EndOfDay-Sync"
 
 Log được ghi tại `logs\crawl-YYYY-MM-DD.log`. Để chạy lại thủ công sau khi task lỗi, dùng `npm run daily`.
 
-## Kiểm tra crawler Long Châu bằng Python
+## Kiểm tra crawler Python
 
-Các lệnh Python chỉ phục vụ kiểm tra crawler Long Châu hiện có:
+Cài dependency và kiểm tra hai crawler Python:
 
 ```powershell
 py -3 -m pip install -r requirements.txt
 py -3 -m playwright install chromium
-python crawl.py --validate-only
-python crawl.py --dry-run
+py -3 crawl_nhathuoc.py --validate-only
+py -3 crawl_nhathuoc.py --dry-run
+py -3 crawl_bhx.py --validate-only
+py -3 crawl_bhx.py --dry-run
 ```
 
-`npm run crawl` là crawler Long Châu được sử dụng trong lịch tự động. Nếu API lỗi hoặc dữ liệu thiếu/trùng `shopCode`, cần kiểm tra log trước khi chạy lại.
+`py -3 crawl_nhathuoc.py` là crawler Long Châu được sử dụng trong lịch tự động. `npm run crawl` cũng trỏ tới crawler Python này. Nếu API lỗi hoặc dữ liệu thiếu/trùng `shopCode`, cần kiểm tra log trước khi chạy lại.
+
+`py -3 crawl_bhx.py` là crawler Bách Hoá Xanh được sử dụng trong lịch tự động. `npm run crawl-bhx` cũng trỏ tới crawler Python này.
+
+`py -3 crawl_tiemchung.py` là crawler Tiêm chủng Long Châu, gọi trực tiếp API phân trang `search-stores` và không scrape HTML. Có thể kiểm tra bằng `--dry-run` hoặc `--validate-only`; `npm run crawl-tiem-chung` cũng trỏ tới crawler Python này.
 
 ## Cấu trúc MVC
 
