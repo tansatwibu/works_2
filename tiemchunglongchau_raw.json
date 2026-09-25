@@ -68,28 +68,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/khoi-4-tt-dien-thanh-h-dien-chau-tinh-nghe-an"
     },
     {
-      "shopCode": "tclc-20bd449537158d14",
-      "shopName": "Tiêm Chủng FPT Long Châu 202 Quang Trung (Ngã Ba Công Viên Nước), P. Bắc Gianh, Tỉnh Quảng Trị",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 202 Quang Trung (Ngã Ba Công Viên Nước), P. Bắc Gianh, Tỉnh Quảng Trị",
-      "location": {
-        "addressDisplay": "202 Quang Trung, P. Quảng Thọ, TX. Ba Đồn, Tỉnh Quảng Bình",
-        "address": "202 Quang Trung, P. Quảng Thọ, TX. Ba Đồn, Tỉnh Quảng Bình",
-        "coordinates": {
-          "longitude": 106.432974,
-          "latitude": 17.756012
-        }
-      },
-      "provinceIDStr": "44",
-      "provinceName": "Tỉnh Quảng Trị",
-      "districtIDStr": "735",
-      "wardIDStr": "19066",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/202-quang-trung-p-quang-tho-tx-ba-don-tinh-quang-binh"
-    },
-    {
       "shopCode": "tclc-bcab82cd7bcb690f",
       "shopName": "Tiêm Chủng FPT Long Châu 444 Trần Hưng Đạo (Đối Diện Quảng Trường Sao Đỏ), P. Chu Văn An, TP. Hải Phòng",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 444 Trần Hưng Đạo (Đối Diện Quảng Trường Sao Đỏ), P. Chu Văn An, TP. Hải Phòng",
@@ -110,6 +88,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/444-tran-hung-dao-p-sao-do-tp-chi-linh-tinh-hai-duong"
+    },
+    {
+      "shopCode": "tclc-58229",
+      "shopName": "Tiêm Chủng FPT Long Châu 137 Hùng Vương (Ngay Ngã Tư Ái Nghĩa), X. Đại Lộc, TP. Đà Nẵng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 137 Hùng Vương (Ngay Ngã Tư Ái Nghĩa), X. Đại Lộc, TP. Đà Nẵng",
+      "location": {
+        "addressDisplay": "137 Hùng Vương, TT. Ái Nghĩa, H. Đại Lộc, Tỉnh Quảng Nam",
+        "address": "137 Hùng Vương, TT. Ái Nghĩa, H. Đại Lộc, Tỉnh Quảng Nam",
+        "coordinates": {
+          "longitude": 108.120994,
+          "latitude": 15.882223
+        }
+      },
+      "provinceIDStr": "48",
+      "provinceName": "Đà Nẵng",
+      "districtIDStr": "572",
+      "wardIDStr": "20500",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/137-hung-vuong-tt-ai-nghia-h-dai-loc-tinh-quang-nam"
     },
     {
       "shopCode": "tclc-76d304ad2c1647d6",
@@ -464,28 +464,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/67-le-thanh-nghi-thi-tran-gia-loc-huyen-gia-loc-tinh-hai-duong"
     },
     {
-      "shopCode": "tclc-1de1d0d1e2492ce0",
-      "shopName": "Tiêm Chủng FPT Long Châu 439A Phú Lợi, P. Phú Lợi, TP. Hồ Chí Minh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 439A Phú Lợi, P. Phú Lợi, TP. Hồ Chí Minh",
-      "location": {
-        "addressDisplay": "439A Phú Lợi, Phường Phú Lợi, Thành Phố Thủ Dầu Một, Tỉnh Bình Dương",
-        "address": "439A Phú Lợi, Phường Phú Lợi, Thành Phố Thủ Dầu Một, Tỉnh Bình Dương",
-        "coordinates": {
-          "longitude": 106.684393,
-          "latitude": 10.986239
-        }
-      },
-      "provinceIDStr": "79",
-      "provinceName": "Hồ Chí Minh",
-      "districtIDStr": "12",
-      "wardIDStr": "25744",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/439-a-phu-loi-phuong-phu-loi-thanh-pho-thu-dau-mot-tinh-binh-duong"
-    },
-    {
       "shopCode": "tclc-961f87338c7c4613",
       "shopName": "Tiêm Chủng FPT Long Châu Thôn Nam Tiến (Ngã Ba Chuối), X. Nông Cống, Tỉnh Thanh Hóa",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu Thôn Nam Tiến (Ngã Ba Chuối), X. Nông Cống, Tỉnh Thanh Hóa",
@@ -662,6 +640,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/379-381-hai-ba-trung-p-vo-thi-sau-q-3-tp-ho-chi-minh"
     },
     {
+      "shopCode": "tclc-c2994036033f776d",
+      "shopName": "Tiêm Chủng FPT Long Châu 137 Lạc Long Quân (Lối Vào Cổng Sau Chợ Nghĩa Đô), P. Tây Hồ, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 137 Lạc Long Quân (Lối Vào Cổng Sau Chợ Nghĩa Đô), P. Tây Hồ, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "137 Lạc Long Quân, P. Nghĩa Đô, Q. Cầu Giấy, TP. Hà Nội",
+        "address": "137 Lạc Long Quân, P. Nghĩa Đô, Q. Cầu Giấy, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.808506,
+          "latitude": 21.051813
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "278",
+      "wardIDStr": "00157",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/137-lac-long-quan-p-nghia-do-q-cau-giay-tp-ha-noi"
+    },
+    {
       "shopCode": "tclc-910e1249e19b74b6",
       "shopName": "Tiêm Chủng FPT Long Châu 422-424 Cách Mạng Tháng Tám (Đối Diện Chợ Hòa Hưng), P. Nhiêu Lộc, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 422-424 Cách Mạng Tháng Tám (Đối Diện Chợ Hòa Hưng), P. Nhiêu Lộc, TP. Hồ Chí Minh",
@@ -770,28 +770,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/376-378-le-duan-tt-tan-chau-h-tan-chau-tinh-tay-ninh"
-    },
-    {
-      "shopCode": "tclc-db2565baf33570b0",
-      "shopName": "Tiêm Chủng FPT Long Châu 33 Tây Mỗ (Gần Winmart+ Tây Mỗ), P. Tây Mỗ, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 33 Tây Mỗ (Gần Winmart+ Tây Mỗ), P. Tây Mỗ, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "33 Tây Mỗ, P. Tây Mỗ, Q. Nam Từ Liêm, TP. Hà Nội",
-        "address": "33 Tây Mỗ, P. Tây Mỗ, Q. Nam Từ Liêm, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.750761,
-          "latitude": 21.001641
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "728",
-      "wardIDStr": "00628",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/33-tay-mo-p-tay-mo-q-nam-tu-liem-tp-ha-noi"
     },
     {
       "shopCode": "tclc-b029d451aa076e5e",
@@ -926,28 +904,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/246-248-tran-hung-dao-p-tien-an-tp-bac-ninh-tinh-bac-ninh"
     },
     {
-      "shopCode": "tclc-d8206b804f9659b2",
-      "shopName": "Tiêm Chủng FPT Long Châu 48 Trần Thành Ngọ (Dưới Chân Đồi Thiên Văn), P. Kiến An, TP. Hải Phòng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 48 Trần Thành Ngọ (Dưới Chân Đồi Thiên Văn), P. Kiến An, TP. Hải Phòng",
-      "location": {
-        "addressDisplay": "48 Trần Thành Ngọ, P. Trần Thành Ngọ, Q. Kiến An, TP. Hải Phòng",
-        "address": "48 Trần Thành Ngọ, P. Trần Thành Ngọ, Q. Kiến An, TP. Hải Phòng",
-        "coordinates": {
-          "longitude": 106.6257488,
-          "latitude": 20.8041179
-        }
-      },
-      "provinceIDStr": "31",
-      "provinceName": "Hải Phòng",
-      "districtIDStr": "313",
-      "wardIDStr": "11443",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/48-tran-thanh-ngo-p-tran-thanh-ngo-q-kien-an-tp-hai-phong"
-    },
-    {
       "shopCode": "tclc-d692d7f0fcc0e7c7",
       "shopName": "Tiêm Chủng FPT Long Châu 313 Hai Bà Trưng (Đối Diện BV Hữu Nghị Việt - Tiệp), P. An Biên, TP. Hải Phòng",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 313 Hai Bà Trưng (Đối Diện BV Hữu Nghị Việt - Tiệp), P. An Biên, TP. Hải Phòng",
@@ -968,6 +924,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/313-hai-ba-trung-p-cat-dai-q-le-chan-tp-hai-phong"
+    },
+    {
+      "shopCode": "tclc-0ee35df1eabeb378",
+      "shopName": "Tiêm Chủng FPT Long Châu 527 Cách Mạng Tháng Tám (Đối Diện Chợ Đất Thánh), P. Tân Ninh, Tỉnh Tây Ninh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 527 Cách Mạng Tháng Tám (Đối Diện Chợ Đất Thánh), P. Tân Ninh, Tỉnh Tây Ninh",
+      "location": {
+        "addressDisplay": "527 Cách Mạng Tháng Tám, Phường 3, TP. Tây Ninh, Tỉnh Tây Ninh",
+        "address": "527 Cách Mạng Tháng Tám, Phường 3, TP. Tây Ninh, Tỉnh Tây Ninh",
+        "coordinates": {
+          "longitude": 106.104464,
+          "latitude": 11.310266
+        }
+      },
+      "provinceIDStr": "80",
+      "provinceName": "Tỉnh Tây Ninh",
+      "districtIDStr": "664",
+      "wardIDStr": "25459",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/527-cach-mang-thang-tam-phuong-3-tp-tay-ninh-tinh-tay-ninh"
     },
     {
       "shopCode": "tclc-4c5cccf3ecf07592",
@@ -1080,26 +1058,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/1613-chi-lang-p-phuoc-hiep-tp-ba-ria-tinh-ba-ria-vung-tau"
     },
     {
-      "shopCode": "tclc-0ee35df1eabeb378",
-      "shopName": "Tiêm Chủng FPT Long Châu 527 Cách Mạng Tháng Tám (Đối Diện Chợ Đất Thánh), P. Tân Ninh, Tỉnh Tây Ninh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 527 Cách Mạng Tháng Tám (Đối Diện Chợ Đất Thánh), P. Tân Ninh, Tỉnh Tây Ninh",
+      "shopCode": "tclc-d8206b804f9659b2",
+      "shopName": "Tiêm Chủng FPT Long Châu 48 Trần Thành Ngọ (Dưới Chân Đồi Thiên Văn), P. Kiến An, TP. Hải Phòng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 48 Trần Thành Ngọ (Dưới Chân Đồi Thiên Văn), P. Kiến An, TP. Hải Phòng",
       "location": {
-        "addressDisplay": "527 Cách Mạng Tháng Tám, Phường 3, TP. Tây Ninh, Tỉnh Tây Ninh",
-        "address": "527 Cách Mạng Tháng Tám, Phường 3, TP. Tây Ninh, Tỉnh Tây Ninh",
+        "addressDisplay": "48 Trần Thành Ngọ, P. Trần Thành Ngọ, Q. Kiến An, TP. Hải Phòng",
+        "address": "48 Trần Thành Ngọ, P. Trần Thành Ngọ, Q. Kiến An, TP. Hải Phòng",
         "coordinates": {
-          "longitude": 106.104464,
-          "latitude": 11.310266
+          "longitude": 106.6257488,
+          "latitude": 20.8041179
         }
       },
-      "provinceIDStr": "80",
-      "provinceName": "Tỉnh Tây Ninh",
-      "districtIDStr": "664",
-      "wardIDStr": "25459",
+      "provinceIDStr": "31",
+      "provinceName": "Hải Phòng",
+      "districtIDStr": "313",
+      "wardIDStr": "11443",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/527-cach-mang-thang-tam-phuong-3-tp-tay-ninh-tinh-tay-ninh"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/48-tran-thanh-ngo-p-tran-thanh-ngo-q-kien-an-tp-hai-phong"
     },
     {
       "shopCode": "tclc-5516bbbecf94814c",
@@ -1166,6 +1144,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/32-nhac-son-p-duyen-hai-tp-lao-cai-tinh-lao-cai"
+    },
+    {
+      "shopCode": "tclc-db2565baf33570b0",
+      "shopName": "Tiêm Chủng FPT Long Châu 33 Tây Mỗ (Gần Winmart+ Tây Mỗ), P. Tây Mỗ, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 33 Tây Mỗ (Gần Winmart+ Tây Mỗ), P. Tây Mỗ, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "33 Tây Mỗ, P. Tây Mỗ, Q. Nam Từ Liêm, TP. Hà Nội",
+        "address": "33 Tây Mỗ, P. Tây Mỗ, Q. Nam Từ Liêm, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.750761,
+          "latitude": 21.001641
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "728",
+      "wardIDStr": "00628",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/33-tay-mo-p-tay-mo-q-nam-tu-liem-tp-ha-noi"
     },
     {
       "shopCode": "tclc-7a3a18b0b5474770",
@@ -1276,28 +1276,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/406-b-truong-cong-dinh-p-8-tp-vung-tau-tinh-ba-ria-vung-tau"
-    },
-    {
-      "shopCode": "tclc-5b31d74a6b873025",
-      "shopName": "Tiêm Chủng FPT Long Châu 64 Trương Định (Trên Chợ Lớn Gia Nghĩa), P. Bắc Gia Nghĩa, Tỉnh Lâm Đồng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 64 Trương Định (Trên Chợ Lớn Gia Nghĩa), P. Bắc Gia Nghĩa, Tỉnh Lâm Đồng",
-      "location": {
-        "addressDisplay": "64 Trương Định, P. Nghĩa Thành, TP. Gia Nghĩa, Tỉnh Đắk Nông",
-        "address": "64 Trương Định, P. Nghĩa Thành, TP. Gia Nghĩa, Tỉnh Đắk Nông",
-        "coordinates": {
-          "longitude": 107.683406,
-          "latitude": 12.005584
-        }
-      },
-      "provinceIDStr": "68",
-      "provinceName": "Tỉnh Lâm Đồng",
-      "districtIDStr": "182",
-      "wardIDStr": "24612",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/64-truong-dinh-p-nghia-thanh-tp-gia-nghia-tinh-dak-nong"
     },
     {
       "shopCode": "tclc-a3afdffc077da0e2",
@@ -1498,6 +1476,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/28-tran-dang-ninh-p-hoang-van-thu-tp-lang-son-tinh-lang-son"
     },
     {
+      "shopCode": "tclc-5b31d74a6b873025",
+      "shopName": "Tiêm Chủng FPT Long Châu 64 Trương Định (Trên Chợ Lớn Gia Nghĩa), P. Bắc Gia Nghĩa, Tỉnh Lâm Đồng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 64 Trương Định (Trên Chợ Lớn Gia Nghĩa), P. Bắc Gia Nghĩa, Tỉnh Lâm Đồng",
+      "location": {
+        "addressDisplay": "64 Trương Định, P. Nghĩa Thành, TP. Gia Nghĩa, Tỉnh Đắk Nông",
+        "address": "64 Trương Định, P. Nghĩa Thành, TP. Gia Nghĩa, Tỉnh Đắk Nông",
+        "coordinates": {
+          "longitude": 107.683406,
+          "latitude": 12.005584
+        }
+      },
+      "provinceIDStr": "68",
+      "provinceName": "Tỉnh Lâm Đồng",
+      "districtIDStr": "182",
+      "wardIDStr": "24612",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/64-truong-dinh-p-nghia-thanh-tp-gia-nghia-tinh-dak-nong"
+    },
+    {
       "shopCode": "tclc-68c02485cf76b226",
       "shopName": "Tiêm Chủng FPT Long Châu 245 Nguyễn Công Trứ (Ngay Cổng Chợ 5 Tầng), P. Hoa Lư, Tỉnh Ninh Bình",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 245 Nguyễn Công Trứ (Ngay Cổng Chợ 5 Tầng), P. Hoa Lư, Tỉnh Ninh Bình",
@@ -1540,28 +1540,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/76-tue-tinh-p-nam-thanh-tp-ninh-binh-tinh-ninh-binh"
-    },
-    {
-      "shopCode": "tclc-722c0564cbd3c3a8",
-      "shopName": "Tiêm Chủng FPT Long Châu 44B Phan Đình Phùng (Đối Diện Trường Tiểu Học Đoàn Kết), P. Xuân Hương - Đà Lạt, Tỉnh Lâm Đồng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 44B Phan Đình Phùng (Đối Diện Trường Tiểu Học Đoàn Kết), P. Xuân Hương - Đà Lạt, Tỉnh Lâm Đồng",
-      "location": {
-        "addressDisplay": "44B Phan Đình Phùng, P. 1, TP. Đà Lạt, Tỉnh Lâm Đồng",
-        "address": "44B Phan Đình Phùng, P. 1, TP. Đà Lạt, Tỉnh Lâm Đồng",
-        "coordinates": {
-          "longitude": 108.434084,
-          "latitude": 11.943339
-        }
-      },
-      "provinceIDStr": "68",
-      "provinceName": "Tỉnh Lâm Đồng",
-      "districtIDStr": "439",
-      "wardIDStr": "24784",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/44b-phan-dinh-phung-p-1-tp-da-lat-tinh-lam-dong"
     },
     {
       "shopCode": "tclc-fc8d193ae1b46583",
@@ -1718,26 +1696,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/64-a-dien-bien-phu-p-2-tp-tra-vinh-tinh-tra-vinh"
     },
     {
-      "shopCode": "tclc-2df21600062d1cac",
-      "shopName": "Tiêm Chủng FPT Long Châu TDP. 11 (Gần Chợ Ga Nam Lý), P. Đồng Hới, Tỉnh Quảng Trị",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu TDP. 11 (Gần Chợ Ga Nam Lý), P. Đồng Hới, Tỉnh Quảng Trị",
+      "shopCode": "tclc-57ddf11b88bf614f",
+      "shopName": "Tiêm Chủng FPT Long Châu 16 Hùng Vương (Gần Trường Tiểu Học Hùng Vương), P. Đông Hà, Tỉnh Quảng Trị",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 16 Hùng Vương (Gần Trường Tiểu Học Hùng Vương), P. Đông Hà, Tỉnh Quảng Trị",
       "location": {
-        "addressDisplay": "TDP. 11, P. Nam Lý, TP. Đồng Hới, Tỉnh Quảng Bình",
-        "address": "TDP. 11, P. Nam Lý, TP. Đồng Hới, Tỉnh Quảng Bình",
+        "addressDisplay": "16 Hùng Vương, P. 1, TP. Đông Hà, Quảng Trị",
+        "address": "16 Hùng Vương, P. 1, TP. Đông Hà, Tỉnh Quảng Trị",
         "coordinates": {
-          "longitude": 106.604821,
-          "latitude": 17.466549
+          "longitude": 107.107768,
+          "latitude": 16.811551
         }
       },
       "provinceIDStr": "44",
       "provinceName": "Tỉnh Quảng Trị",
-      "districtIDStr": "533",
-      "wardIDStr": "18865",
+      "districtIDStr": "586",
+      "wardIDStr": "19333",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tdp-11-p-nam-ly-tp-dong-hoi-tinh-quang-binh"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/16-hung-vuong-p-dong-ha-tinh-quang-tri"
     },
     {
       "shopCode": "tclc-002723e6cdfc5d34",
@@ -1804,28 +1782,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/81-hai-thuong-lan-ong-p-bac-ha-tp-ha-tinh-tinh-ha-tinh"
-    },
-    {
-      "shopCode": "tclc-b0a858f9b39763a0",
-      "shopName": "Tiêm Chủng FPT Long Châu 143 Trần Hưng Đạo (Cổng Chợ Phố Mới), P. Quế Võ, Tỉnh Bắc Ninh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 143 Trần Hưng Đạo (Cổng Chợ Phố Mới), P. Quế Võ, Tỉnh Bắc Ninh",
-      "location": {
-        "addressDisplay": "143 Trần Hưng Đạo, P. Phố Mới, TX. Quế Võ, Tỉnh Bắc Ninh",
-        "address": "143 Trần Hưng Đạo, P. Phố Mới, TX. Quế Võ, Tỉnh Bắc Ninh",
-        "coordinates": {
-          "longitude": 106.149788,
-          "latitude": 21.153474
-        }
-      },
-      "provinceIDStr": "24",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "57",
-      "wardIDStr": "09247",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/143-tran-hung-dao-p-pho-moi-tx-que-vo-tinh-bac-ninh"
     },
     {
       "shopCode": "tclc-26a67613c4af4a09",
@@ -1938,26 +1894,48 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/31-nui-thanh-p-hoa-thuan-dong-q-hai-chau-tp-da-nang"
     },
     {
-      "shopCode": "tclc-57ddf11b88bf614f",
-      "shopName": "Tiêm Chủng FPT Long Châu 16 Hùng Vương (Gần Trường Tiểu Học Hùng Vương), P. Đông Hà, Tỉnh Quảng Trị",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 16 Hùng Vương (Gần Trường Tiểu Học Hùng Vương), P. Đông Hà, Tỉnh Quảng Trị",
+      "shopCode": "tclc-2df21600062d1cac",
+      "shopName": "Tiêm Chủng FPT Long Châu TDP. 11 (Gần Chợ Ga Nam Lý), P. Đồng Hới, Tỉnh Quảng Trị",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu TDP. 11 (Gần Chợ Ga Nam Lý), P. Đồng Hới, Tỉnh Quảng Trị",
       "location": {
-        "addressDisplay": "16 Hùng Vương, P. 1, TP. Đông Hà, Quảng Trị",
-        "address": "16 Hùng Vương, P. 1, TP. Đông Hà, Tỉnh Quảng Trị",
+        "addressDisplay": "TDP. 11, P. Nam Lý, TP. Đồng Hới, Tỉnh Quảng Bình",
+        "address": "TDP. 11, P. Nam Lý, TP. Đồng Hới, Tỉnh Quảng Bình",
         "coordinates": {
-          "longitude": 107.107768,
-          "latitude": 16.811551
+          "longitude": 106.604821,
+          "latitude": 17.466549
         }
       },
       "provinceIDStr": "44",
       "provinceName": "Tỉnh Quảng Trị",
-      "districtIDStr": "586",
-      "wardIDStr": "19333",
+      "districtIDStr": "533",
+      "wardIDStr": "18865",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/16-hung-vuong-p-dong-ha-tinh-quang-tri"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tdp-11-p-nam-ly-tp-dong-hoi-tinh-quang-binh"
+    },
+    {
+      "shopCode": "tclc-722c0564cbd3c3a8",
+      "shopName": "Tiêm Chủng FPT Long Châu 44B Phan Đình Phùng (Đối Diện Trường Tiểu Học Đoàn Kết), P. Xuân Hương - Đà Lạt, Tỉnh Lâm Đồng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 44B Phan Đình Phùng (Đối Diện Trường Tiểu Học Đoàn Kết), P. Xuân Hương - Đà Lạt, Tỉnh Lâm Đồng",
+      "location": {
+        "addressDisplay": "44B Phan Đình Phùng, P. 1, TP. Đà Lạt, Tỉnh Lâm Đồng",
+        "address": "44B Phan Đình Phùng, P. 1, TP. Đà Lạt, Tỉnh Lâm Đồng",
+        "coordinates": {
+          "longitude": 108.434084,
+          "latitude": 11.943339
+        }
+      },
+      "provinceIDStr": "68",
+      "provinceName": "Tỉnh Lâm Đồng",
+      "districtIDStr": "439",
+      "wardIDStr": "24784",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/44b-phan-dinh-phung-p-1-tp-da-lat-tinh-lam-dong"
     },
     {
       "shopCode": "tclc-9ab5793f51a0a108",
@@ -2002,6 +1980,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/quoc-lo-51-p-my-xuan-tx-phu-my-tinh-ba-ria-vung-tau"
+    },
+    {
+      "shopCode": "tclc-b0a858f9b39763a0",
+      "shopName": "Tiêm Chủng FPT Long Châu 143 Trần Hưng Đạo (Cổng Chợ Phố Mới), P. Quế Võ, Tỉnh Bắc Ninh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 143 Trần Hưng Đạo (Cổng Chợ Phố Mới), P. Quế Võ, Tỉnh Bắc Ninh",
+      "location": {
+        "addressDisplay": "143 Trần Hưng Đạo, P. Phố Mới, TX. Quế Võ, Tỉnh Bắc Ninh",
+        "address": "143 Trần Hưng Đạo, P. Phố Mới, TX. Quế Võ, Tỉnh Bắc Ninh",
+        "coordinates": {
+          "longitude": 106.149788,
+          "latitude": 21.153474
+        }
+      },
+      "provinceIDStr": "24",
+      "provinceName": "Tỉnh Bắc Ninh",
+      "districtIDStr": "57",
+      "wardIDStr": "09247",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/143-tran-hung-dao-p-pho-moi-tx-que-vo-tinh-bac-ninh"
     },
     {
       "shopCode": "tclc-4c1add43527425d8",
@@ -2114,28 +2114,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/38-lieu-binh-huong-x-tan-thong-hoi-h-cu-chi-tp-ho-chi-minh"
     },
     {
-      "shopCode": "tclc-2fb40e5af636d950",
-      "shopName": "Tiêm Chủng FPT Long Châu 71-73 Trần Hưng Đạo (Đối Diện Lưu Di Hưng), P. Tân Thành, Tỉnh Cà Mau",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 71-73 Trần Hưng Đạo (Đối Diện Lưu Di Hưng), P. Tân Thành, Tỉnh Cà Mau",
-      "location": {
-        "addressDisplay": "71-73 Trần Hưng Đạo, P. 5, TP. Cà Mau, Tỉnh Cà Mau",
-        "address": "71-73 Trần Hưng Đạo, P. 5, TP. Cà Mau, Tỉnh Cà Mau",
-        "coordinates": {
-          "longitude": 105.157816,
-          "latitude": 9.180946
-        }
-      },
-      "provinceIDStr": "96",
-      "provinceName": "Tỉnh Cà Mau",
-      "districtIDStr": "113",
-      "wardIDStr": "32008",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/71-73-tran-hung-dao-p-5-tp-ca-mau-tinh-ca-mau"
-    },
-    {
       "shopCode": "tclc-eb4d145fcb3ad9be",
       "shopName": "Tiêm Chủng FPT Long Châu 99 Trần Văn Xã (Ngay Ngã Ba Chợ Trảng Dài), P. Trảng Dài, TP. Đồng Nai",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 99 Trần Văn Xã (Ngay Ngã Ba Chợ Trảng Dài), P. Trảng Dài, TP. Đồng Nai",
@@ -2202,28 +2180,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/226-thong-nhat-p-phu-ha-tp-phan-rang-thap-cham-tinh-ninh-thuan"
     },
     {
-      "shopCode": "tclc-1e547c76cbdeb0eb",
-      "shopName": "Tiêm Chủng FPT Long Châu 148 Quốc Lộ N2 (Nằm Ngay Ngã Tư Hậu Nghĩa), X. Hậu Nghĩa, Tỉnh Tây Ninh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 148 Quốc Lộ N2 (Nằm Ngay Ngã Tư Hậu Nghĩa), X. Hậu Nghĩa, Tỉnh Tây Ninh",
-      "location": {
-        "addressDisplay": "148 Quốc Lộ N2, TT. Hậu Nghĩa, H. Đức Hòa, Tỉnh Long An",
-        "address": "148 Quốc Lộ N2, TT. Hậu Nghĩa, H. Đức Hòa, Tỉnh Long An",
-        "coordinates": {
-          "longitude": 106.392932,
-          "latitude": 10.894278
-        }
-      },
-      "provinceIDStr": "80",
-      "provinceName": "Tỉnh Tây Ninh",
-      "districtIDStr": "422",
-      "wardIDStr": "27931",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/148-quoc-lo-n2-tt-hau-nghia-h-duc-hoa-tinh-long-an"
-    },
-    {
       "shopCode": "tclc-ff16de58edb86e46",
       "shopName": "Tiêm Chủng FPT Long Châu 17A Đường 29/3 (Ngay Chợ Cũ Ba Tri, Sau Tiệm Vàng Kim Ngân), X. Ba Tri, Tỉnh Vĩnh Long",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 17A Đường 29/3 (Ngay Chợ Cũ Ba Tri, Sau Tiệm Vàng Kim Ngân), X. Ba Tri, Tỉnh Vĩnh Long",
@@ -2288,6 +2244,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/35-ly-thuong-kiet-p-thong-nhat-tp-buon-me-thuot-tinh-dak-lak"
+    },
+    {
+      "shopCode": "tclc-2fb40e5af636d950",
+      "shopName": "Tiêm Chủng FPT Long Châu 71-73 Trần Hưng Đạo (Đối Diện Lưu Di Hưng), P. Tân Thành, Tỉnh Cà Mau",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 71-73 Trần Hưng Đạo (Đối Diện Lưu Di Hưng), P. Tân Thành, Tỉnh Cà Mau",
+      "location": {
+        "addressDisplay": "71-73 Trần Hưng Đạo, P. 5, TP. Cà Mau, Tỉnh Cà Mau",
+        "address": "71-73 Trần Hưng Đạo, P. 5, TP. Cà Mau, Tỉnh Cà Mau",
+        "coordinates": {
+          "longitude": 105.157816,
+          "latitude": 9.180946
+        }
+      },
+      "provinceIDStr": "96",
+      "provinceName": "Tỉnh Cà Mau",
+      "districtIDStr": "113",
+      "wardIDStr": "32008",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/71-73-tran-hung-dao-p-5-tp-ca-mau-tinh-ca-mau"
     },
     {
       "shopCode": "tclc-f260a3000e661df1",
@@ -2378,28 +2356,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/384-thong-nhat-p-tan-thien-tx-la-gi-tinh-binh-thuan"
     },
     {
-      "shopCode": "tclc-d66e7798411f222f",
-      "shopName": "Tiêm Chủng FPT Long Châu Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm (Siêu Thị Bài Thơ, Cạnh Nhà Sách ADC Book), P. Định Công, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm (Siêu Thị Bài Thơ, Cạnh Nhà Sách ADC Book), P. Định Công, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội",
-        "address": "Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.829209,
-          "latitude": 20.969536
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "281",
-      "wardIDStr": "00316",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tang-1-toa-nha-ct-4-a-kdt-bac-linh-dam-p-dai-kim-q-hoang-mai-tp-ha-noi"
-    },
-    {
       "shopCode": "tclc-6284adbb925e4b07",
       "shopName": "Tiêm Chủng FPT Long Châu 154 - 156 Dương Bá Trạc (Dưới Chân Cầu Nguyễn Văn Cừ), P. Chánh Hưng, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 154 - 156 Dương Bá Trạc (Dưới Chân Cầu Nguyễn Văn Cừ), P. Chánh Hưng, TP. Hồ Chí Minh",
@@ -2420,6 +2376,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/154-156-duong-ba-trac-p-2-q-8-tp-ho-chi-minh"
+    },
+    {
+      "shopCode": "tclc-1e547c76cbdeb0eb",
+      "shopName": "Tiêm Chủng FPT Long Châu 148 Quốc Lộ N2 (Nằm Ngay Ngã Tư Hậu Nghĩa), X. Hậu Nghĩa, Tỉnh Tây Ninh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 148 Quốc Lộ N2 (Nằm Ngay Ngã Tư Hậu Nghĩa), X. Hậu Nghĩa, Tỉnh Tây Ninh",
+      "location": {
+        "addressDisplay": "148 Quốc Lộ N2, TT. Hậu Nghĩa, H. Đức Hòa, Tỉnh Long An",
+        "address": "148 Quốc Lộ N2, TT. Hậu Nghĩa, H. Đức Hòa, Tỉnh Long An",
+        "coordinates": {
+          "longitude": 106.392932,
+          "latitude": 10.894278
+        }
+      },
+      "provinceIDStr": "80",
+      "provinceName": "Tỉnh Tây Ninh",
+      "districtIDStr": "422",
+      "wardIDStr": "27931",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/148-quoc-lo-n2-tt-hau-nghia-h-duc-hoa-tinh-long-an"
     },
     {
       "shopCode": "tclc-b64e880b9614ef5d",
@@ -2554,6 +2532,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/116-4-116-a-4-quoc-lo-1-a-p-tan-bien-tp-bien-hoa-tinh-dong-nai"
     },
     {
+      "shopCode": "tclc-d66e7798411f222f",
+      "shopName": "Tiêm Chủng FPT Long Châu Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm (Siêu Thị Bài Thơ, Cạnh Nhà Sách ADC Book), P. Định Công, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm (Siêu Thị Bài Thơ, Cạnh Nhà Sách ADC Book), P. Định Công, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội",
+        "address": "Tầng 1, Tòa Nhà CT4A, KĐT Bắc Linh Đàm, P. Đại Kim, Q. Hoàng Mai, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.829209,
+          "latitude": 20.969536
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "281",
+      "wardIDStr": "00316",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tang-1-toa-nha-ct-4-a-kdt-bac-linh-dam-p-dai-kim-q-hoang-mai-tp-ha-noi"
+    },
+    {
       "shopCode": "tclc-2b7188b07097d961",
       "shopName": "Tiêm Chủng FPT Long Châu 11 Nguyễn Bình (Gần Chợ Bao Bì, Đối Diện Cây Xăng Bao Bì), P. Mỹ Hào, Tỉnh Hưng Yên",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 11 Nguyễn Bình (Gần Chợ Bao Bì, Đối Diện Cây Xăng Bao Bì), P. Mỹ Hào, Tỉnh Hưng Yên",
@@ -2640,28 +2640,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/454-quoc-lo-13-p-my-phuoc-tp-ben-cat-tinh-binh-duong"
-    },
-    {
-      "shopCode": "tclc-9a0b078c9ce8b0b5",
-      "shopName": "Tiêm Chủng FPT Long Châu 20 Trần Phú (Đối Diện Toà Nhà 18 Tầng Ngay Bưu Điện Cũ), P. Bạc Liêu, Tỉnh Cà Mau",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 20 Trần Phú (Đối Diện Toà Nhà 18 Tầng Ngay Bưu Điện Cũ), P. Bạc Liêu, Tỉnh Cà Mau",
-      "location": {
-        "addressDisplay": "20 Trần Phú, P. 3, TP. Bạc Liêu, Tỉnh Bạc Liêu",
-        "address": "20 Trần Phú, P. 3, TP. Bạc Liêu, Tỉnh Bạc Liêu",
-        "coordinates": {
-          "longitude": 105.723142,
-          "latitude": 9.286721
-        }
-      },
-      "provinceIDStr": "96",
-      "provinceName": "Tỉnh Cà Mau",
-      "districtIDStr": "48",
-      "wardIDStr": "31816",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/20-tran-phu-p-3-tp-bac-lieu-tinh-bac-lieu"
     },
     {
       "shopCode": "tclc-7f200137aad5f26d",
@@ -2840,28 +2818,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/lo-lk-3-08-kda-nha-o-phia-bac-p-ho-tx-thuan-thanh-tinh-bac-ninh"
     },
     {
-      "shopCode": "tclc-35db8e32d6d80825",
-      "shopName": "Tiêm Chủng FPT Long Châu 355 Lý Bôn (Nằm Trên Mặt Đường Hai Bà Trưng, Đối Diện Vườn Hoa Lê Quý Đôn), P. Trần Hưng Đạo, Tỉnh Hưng Yên",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 355 Lý Bôn (Nằm Trên Mặt Đường Hai Bà Trưng, Đối Diện Vườn Hoa Lê Quý Đôn), P. Trần Hưng Đạo, Tỉnh Hưng Yên",
-      "location": {
-        "addressDisplay": "355 Lý Bôn, P. Đề Thám, TP. Thái Bình, Tỉnh Thái Bình",
-        "address": "355 Lý Bôn, P. Đề Thám, TP. Thái Bình, Tỉnh Thái Bình",
-        "coordinates": {
-          "longitude": 106.338387,
-          "latitude": 20.444386
-        }
-      },
-      "provinceIDStr": "33",
-      "provinceName": "Tỉnh Hưng Yên",
-      "districtIDStr": "618",
-      "wardIDStr": "12439",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/355-ly-bon-p-de-tham-tp-thai-binh-tinh-thai-binh"
-    },
-    {
       "shopCode": "tclc-d0af2e0c5af568fd",
       "shopName": "Tiêm Chủng FPT Long Châu 485 Đỗ Xuân Hợp, P. Phước Long, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 485 Đỗ Xuân Hợp, P. Phước Long, TP. Hồ Chí Minh",
@@ -2928,6 +2884,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/02-tran-hung-dao-p-2-tp-soc-trang-tinh-soc-trang"
     },
     {
+      "shopCode": "tclc-9a0b078c9ce8b0b5",
+      "shopName": "Tiêm Chủng FPT Long Châu 20 Trần Phú (Đối Diện Toà Nhà 18 Tầng Ngay Bưu Điện Cũ), P. Bạc Liêu, Tỉnh Cà Mau",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 20 Trần Phú (Đối Diện Toà Nhà 18 Tầng Ngay Bưu Điện Cũ), P. Bạc Liêu, Tỉnh Cà Mau",
+      "location": {
+        "addressDisplay": "20 Trần Phú, P. 3, TP. Bạc Liêu, Tỉnh Bạc Liêu",
+        "address": "20 Trần Phú, P. 3, TP. Bạc Liêu, Tỉnh Bạc Liêu",
+        "coordinates": {
+          "longitude": 105.723142,
+          "latitude": 9.286721
+        }
+      },
+      "provinceIDStr": "96",
+      "provinceName": "Tỉnh Cà Mau",
+      "districtIDStr": "48",
+      "wardIDStr": "31816",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/20-tran-phu-p-3-tp-bac-lieu-tinh-bac-lieu"
+    },
+    {
       "shopCode": "tclc-5d643047c29de09a",
       "shopName": "Tiêm Chủng FPT Long Châu 116-118 Nguyễn Huệ (Đối Diện Chợ Bỉm Sơn), P. Quang Trung, Tỉnh Thanh Hóa",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 116-118 Nguyễn Huệ (Đối Diện Chợ Bỉm Sơn), P. Quang Trung, Tỉnh Thanh Hóa",
@@ -2970,6 +2948,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/2051-hung-vuong-p-cam-thuan-tp-cam-ranh-tinh-khanh-hoa"
+    },
+    {
+      "shopCode": "tclc-35db8e32d6d80825",
+      "shopName": "Tiêm Chủng FPT Long Châu 355 Lý Bôn (Nằm Trên Mặt Đường Hai Bà Trưng, Đối Diện Vườn Hoa Lê Quý Đôn), P. Trần Hưng Đạo, Tỉnh Hưng Yên",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 355 Lý Bôn (Nằm Trên Mặt Đường Hai Bà Trưng, Đối Diện Vườn Hoa Lê Quý Đôn), P. Trần Hưng Đạo, Tỉnh Hưng Yên",
+      "location": {
+        "addressDisplay": "355 Lý Bôn, P. Đề Thám, TP. Thái Bình, Tỉnh Thái Bình",
+        "address": "355 Lý Bôn, P. Đề Thám, TP. Thái Bình, Tỉnh Thái Bình",
+        "coordinates": {
+          "longitude": 106.338387,
+          "latitude": 20.444386
+        }
+      },
+      "provinceIDStr": "33",
+      "provinceName": "Tỉnh Hưng Yên",
+      "districtIDStr": "618",
+      "wardIDStr": "12439",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/355-ly-bon-p-de-tham-tp-thai-binh-tinh-thai-binh"
     },
     {
       "shopCode": "tclc-42df537e52100351",
@@ -3060,28 +3060,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/279-phan-chu-trinh-p-phuoc-hoa-tp-tam-ky-tinh-quang-nam"
     },
     {
-      "shopCode": "tclc-bb3303e8d6885894",
-      "shopName": "Tiêm Chủng FPT Long Châu 7-9-11 Bắc Sơn (Cạnh Bưu Điện Huyện Chương Mỹ), P. Chương Mỹ, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 7-9-11 Bắc Sơn (Cạnh Bưu Điện Huyện Chương Mỹ), P. Chương Mỹ, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "7-9-11 Bắc Sơn, TT. Chúc Sơn, H. Chương Mỹ, TP. Hà Nội",
-        "address": "7-9-11 Bắc Sơn, TT. Chúc Sơn, H. Chương Mỹ, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.704969,
-          "latitude": 20.924066
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "289",
-      "wardIDStr": "10015",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/7-9-11-bac-son-tt-chuc-son-h-chuong-my-tp-ha-noi"
-    },
-    {
       "shopCode": "tclc-321d4a1871ccadd5",
       "shopName": "Tiêm Chủng FPT Long Châu 229 - 231 Minh Khai (Đối Diện Dốc Đồng Cẩm), Phường Từ Sơn, Tỉnh Bắc Ninh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 229 - 231 Minh Khai (Đối Diện Dốc Đồng Cẩm), Phường Từ Sơn, Tỉnh Bắc Ninh",
@@ -3170,28 +3148,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/44-duong-so-7-tt-long-hai-h-long-dat-tinh-ba-ria-vung-tau"
     },
     {
-      "shopCode": "tclc-b05b4e4e35a0fa9f",
-      "shopName": "Tiêm Chủng FPT Long Châu 982-983 Quốc Lộ 51 (Gần Bệnh Viện ĐHYD Shingmark), P. Long Hưng, TP. Đồng Nai",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 982-983 Quốc Lộ 51 (Gần Bệnh Viện ĐHYD Shingmark), P. Long Hưng, TP. Đồng Nai",
-      "location": {
-        "addressDisplay": "982-983 Quốc Lộ 51, P. An Hòa, TP. Biên Hòa, Tỉnh Đồng Nai",
-        "address": "982-983 Quốc Lộ 51, P. An Hòa, TP. Biên Hòa, Tỉnh Đồng Nai",
-        "coordinates": {
-          "longitude": 106.865074,
-          "latitude": 10.894314
-        }
-      },
-      "provinceIDStr": "75",
-      "provinceName": "Đồng Nai",
-      "districtIDStr": "164",
-      "wardIDStr": "90498",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/982-983-quoc-lo-51-p-an-hoa-tp-bien-hoa-tinh-dong-nai"
-    },
-    {
       "shopCode": "tclc-e9b98ac54bfd0efb",
       "shopName": "Tiêm Chủng FPT Long Châu 1086 Lê Văn Lương (Đối Diện Gà KFC Lê Văn Lương), X. Nhà Bè, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 1086 Lê Văn Lương (Đối Diện Gà KFC Lê Văn Lương), X. Nhà Bè, TP. Hồ Chí Minh",
@@ -3234,6 +3190,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/thua-119-to-ban-do-14-tran-hung-dao-p-1-tp-vi-thanh-tinh-hau-giang"
+    },
+    {
+      "shopCode": "tclc-bb3303e8d6885894",
+      "shopName": "Tiêm Chủng FPT Long Châu 7-9-11 Bắc Sơn (Cạnh Bưu Điện Huyện Chương Mỹ), P. Chương Mỹ, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 7-9-11 Bắc Sơn (Cạnh Bưu Điện Huyện Chương Mỹ), P. Chương Mỹ, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "7-9-11 Bắc Sơn, TT. Chúc Sơn, H. Chương Mỹ, TP. Hà Nội",
+        "address": "7-9-11 Bắc Sơn, TT. Chúc Sơn, H. Chương Mỹ, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.704969,
+          "latitude": 20.924066
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "289",
+      "wardIDStr": "10015",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/7-9-11-bac-son-tt-chuc-son-h-chuong-my-tp-ha-noi"
     },
     {
       "shopCode": "tclc-1def1a518251bf90",
@@ -3390,26 +3368,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/f267-vo-thi-sau-p-thong-nhat-tp-bien-hoa-tinh-dong-nai"
     },
     {
-      "shopCode": "tclc-ff61e15c92adf287",
-      "shopName": "Tiêm Chủng FPT Long Châu 887 - 889 Võ Văn Vân (Cách Chợ Ấp 1 200m), X. Tân Vĩnh Lộc, TP. Hồ Chí Minh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 887 - 889 Võ Văn Vân (Cách Chợ Ấp 1 200m), X. Tân Vĩnh Lộc, TP. Hồ Chí Minh",
+      "shopCode": "tclc-b05b4e4e35a0fa9f",
+      "shopName": "Tiêm Chủng FPT Long Châu 982-983 Quốc Lộ 51 (Gần Bệnh Viện ĐHYD Shingmark), P. Long Hưng, TP. Đồng Nai",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 982-983 Quốc Lộ 51 (Gần Bệnh Viện ĐHYD Shingmark), P. Long Hưng, TP. Đồng Nai",
       "location": {
-        "addressDisplay": "887 - 889 Võ Văn Vân, X. Vĩnh Lộc B, H. Bình Chánh, TP. Hồ Chí Minh",
-        "address": "887 - 889 Võ Văn Vân, X. Vĩnh Lộc B, H. Bình Chánh, TP. Hồ Chí Minh",
+        "addressDisplay": "982-983 Quốc Lộ 51, P. An Hòa, TP. Biên Hòa, Tỉnh Đồng Nai",
+        "address": "982-983 Quốc Lộ 51, P. An Hòa, TP. Biên Hòa, Tỉnh Đồng Nai",
         "coordinates": {
-          "longitude": 106.573619,
-          "latitude": 10.780488
+          "longitude": 106.865074,
+          "latitude": 10.894314
         }
       },
-      "provinceIDStr": "79",
-      "provinceName": "Hồ Chí Minh",
-      "districtIDStr": "238",
-      "wardIDStr": "27604",
+      "provinceIDStr": "75",
+      "provinceName": "Đồng Nai",
+      "districtIDStr": "164",
+      "wardIDStr": "90498",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/887-889-vo-van-van-x-vinh-loc-b-h-binh-chanh-tp-ho-chi-minh"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/982-983-quoc-lo-51-p-an-hoa-tp-bien-hoa-tinh-dong-nai"
     },
     {
       "shopCode": "tclc-d2bfe1a4ca68b478",
@@ -3544,28 +3522,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/170-bac-son-p-hoa-an-q-cam-le-tp-da-nang"
     },
     {
-      "shopCode": "tclc-a46e2738e78e4956",
-      "shopName": "Tiêm Chủng FPT Long Châu 268 Lê Hồng Phong (Ngay Auto Sơn Trinh Cũ), X. Ngãi Giao, TP. Hồ Chí Minh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 268 Lê Hồng Phong (Ngay Auto Sơn Trinh Cũ), X. Ngãi Giao, TP. Hồ Chí Minh",
-      "location": {
-        "addressDisplay": "268 Lê Hồng Phong, TT. Ngãi Giao, H. Châu Đức, Tỉnh Bà Rịa - Vũng Tàu",
-        "address": "268 Lê Hồng Phong, TT. Ngãi Giao, H. Châu Đức, Tỉnh Bà Rịa - Vũng Tàu",
-        "coordinates": {
-          "longitude": 107.2436025,
-          "latitude": 10.64796891
-        }
-      },
-      "provinceIDStr": "79",
-      "provinceName": "Hồ Chí Minh",
-      "districtIDStr": "75",
-      "wardIDStr": "26575",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/268-le-hong-phong-tt-ngai-giao-h-chau-duc-tinh-ba-ria-vung-tau"
-    },
-    {
       "shopCode": "tclc-772522f64fbecadb",
       "shopName": "Tiêm Chủng FPT Long Châu A35 Hùng Vương (Cách Lottemart 500m), P. Phú Thuỷ, Tỉnh Lâm Đồng",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu A35 Hùng Vương (Cách Lottemart 500m), P. Phú Thuỷ, Tỉnh Lâm Đồng",
@@ -3608,6 +3564,28 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/337-le-van-quoi-p-binh-tri-dong-a-q-binh-tan-tp-ho-chi-minh"
+    },
+    {
+      "shopCode": "tclc-ff61e15c92adf287",
+      "shopName": "Tiêm Chủng FPT Long Châu 887 - 889 Võ Văn Vân (Cách Chợ Ấp 1 200m), X. Tân Vĩnh Lộc, TP. Hồ Chí Minh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 887 - 889 Võ Văn Vân (Cách Chợ Ấp 1 200m), X. Tân Vĩnh Lộc, TP. Hồ Chí Minh",
+      "location": {
+        "addressDisplay": "887 - 889 Võ Văn Vân, X. Vĩnh Lộc B, H. Bình Chánh, TP. Hồ Chí Minh",
+        "address": "887 - 889 Võ Văn Vân, X. Vĩnh Lộc B, H. Bình Chánh, TP. Hồ Chí Minh",
+        "coordinates": {
+          "longitude": 106.573619,
+          "latitude": 10.780488
+        }
+      },
+      "provinceIDStr": "79",
+      "provinceName": "Hồ Chí Minh",
+      "districtIDStr": "238",
+      "wardIDStr": "27604",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/887-889-vo-van-van-x-vinh-loc-b-h-binh-chanh-tp-ho-chi-minh"
     },
     {
       "shopCode": "tclc-67d7207220cbe013",
@@ -3764,26 +3742,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/61-b-61-c-to-4-p-trung-thanh-tp-thai-nguyen-tinh-thai-nguyen"
     },
     {
-      "shopCode": "tclc-733a1353ae6ae27d",
-      "shopName": "Tiêm Chủng FPT Long Châu Thửa 625-626, Bản đồ 8 (Đối Diện Chợ Cột Đỏ), P. Sầm Sơn, Tỉnh Thanh Hóa",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Thửa 625-626, Bản đồ 8 (Đối Diện Chợ Cột Đỏ), P. Sầm Sơn, Tỉnh Thanh Hóa",
+      "shopCode": "tclc-a46e2738e78e4956",
+      "shopName": "Tiêm Chủng FPT Long Châu 268 Lê Hồng Phong (Ngay Auto Sơn Trinh Cũ), X. Ngãi Giao, TP. Hồ Chí Minh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 268 Lê Hồng Phong (Ngay Auto Sơn Trinh Cũ), X. Ngãi Giao, TP. Hồ Chí Minh",
       "location": {
-        "addressDisplay": "Thửa 625-626, Bản đồ 8, P. Trường Sơn, TP. Sầm Sơn, Tỉnh Thanh Hoá",
-        "address": "Thửa 625-626, Bản đồ 8, P. Trường Sơn, TP. Sầm Sơn, Tỉnh Thanh Hoá",
+        "addressDisplay": "268 Lê Hồng Phong, TT. Ngãi Giao, H. Châu Đức, Tỉnh Bà Rịa - Vũng Tàu",
+        "address": "268 Lê Hồng Phong, TT. Ngãi Giao, H. Châu Đức, Tỉnh Bà Rịa - Vũng Tàu",
         "coordinates": {
-          "longitude": 105.89241,
-          "latitude": 19.736088
+          "longitude": 107.2436025,
+          "latitude": 10.64796891
         }
       },
-      "provinceIDStr": "38",
-      "provinceName": "Tỉnh Thanh Hóa",
-      "districtIDStr": "638",
-      "wardIDStr": "14836",
+      "provinceIDStr": "79",
+      "provinceName": "Hồ Chí Minh",
+      "districtIDStr": "75",
+      "wardIDStr": "26575",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/thua-625-626-ban-do-8-p-truong-son-tp-sam-son-tinh-thanh-hoa"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/268-le-hong-phong-tt-ngai-giao-h-chau-duc-tinh-ba-ria-vung-tau"
     },
     {
       "shopCode": "tclc-0343f129364b937c",
@@ -3984,26 +3962,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/24-tran-hung-dao-tdp-son-hoa-tt-ngo-dong-h-giao-thuy-tinh-nam-dinh"
     },
     {
-      "shopCode": "tclc-e4b8cede88c6a55f",
-      "shopName": "Tiêm Chủng FPT Long Châu 284 Nguyễn Văn Tăng (Cách Chợ Long Thạnh Mỹ 200m), P. Long Bình, TP. Hồ Chí Minh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 284 Nguyễn Văn Tăng (Cách Chợ Long Thạnh Mỹ 200m), P. Long Bình, TP. Hồ Chí Minh",
+      "shopCode": "tclc-733a1353ae6ae27d",
+      "shopName": "Tiêm Chủng FPT Long Châu Thửa 625-626, Bản đồ 8 (Đối Diện Chợ Cột Đỏ), P. Sầm Sơn, Tỉnh Thanh Hóa",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Thửa 625-626, Bản đồ 8 (Đối Diện Chợ Cột Đỏ), P. Sầm Sơn, Tỉnh Thanh Hóa",
       "location": {
-        "addressDisplay": "284 Nguyễn Văn Tăng, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh",
-        "address": "284 Nguyễn Văn Tăng, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh",
+        "addressDisplay": "Thửa 625-626, Bản đồ 8, P. Trường Sơn, TP. Sầm Sơn, Tỉnh Thanh Hoá",
+        "address": "Thửa 625-626, Bản đồ 8, P. Trường Sơn, TP. Sầm Sơn, Tỉnh Thanh Hoá",
         "coordinates": {
-          "longitude": 106.822226,
-          "latitude": 10.841178
+          "longitude": 105.89241,
+          "latitude": 19.736088
         }
       },
-      "provinceIDStr": "79",
-      "provinceName": "Hồ Chí Minh",
-      "districtIDStr": "247",
-      "wardIDStr": "90169",
+      "provinceIDStr": "38",
+      "provinceName": "Tỉnh Thanh Hóa",
+      "districtIDStr": "638",
+      "wardIDStr": "14836",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/284-nguyen-van-tang-p-long-thanh-my-tp-thu-duc-tp-ho-chi-minh"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/thua-625-626-ban-do-8-p-truong-son-tp-sam-son-tinh-thanh-hoa"
     },
     {
       "shopCode": "tclc-6828fcabd7aefdca",
@@ -4160,6 +4138,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/25-ngo-13-duong-linh-nam-p-mai-dong-q-hoang-mai-tp-ha-noi"
     },
     {
+      "shopCode": "tclc-e4b8cede88c6a55f",
+      "shopName": "Tiêm Chủng FPT Long Châu 284 Nguyễn Văn Tăng (Cách Chợ Long Thạnh Mỹ 200m), P. Long Bình, TP. Hồ Chí Minh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 284 Nguyễn Văn Tăng (Cách Chợ Long Thạnh Mỹ 200m), P. Long Bình, TP. Hồ Chí Minh",
+      "location": {
+        "addressDisplay": "284 Nguyễn Văn Tăng, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh",
+        "address": "284 Nguyễn Văn Tăng, P. Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh",
+        "coordinates": {
+          "longitude": 106.822226,
+          "latitude": 10.841178
+        }
+      },
+      "provinceIDStr": "79",
+      "provinceName": "Hồ Chí Minh",
+      "districtIDStr": "247",
+      "wardIDStr": "90169",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/284-nguyen-van-tang-p-long-thanh-my-tp-thu-duc-tp-ho-chi-minh"
+    },
+    {
       "shopCode": "tclc-e9ecef689ce81ead",
       "shopName": "Tiêm Chủng FPT Long Châu Tầng 1 Tòa CT7G KĐT mới Dương Nội (Đối Diện Cổng Trường Đại Học Phenikaa), P. Dương Nội, TP. Hà Nội",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu Tầng 1 Tòa CT7G KĐT mới Dương Nội (Đối Diện Cổng Trường Đại Học Phenikaa), P. Dương Nội, TP. Hà Nội",
@@ -4268,28 +4268,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tdp-manh-p-thuy-duong-tp-thuy-nguyen-tp-hai-phong"
-    },
-    {
-      "shopCode": "tclc-ca9fa5fe4ad70ea1",
-      "shopName": "Tiêm Chủng FPT Long Châu 145-147-149 Lê Lợi (Cách Ngã 4 Đường Đôi Chợ Trung Tâm 100m), Xã Vân Đình, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 145-147-149 Lê Lợi (Cách Ngã 4 Đường Đôi Chợ Trung Tâm 100m), Xã Vân Đình, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "145-147-149 Lê Lợi, TT. Vân Đình, H. Ứng Hòa, TP. Hà Nội",
-        "address": "145-147-149 Lê Lợi, TT. Vân Đình, H. Ứng Hòa, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.770412,
-          "latitude": 20.733447
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "300",
-      "wardIDStr": "10354",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/145-147-149-le-loi-tt-van-dinh-h-ung-hoa-tp-ha-noi"
     },
     {
       "shopCode": "tclc-8c614a41c0e7aae0",
@@ -4424,28 +4402,6 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/48-50-quang-trung-phuong-loc-tho-thanh-pho-nha-trang-tinh-khanh-hoa"
     },
     {
-      "shopCode": "tclc-bc5828639d6eed77",
-      "shopName": "Tiêm Chủng FPT Long Châu Tầng 2, Số 1 Nguyễn Văn Cừ (Ngay Ngã Sáu Trung Tâm Xã), X. Hiệp Hòa, Tỉnh Bắc Ninh",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Tầng 2, Số 1 Nguyễn Văn Cừ (Ngay Ngã Sáu Trung Tâm Xã), X. Hiệp Hòa, Tỉnh Bắc Ninh",
-      "location": {
-        "addressDisplay": "Tầng 2, Số 1 Nguyễn Văn Cừ, TT. Thắng, H. Hiệp Hòa, Tỉnh Bắc Giang",
-        "address": "Tầng 2, Số 1 Nguyễn Văn Cừ, TT. Thắng, H. Hiệp Hòa, Tỉnh Bắc Giang",
-        "coordinates": {
-          "longitude": 105.978861,
-          "latitude": 21.354573
-        }
-      },
-      "provinceIDStr": "24",
-      "provinceName": "Tỉnh Bắc Ninh",
-      "districtIDStr": "39",
-      "wardIDStr": "07810",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tang-2-so-1-nguyen-van-cu-tt-thang-h-hiep-hoa-tinh-bac-giang"
-    },
-    {
       "shopCode": "tclc-56645e0e5127da74",
       "shopName": "Tiêm Chủng FPT Long Châu 94 Trần Hưng Đạo (Đối Diện Đài Phun Nước Phúc Yên), Phường Phúc Yên, Tỉnh Phú Thọ",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 94 Trần Hưng Đạo (Đối Diện Đài Phun Nước Phúc Yên), Phường Phúc Yên, Tỉnh Phú Thọ",
@@ -4490,6 +4446,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/768-phan-dinh-phung-phuong-duy-tan-tp-kon-tum-tinh-kon-tum"
     },
     {
+      "shopCode": "tclc-76348cc0be814d52",
+      "shopName": "Tiêm Chủng FPT Long Châu 170-171 Tiểu Khu Phú Mỹ (Cạnh Cây Xăng Phú Mỹ), Xã Phú Xuyên, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 170-171 Tiểu Khu Phú Mỹ (Cạnh Cây Xăng Phú Mỹ), Xã Phú Xuyên, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "170-171 Tiểu Khu Phú Mỹ, TT. Phú Xuyên, H. Phú Xuyên, TP. Hà Nội",
+        "address": "170-171 Tiểu Khu Phú Mỹ, TT. Phú Xuyên, H. Phú Xuyên, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.911882,
+          "latitude": 20.746886
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "294",
+      "wardIDStr": "10273",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/170-171-tieu-khu-phu-my-tt-phu-xuyen-h-phu-xuyen-tp-ha-noi"
+    },
+    {
       "shopCode": "tclc-46337e99b013994b",
       "shopName": "Tiêm Chủng FPT Long Châu 355-355A Nguyễn Xí (Ngay Ngã Tư Nguyễn Xí - Phạm Văn Đồng), P. Bình Lợi Trung, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 355-355A Nguyễn Xí (Ngay Ngã Tư Nguyễn Xí - Phạm Văn Đồng), P. Bình Lợi Trung, TP. Hồ Chí Minh",
@@ -4510,28 +4488,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/355-355-a-nguyen-xi-phuong-13-quan-binh-thanh-thanh-pho-ho-chi-minh"
-    },
-    {
-      "shopCode": "tclc-532e058f69a72134",
-      "shopName": "Tiêm Chủng FPT Long Châu Lô A7 KQH 35 Quang Trung (Ngay Ngã Tư Phan Chu Trinh), P. Lâm Viên-Đà Lạt, Tỉnh Lâm Đồng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Lô A7 KQH 35 Quang Trung (Ngay Ngã Tư Phan Chu Trinh), P. Lâm Viên-Đà Lạt, Tỉnh Lâm Đồng",
-      "location": {
-        "addressDisplay": "Lô A7 KQH 35 Quang Trung, P. 9, TP. Đà Lạt, Tỉnh Lâm Đồng",
-        "address": "Lô A7 KQH 35 Quang Trung, P. 9, TP. Đà Lạt, Tỉnh Lâm Đồng",
-        "coordinates": {
-          "longitude": 108.462972,
-          "latitude": 11.949117
-        }
-      },
-      "provinceIDStr": "68",
-      "provinceName": "Tỉnh Lâm Đồng",
-      "districtIDStr": "439",
-      "wardIDStr": "24778",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/lo-a7-kqh-35-quang-trung-p-9-tp-da-lat-tinh-lam-dong"
     },
     {
       "shopCode": "tclc-842be0b1f2a3d471",
@@ -4622,6 +4578,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/189-191-quoc-lo-60-tt-mo-cay-h-mo-cay-nam-tinh-ben-tre"
     },
     {
+      "shopCode": "tclc-bc5828639d6eed77",
+      "shopName": "Tiêm Chủng FPT Long Châu Tầng 2, Số 1 Nguyễn Văn Cừ (Ngay Ngã Sáu Trung Tâm Xã), X. Hiệp Hòa, Tỉnh Bắc Ninh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Tầng 2, Số 1 Nguyễn Văn Cừ (Ngay Ngã Sáu Trung Tâm Xã), X. Hiệp Hòa, Tỉnh Bắc Ninh",
+      "location": {
+        "addressDisplay": "Tầng 2, Số 1 Nguyễn Văn Cừ, TT. Thắng, H. Hiệp Hòa, Tỉnh Bắc Giang",
+        "address": "Tầng 2, Số 1 Nguyễn Văn Cừ, TT. Thắng, H. Hiệp Hòa, Tỉnh Bắc Giang",
+        "coordinates": {
+          "longitude": 105.978861,
+          "latitude": 21.354573
+        }
+      },
+      "provinceIDStr": "24",
+      "provinceName": "Tỉnh Bắc Ninh",
+      "districtIDStr": "39",
+      "wardIDStr": "07810",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/tang-2-so-1-nguyen-van-cu-tt-thang-h-hiep-hoa-tinh-bac-giang"
+    },
+    {
       "shopCode": "tclc-70de7bef0071230a",
       "shopName": "Tiêm Chủng FPT Long Châu 40 Đường DT 746 (Đối Diện Chợ Tân Phước Khánh), P. Tân Khánh, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 40 Đường DT 746 (Đối Diện Chợ Tân Phước Khánh), P. Tân Khánh, TP. Hồ Chí Minh",
@@ -4666,26 +4644,26 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/thon-xuan-tho-x-ky-tan-h-ky-anh-tinh-ha-tinh"
     },
     {
-      "shopCode": "tclc-76348cc0be814d52",
-      "shopName": "Tiêm Chủng FPT Long Châu 170-171 Tiểu Khu Phú Mỹ (Cạnh Cây Xăng Phú Mỹ), Xã Phú Xuyên, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 170-171 Tiểu Khu Phú Mỹ (Cạnh Cây Xăng Phú Mỹ), Xã Phú Xuyên, TP. Hà Nội",
+      "shopCode": "tclc-ca9fa5fe4ad70ea1",
+      "shopName": "Tiêm Chủng FPT Long Châu 145-147-149 Lê Lợi (Cách Ngã 4 Đường Đôi Chợ Trung Tâm 100m), Xã Vân Đình, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 145-147-149 Lê Lợi (Cách Ngã 4 Đường Đôi Chợ Trung Tâm 100m), Xã Vân Đình, TP. Hà Nội",
       "location": {
-        "addressDisplay": "170-171 Tiểu Khu Phú Mỹ, TT. Phú Xuyên, H. Phú Xuyên, TP. Hà Nội",
-        "address": "170-171 Tiểu Khu Phú Mỹ, TT. Phú Xuyên, H. Phú Xuyên, TP. Hà Nội",
+        "addressDisplay": "145-147-149 Lê Lợi, TT. Vân Đình, H. Ứng Hòa, TP. Hà Nội",
+        "address": "145-147-149 Lê Lợi, TT. Vân Đình, H. Ứng Hòa, TP. Hà Nội",
         "coordinates": {
-          "longitude": 105.911882,
-          "latitude": 20.746886
+          "longitude": 105.770412,
+          "latitude": 20.733447
         }
       },
       "provinceIDStr": "01",
       "provinceName": "Hà Nội",
-      "districtIDStr": "294",
-      "wardIDStr": "10273",
+      "districtIDStr": "300",
+      "wardIDStr": "10354",
       "isEcom": true,
       "operation": {
         "openStatus": false
       },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/170-171-tieu-khu-phu-my-tt-phu-xuyen-h-phu-xuyen-tp-ha-noi"
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/145-147-149-le-loi-tt-van-dinh-h-ung-hoa-tp-ha-noi"
     },
     {
       "shopCode": "tclc-aae40edb478354a8",
@@ -4754,6 +4732,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/372-a-ha-huy-giap-p-thanh-loc-q-12-tp-ho-chi-minh"
     },
     {
+      "shopCode": "tclc-532e058f69a72134",
+      "shopName": "Tiêm Chủng FPT Long Châu Lô A7 KQH 35 Quang Trung (Ngay Ngã Tư Phan Chu Trinh), P. Lâm Viên-Đà Lạt, Tỉnh Lâm Đồng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu Lô A7 KQH 35 Quang Trung (Ngay Ngã Tư Phan Chu Trinh), P. Lâm Viên-Đà Lạt, Tỉnh Lâm Đồng",
+      "location": {
+        "addressDisplay": "Lô A7 KQH 35 Quang Trung, P. 9, TP. Đà Lạt, Tỉnh Lâm Đồng",
+        "address": "Lô A7 KQH 35 Quang Trung, P. 9, TP. Đà Lạt, Tỉnh Lâm Đồng",
+        "coordinates": {
+          "longitude": 108.462972,
+          "latitude": 11.949117
+        }
+      },
+      "provinceIDStr": "68",
+      "provinceName": "Tỉnh Lâm Đồng",
+      "districtIDStr": "439",
+      "wardIDStr": "24778",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/lo-a7-kqh-35-quang-trung-p-9-tp-da-lat-tinh-lam-dong"
+    },
+    {
       "shopCode": "tclc-65344130f81fc1ab",
       "shopName": "Tiêm Chủng FPT Long Châu 137A1 Hiệp Bình (Gần Trường Mầm Non Hiếu Trung), P. Hiệp Bình, TP. Hồ Chí Minh",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 137A1 Hiệp Bình (Gần Trường Mầm Non Hiếu Trung), P. Hiệp Bình, TP. Hồ Chí Minh",
@@ -4774,28 +4774,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/137-a1-hiep-binh-khu-pho-7-phuong-hiep-binh-chanh-thanh-pho-thu-duc-thanh-pho-ho-chi-minh"
-    },
-    {
-      "shopCode": "tclc-15b2b1e2d69129ea",
-      "shopName": "Tiêm Chủng FPT Long Châu 382-384 Trường Chinh (Cách Ngã Tư Cầu Cất 100m), P. Lê Thanh Nghị, TP. Hải Phòng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 382-384 Trường Chinh (Cách Ngã Tư Cầu Cất 100m), P. Lê Thanh Nghị, TP. Hải Phòng",
-      "location": {
-        "addressDisplay": "382-384 Trường Chinh, P. Lê Thanh Nghị, TP. Hải Dương, Tỉnh Hải Dương",
-        "address": "382-384 Trường Chinh, P. Lê Thanh Nghị, TP. Hải Dương, Tỉnh Hải Dương",
-        "coordinates": {
-          "longitude": 106.321714,
-          "latitude": 20.928962
-        }
-      },
-      "provinceIDStr": "31",
-      "provinceName": "Hải Phòng",
-      "districtIDStr": "249",
-      "wardIDStr": "10534",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/382-384-truong-chinh-p-le-thanh-nghi-tp-hai-duong-tinh-hai-duong"
     },
     {
       "shopCode": "tclc-f038ab64bcb68ef8",
@@ -4996,6 +4974,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/358-hung-vuong-tt-dinh-van-h-lam-ha-tinh-lam-dong"
     },
     {
+      "shopCode": "tclc-15b2b1e2d69129ea",
+      "shopName": "Tiêm Chủng FPT Long Châu 382-384 Trường Chinh (Cách Ngã Tư Cầu Cất 100m), P. Lê Thanh Nghị, TP. Hải Phòng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 382-384 Trường Chinh (Cách Ngã Tư Cầu Cất 100m), P. Lê Thanh Nghị, TP. Hải Phòng",
+      "location": {
+        "addressDisplay": "382-384 Trường Chinh, P. Lê Thanh Nghị, TP. Hải Dương, Tỉnh Hải Dương",
+        "address": "382-384 Trường Chinh, P. Lê Thanh Nghị, TP. Hải Dương, Tỉnh Hải Dương",
+        "coordinates": {
+          "longitude": 106.321714,
+          "latitude": 20.928962
+        }
+      },
+      "provinceIDStr": "31",
+      "provinceName": "Hải Phòng",
+      "districtIDStr": "249",
+      "wardIDStr": "10534",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/382-384-truong-chinh-p-le-thanh-nghi-tp-hai-duong-tinh-hai-duong"
+    },
+    {
       "shopCode": "tclc-b9558b3ac1c59bf5",
       "shopName": "Tiêm Chủng FPT Long Châu 101-103-105 Giải Phóng (Đối Diện Bệnh Viện Bạch Mai), P. Bạch Mai, TP. Hà Nội",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 101-103-105 Giải Phóng (Đối Diện Bệnh Viện Bạch Mai), P. Bạch Mai, TP. Hà Nội",
@@ -5016,28 +5016,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/101-103-105-giai-phong-p-dong-tam-q-hai-ba-trung-tp-ha-noi"
-    },
-    {
-      "shopCode": "tclc-99a21a188fc92b82",
-      "shopName": "Tiêm Chủng FPT Long Châu 52B Âu Cơ (Đối Diện Chợ Hoà Khánh), P. Liên Chiểu, TP. Đà Nẵng",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 52B Âu Cơ (Đối Diện Chợ Hoà Khánh), P. Liên Chiểu, TP. Đà Nẵng",
-      "location": {
-        "addressDisplay": "52B Âu Cơ, P. Hòa Khánh Bắc, Q. Liên Chiểu, TP. Đà Nẵng",
-        "address": "52B Âu Cơ, P. Hòa Khánh Bắc, Q. Liên Chiểu, TP. Đà Nẵng",
-        "coordinates": {
-          "longitude": 108.148997,
-          "latitude": 16.071096
-        }
-      },
-      "provinceIDStr": "48",
-      "provinceName": "Đà Nẵng",
-      "districtIDStr": "156",
-      "wardIDStr": "20197",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/52-b-au-co-p-hoa-khanh-bac-q-lien-chieu-tp-da-nang"
     },
     {
       "shopCode": "tclc-40fc1399fdeb89f5",
@@ -5238,6 +5216,28 @@
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/206-a-tran-hung-dao-p-4-tp-tuy-hoa-tinh-phu-yen"
     },
     {
+      "shopCode": "tclc-99a21a188fc92b82",
+      "shopName": "Tiêm Chủng FPT Long Châu 52B Âu Cơ (Đối Diện Chợ Hoà Khánh), P. Liên Chiểu, TP. Đà Nẵng",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 52B Âu Cơ (Đối Diện Chợ Hoà Khánh), P. Liên Chiểu, TP. Đà Nẵng",
+      "location": {
+        "addressDisplay": "52B Âu Cơ, P. Hòa Khánh Bắc, Q. Liên Chiểu, TP. Đà Nẵng",
+        "address": "52B Âu Cơ, P. Hòa Khánh Bắc, Q. Liên Chiểu, TP. Đà Nẵng",
+        "coordinates": {
+          "longitude": 108.148997,
+          "latitude": 16.071096
+        }
+      },
+      "provinceIDStr": "48",
+      "provinceName": "Đà Nẵng",
+      "districtIDStr": "156",
+      "wardIDStr": "20197",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/52-b-au-co-p-hoa-khanh-bac-q-lien-chieu-tp-da-nang"
+    },
+    {
       "shopCode": "tclc-0d960efe19944520",
       "shopName": "Tiêm Chủng FPT Long Châu 497 Máng Nước (Đối Diện Chợ Vĩnh Khê), P. An Hải, TP. Hải Phòng",
       "shopNameDisplay": "Tiêm Chủng FPT Long Châu 497 Máng Nước (Đối Diện Chợ Vĩnh Khê), P. An Hải, TP. Hải Phòng",
@@ -5258,6 +5258,50 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/497-mang-nuoc-p-an-dong-q-an-duong-tp-hai-phong"
+    },
+    {
+      "shopCode": "tclc-1de1d0d1e2492ce0",
+      "shopName": "Tiêm Chủng FPT Long Châu 439A Phú Lợi, P. Phú Lợi, TP. Hồ Chí Minh",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 439A Phú Lợi, P. Phú Lợi, TP. Hồ Chí Minh",
+      "location": {
+        "addressDisplay": "439A Phú Lợi, Phường Phú Lợi, Thành Phố Thủ Dầu Một, Tỉnh Bình Dương",
+        "address": "439A Phú Lợi, Phường Phú Lợi, Thành Phố Thủ Dầu Một, Tỉnh Bình Dương",
+        "coordinates": {
+          "longitude": 106.684393,
+          "latitude": 10.986239
+        }
+      },
+      "provinceIDStr": "79",
+      "provinceName": "Hồ Chí Minh",
+      "districtIDStr": "12",
+      "wardIDStr": "25744",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/439-a-phu-loi-phuong-phu-loi-thanh-pho-thu-dau-mot-tinh-binh-duong"
+    },
+    {
+      "shopCode": "tclc-8faf965cfff9b032",
+      "shopName": "Tiêm Chủng FPT Long Châu 216 Thái Hà (Ngã Tư Thái Hà- Hoàng Cầu), P. Đống Đa, TP. Hà Nội",
+      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 216 Thái Hà (Ngã Tư Thái Hà- Hoàng Cầu), P. Đống Đa, TP. Hà Nội",
+      "location": {
+        "addressDisplay": "216 Thái Hà, P. Trung Liệt, Q. Đống Đa, TP. Hà Nội",
+        "address": "216 Thái Hà, P. Trung Liệt, Q. Đống Đa, TP. Hà Nội",
+        "coordinates": {
+          "longitude": 105.8190424,
+          "latitude": 21.0138087
+        }
+      },
+      "provinceIDStr": "01",
+      "provinceName": "Hà Nội",
+      "districtIDStr": "279",
+      "wardIDStr": "00217",
+      "isEcom": true,
+      "operation": {
+        "openStatus": false
+      },
+      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/216-thai-ha-p-trung-liet-q-dong-da-tp-ha-noi"
     },
     {
       "shopCode": "tclc-c119bc3498404eae",
@@ -5302,50 +5346,6 @@
         "openStatus": false
       },
       "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/bt-11-vt-10-khu-nha-o-xa-la-p-phuc-la-q-ha-dong-tp-ha-noi"
-    },
-    {
-      "shopCode": "tclc-8faf965cfff9b032",
-      "shopName": "Tiêm Chủng FPT Long Châu 216 Thái Hà (Ngã Tư Thái Hà- Hoàng Cầu), P. Đống Đa, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 216 Thái Hà (Ngã Tư Thái Hà- Hoàng Cầu), P. Đống Đa, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "216 Thái Hà, P. Trung Liệt, Q. Đống Đa, TP. Hà Nội",
-        "address": "216 Thái Hà, P. Trung Liệt, Q. Đống Đa, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.8190424,
-          "latitude": 21.0138087
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "279",
-      "wardIDStr": "00217",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/216-thai-ha-p-trung-liet-q-dong-da-tp-ha-noi"
-    },
-    {
-      "shopCode": "tclc-c2994036033f776d",
-      "shopName": "Tiêm Chủng FPT Long Châu 137 Lạc Long Quân (Lối Vào Cổng Sau Chợ Nghĩa Đô), P. Tây Hồ, TP. Hà Nội",
-      "shopNameDisplay": "Tiêm Chủng FPT Long Châu 137 Lạc Long Quân (Lối Vào Cổng Sau Chợ Nghĩa Đô), P. Tây Hồ, TP. Hà Nội",
-      "location": {
-        "addressDisplay": "137 Lạc Long Quân, P. Nghĩa Đô, Q. Cầu Giấy, TP. Hà Nội",
-        "address": "137 Lạc Long Quân, P. Nghĩa Đô, Q. Cầu Giấy, TP. Hà Nội",
-        "coordinates": {
-          "longitude": 105.808506,
-          "latitude": 21.051813
-        }
-      },
-      "provinceIDStr": "01",
-      "provinceName": "Hà Nội",
-      "districtIDStr": "278",
-      "wardIDStr": "00157",
-      "isEcom": true,
-      "operation": {
-        "openStatus": false
-      },
-      "detailUrl": "https://tiemchunglongchau.com.vn/he-thong-trung-tam/137-lac-long-quan-p-nghia-do-q-cau-giay-tp-ha-noi"
     }
   ]
 }

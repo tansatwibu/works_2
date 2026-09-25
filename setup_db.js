@@ -23,7 +23,7 @@ async function setupDatabase() {
         try {
             await db.collection(collectionName).dropIndex(indexName);
         } catch (error) {
-            if (error.codeName !== 'IndexNotFound') throw error;
+            if (!['IndexNotFound', 'NamespaceNotFound'].includes(error.codeName)) throw error;
         }
     }
 

@@ -3,8 +3,11 @@ from datetime import datetime, timedelta, timezone
 from typing import Any
 
 from bson import ObjectId
+from dotenv import load_dotenv
 from pymongo import MongoClient, UpdateOne
 
+
+load_dotenv()
 
 CLOSE_AFTER_MISSING_DAYS = 2
 VIETNAM_TIMEZONE = timezone(timedelta(hours=7))
