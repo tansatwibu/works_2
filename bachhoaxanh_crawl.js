@@ -38,6 +38,7 @@ async function crawl() {
     const stores = [];
 
     for (const province of provinces) {
+        let provinceCount = 0;
         let pageIndex = 0;
         while (true) {
             const query = new URLSearchParams({
@@ -48,8 +49,9 @@ async function crawl() {
             const responseData = data.data || data;
             const page = responseData.stores || [];
             stores.push(...page.map((store) => normalizeStore(store, province)));
-            if (stores.length && page.length === 0) break;
-            if (page.length < PAGE_SIZE || stores.filter((store) => store.provinceIDStr === String(province.id)).length >= Number(responseData.total || 0)) break;
+            provinceCount += page.length;
+            const total = Number(responseData.total || 0);
+            if (!page.length || (total > 0 && provinceCount >= total) || (total === 0 && page.length < PAGE_SIZE)) break;
             pageIndex += 1;
         }
     }

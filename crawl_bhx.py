@@ -99,7 +99,7 @@ async def fetch_payload() -> dict[str, Any]:
                     stores.extend(normalize_store(store, province) for store in page)
                     province_count += len(page)
                     total = int(response_data.get("total") or 0)
-                    if not page or len(page) < PAGE_SIZE or (total and province_count >= total):
+                    if not page or (total and province_count >= total) or (not total and len(page) < PAGE_SIZE):
                         break
                     page_index += 1
         finally:
