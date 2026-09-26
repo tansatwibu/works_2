@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pharmacy Dashboard</title>
+  <title>Retail Shops</title>
   <link rel="stylesheet" href="/dashboard.css">
 </head>
 <body>
@@ -16,10 +16,10 @@
     <aside class="module-sidebar" id="module-sidebar">
       <div class="sidebar-brand">
         <div class="brand-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 15-3-3 3-3"/><path d="M16 18a4 4 0 0 0 0-8"/><path d="M3 12h10"/><path d="M16 6a4 4 0 0 1 0 8"/><path d="M3 6h10"/><path d="M3 18h10"/></svg>
+          <span aria-hidden="true">RS</span>
         </div>
         <div class="brand-text">
-          <span class="brand-name">Pharmacy</span>
+          <span class="brand-name">Retail Shops</span>
           <span class="brand-sub">Store Intelligence</span>
         </div>
       </div>
@@ -27,15 +27,15 @@
       <div class="sidebar-section-label">Thương hiệu</div>
       <nav class="module-nav" aria-label="Thương hiệu">
         <button class="module-link active" data-module="longchau">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          <img class="logo-pharmacy" src="/assets/logo-pharmacy.svg" alt="" aria-hidden="true">
           Nhà thuốc Long Châu
         </button>
         <button class="module-link" data-module="bachhoaxanh">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          <img class="logo-bhx" src="/assets/logo-bachhoaxanh.svg" alt="" aria-hidden="true">
           Bách Hoá Xanh
         </button>
         <button class="module-link" data-module="tiemchunglongchau">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3"/><path d="M9 14h6"/></svg>
+          <img class="logo-vaccine" src="/assets/logo-tiemchung.svg" alt="" aria-hidden="true">
           Tiêm chủng Long Châu
         </button>
       </nav>
@@ -46,8 +46,8 @@
     <main class="dashboard-main">
       <header class="dashboard-header">
         <div>
-          <p class="eyebrow">PHARMACY / STORE NETWORK</p>
-          <h1 id="page-title">Dashboard</h1>
+          <p class="eyebrow">RETAIL / STORE NETWORK</p>
+          <h1 id="page-title">Retail Shops</h1>
         </div>
         <div class="sync-badge" title="Dữ liệu được cập nhật một lần vào cuối ngày"><span class="status-dot"></span><span id="last-sync">Đang tải snapshot cuối ngày</span></div>
       </header>
@@ -59,11 +59,13 @@
               <div class="chart-title-block">
                 <div class="chart-title">Tổng cửa hàng theo ngày crawl</div>
                 <div class="chart-subtitle">Số cửa hàng hiện có trong từng lần crawl</div>
+                <div class="chart-scope" id="chart-scope">Toàn quốc</div>
               </div>
-              <div class="chart-controls">
-                <label><span>Tháng</span><input id="chart-month" type="month"></label>
-                <label>Tỉnh <select id="chart-province"><option value="">Tất cả tỉnh / thành</option></select></label>
-                <button class="chart-refresh" id="chart-refresh" aria-label="Làm mới">
+              <div class="chart-controls" aria-label="Bộ lọc thời gian">
+                <label><span>Từ</span><input id="from-month" type="month"></label>
+                <span class="filter-arrow">→</span>
+                <label><span>Đến</span><input id="to-month" type="month"></label>
+                <button id="refresh-button" class="refresh-button" aria-label="Cập nhật dữ liệu">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
                 </button>
               </div>
@@ -72,24 +74,7 @@
               <div class="chart-legend-item"><span class="chart-legend-dot opened"></span> Số cửa hàng hiện có</div>
             </div>
             <div id="daily-chart" class="bar-chart line-chart"><div class="empty-state">Đang tải...</div></div>
-            <div class="chart-caption">Theo ngày crawl</div>
           </article>
-        </section>
-
-        <section class="filter-card table-filter-card">
-          <div class="filter-card-header">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
-            <span class="filter-card-title">Bộ lọc bảng</span>
-          </div>
-          <div class="filter-bar table-filter-bar">
-            <label><span>Từ tháng</span><input id="from-month" type="month"></label>
-            <span class="filter-arrow">→</span>
-            <label><span>Đến tháng</span><input id="to-month" type="month"></label>
-            <button id="refresh-button" class="refresh-button">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
-              Cập nhật bảng
-            </button>
-          </div>
         </section>
 
         <section class="data-card">

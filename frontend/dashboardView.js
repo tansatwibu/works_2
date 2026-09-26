@@ -49,7 +49,7 @@ function renderLineChart(selector, daily) {
     if (!daily.length) { chart.innerHTML = '<div class="empty-state">Chưa có snapshot crawl trong khoảng này.</div>'; return; }
     const width = 1000;
     const height = 300;
-    const padding = { top: 20, right: 24, bottom: 42, left: 54 };
+    const padding = { top: 20, right: 24, bottom: 42, left: 70 };
     const counts = daily.map((item) => item.count);
     const dataMin = Math.min(...counts);
     const dataMax = Math.max(...counts);
@@ -76,10 +76,10 @@ function renderProvinceTable(rows) {
     if (!rows.length) { body.innerHTML = '<tr><td colspan="4" class="empty-cell">Chưa có snapshot crawl trong khoảng này.</td></tr>'; return; }
     const nationalTotal = rows.reduce((sum, item) => sum + item.count, 0);
     const nationalDelta = rows.reduce((sum, item) => sum + item.delta, 0);
-    const nationalRow = `<tr class="national-total"><td><strong>Toàn quốc</strong><small>Tổng cộng</small></td><td>${formatNumber(nationalTotal)}</td><td class="${nationalDelta >= 0 ? 'positive' : 'negative'}">${nationalDelta > 0 ? '+' : ''}${formatNumber(nationalDelta)}</td><td><div class="share"><span><i style="width:100%"></i></span>100.0%</div></td></tr>`;
+    const nationalRow = `<tr class="national-total" data-province-id=""><td><strong>Toàn quốc</strong><small>Tổng cộng</small></td><td>${formatNumber(nationalTotal)}</td><td class="${nationalDelta >= 0 ? 'positive' : 'negative'}">${nationalDelta > 0 ? '+' : ''}${formatNumber(nationalDelta)}</td><td><div class="share"><span><i style="width:100%"></i></span>100.0%</div></td></tr>`;
     body.innerHTML = nationalRow + rows.map((row) => {
         const share = nationalTotal ? ((row.count / nationalTotal) * 100).toFixed(1) : '0.0';
-        return `<tr><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.count)}</td><td class="${row.delta >= 0 ? 'positive' : 'negative'}">${row.delta > 0 ? '+' : ''}${formatNumber(row.delta)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
+        return `<tr data-province-id="${row.provinceId}"><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.count)}</td><td class="${row.delta >= 0 ? 'positive' : 'negative'}">${row.delta > 0 ? '+' : ''}${formatNumber(row.delta)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
     }).join('');
 }
 

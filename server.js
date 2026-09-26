@@ -24,7 +24,8 @@ function serveStatic(response, pathname) {
     const contentTypes = {
         '.css': 'text/css; charset=utf-8',
         '.html': 'text/html; charset=utf-8',
-        '.js': 'text/javascript; charset=utf-8'
+        '.js': 'text/javascript; charset=utf-8',
+        '.svg': 'image/svg+xml'
     };
     response.writeHead(200, {
         'Content-Type': contentTypes[path.extname(filePath)] || 'application/octet-stream'
