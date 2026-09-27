@@ -469,9 +469,9 @@ button, input, select { font: inherit; color: inherit; }
 }
 
 .line-chart {
-  height: 380px;
-  min-height: 380px;
-  flex-basis: 380px;
+  height: 420px;
+  min-height: 420px;
+  flex-basis: 420px;
   display: block;
   padding-top: 8px;
 }
@@ -488,8 +488,8 @@ button, input, select { font: inherit; color: inherit; }
 .line-series { fill: none; stroke: var(--primary); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
 .line-point { fill: var(--surface); stroke: var(--primary); stroke-width: 3; cursor: pointer; }
 .line-point:hover { fill: var(--primary); }
-.line-y-label, .line-x-label, .line-axis-title { fill: var(--muted); font: 10px 'DM Mono', monospace; }
-.line-x-label { text-anchor: middle; }
+.line-y-label, .line-x-label, .line-axis-title { fill: var(--muted); font: normal 10px 'DM Mono', monospace; font-style: normal; }
+.line-x-label { text-anchor: end; }
 .line-axis-title { font-size: 9px; }
 
 .chart-y-axis {
@@ -834,6 +834,23 @@ td small { display: block; color: var(--muted); font: 11px 'DM Mono', monospace;
 .summary-table tbody tr.selected td { background: var(--primary-light); }
 .summary-table tbody tr.selected td:first-child { box-shadow: inset 4px 0 0 var(--primary); }
 .summary-table tbody tr.selected td strong { color: var(--primary-dark); }
+
+.summary-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: color var(--transition);
+}
+
+.summary-table th.sortable:hover { color: var(--primary); }
+.summary-table th.sortable.sorted { color: var(--primary-dark); }
+
+.sort-indicator {
+  font-size: 9px;
+  margin-left: 4px;
+  opacity: 0.55;
+}
+
+.summary-table th.sortable.sorted .sort-indicator { opacity: 1; }
 
 .positive { color: var(--success); font-weight: 700; }
 .negative { color: var(--danger); font-weight: 700; }

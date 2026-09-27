@@ -28,8 +28,8 @@ export function renderKpis(totals, provinceCount) {
     }
 }
 
-export function renderProvinceStats(rows) {
-    renderProvinceTable(rows);
+export function renderProvinceStats(rows, sortColumn = 'count', sortDirection = 'desc') {
+    renderProvinceTable(rows, sortColumn, sortDirection);
 }
 
 function aggregateByPeriod(daily, period) {
@@ -48,8 +48,8 @@ function renderLineChart(selector, daily) {
     const chart = document.querySelector(selector);
     if (!daily.length) { chart.innerHTML = '<div class="empty-state">Chưa có snapshot crawl trong khoảng này.</div>'; return; }
     const width = 1000;
-    const height = 300;
-    const padding = { top: 20, right: 24, bottom: 42, left: 70 };
+    const height = 360;
+    const padding = { top: 20, right: 30, bottom: 70, left: 80 };
     const counts = daily.map((item) => item.count);
     const dataMin = Math.min(...counts);
     const dataMax = Math.max(...counts);
@@ -65,22 +65,54 @@ function renderLineChart(selector, daily) {
     const points = daily.map((item, index) => `${x(index)},${y(item.count)}`).join(' ');
     const tickValues = [domainMax, domainMin + (domainMax - domainMin) * 0.75, domainMin + (domainMax - domainMin) * 0.5, domainMin + (domainMax - domainMin) * 0.25, domainMin]
         .map((tick) => Math.round(tick));
-    const grid = tickValues.map((tick) => `<line class="line-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"><title>${tick} cửa hàng</title></line><text class="line-y-label" x="${padding.left - 10}" y="${y(tick) + 4}">${tick}</text>`).join('');
-    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5"><title>${item.date}: ${item.count} cửa hàng (${item.delta >= 0 ? '+' : ''}${item.delta})</title></circle><text class="line-x-label" x="${x(index)}" y="${height - 14}">${labels[index]}</text>`).join('');
-    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="14" y="${height / 2}" transform="rotate(-90 14 ${height / 2})">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 1}">Ngày crawl</text></svg>`;
+    const grid = tickValues.map((tick) => `<line class="line-grid" x1="${padding.left}" x2="${width - padding.right}" y1="${y(tick)}" y2="${y(tick)}"><title>${tick} cửa hàng</title></line><text class="line-y-label" x="${padding.left - 12}" y="${y(tick) + 4}" text-anchor="end">${formatNumber(tick)}</text>`).join('');
+
+    const maxLabels = Math.max(6, Math.floor(chartWidth / 55));
+    const labelStep = Math.ceil(daily.length / maxLabels);
+    const shouldShowLabel = (index) => index % labelStep === 0 || index === daily.length - 1;
+    const labelY = height - padding.bottom + 18;
+    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5"><title>${item.date}: ${item.count} cửa hàng (${item.delta >= 0 ? '+' : ''}${item.delta})</title></circle>${shouldShowLabel(index) ? `<text class="line-x-label" x="${x(index)}" y="${labelY}" text-anchor="middle">${labels[index]}</text>` : ''}`).join('');
+    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="16" y="${height / 2}" transform="rotate(-90 16 ${height / 2})" text-anchor="middle">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 4}" text-anchor="middle">Ngày crawl</text></svg>`;
 }
 
-function renderProvinceTable(rows) {
+const sortArrow = { asc: '▲', desc: '▼', none: '↕' };
+
+function sortRows(rows, column, direction) {
+    const sorted = [...rows];
+    const dir = direction === 'asc' ? 1 : -1;
+    sorted.sort((a, b) => {
+        let av, bv;
+        if (column === 'province') { av = (a.provinceName || '').toLowerCase(); bv = (b.provinceName || '').toLowerCase(); return av < bv ? -dir : av > bv ? dir : 0; }
+        if (column === 'count') { av = a.count; bv = b.count; }
+        if (column === 'delta') { av = a.delta; bv = b.delta; }
+        if (column === 'share') { av = a.sharePercent || 0; bv = b.sharePercent || 0; }
+        return ((av || 0) - (bv || 0)) * dir;
+    });
+    return sorted;
+}
+
+export function updateSortIndicators(sortColumn, sortDirection) {
+    document.querySelectorAll('#province-table-wrapper th[data-sort]').forEach((th) => {
+        const col = th.dataset.sort;
+        const indicator = th.querySelector('.sort-indicator');
+        th.classList.toggle('sorted', col === sortColumn);
+        if (indicator) indicator.textContent = col === sortColumn ? sortArrow[sortDirection] : sortArrow.none;
+    });
+}
+
+function renderProvinceTable(rows, sortColumn = 'count', sortDirection = 'desc') {
     const body = document.querySelector('#province-table');
     document.querySelector('#province-count').textContent = `${rows.length} tỉnh`;
     if (!rows.length) { body.innerHTML = '<tr><td colspan="4" class="empty-cell">Chưa có snapshot crawl trong khoảng này.</td></tr>'; return; }
     const nationalTotal = rows.reduce((sum, item) => sum + item.count, 0);
     const nationalDelta = rows.reduce((sum, item) => sum + item.delta, 0);
+    const sortedRows = sortRows(rows.map((row) => ({ ...row, sharePercent: nationalTotal ? (row.count / nationalTotal) * 100 : 0 })), sortColumn, sortDirection);
     const nationalRow = `<tr class="national-total" data-province-id=""><td><strong>Toàn quốc</strong><small>Tổng cộng</small></td><td>${formatNumber(nationalTotal)}</td><td class="${nationalDelta >= 0 ? 'positive' : 'negative'}">${nationalDelta > 0 ? '+' : ''}${formatNumber(nationalDelta)}</td><td><div class="share"><span><i style="width:100%"></i></span>100.0%</div></td></tr>`;
-    body.innerHTML = nationalRow + rows.map((row) => {
+    body.innerHTML = nationalRow + sortedRows.map((row) => {
         const share = nationalTotal ? ((row.count / nationalTotal) * 100).toFixed(1) : '0.0';
         return `<tr data-province-id="${row.provinceId}"><td><strong>${row.provinceName}</strong><small>${row.provinceId}</small></td><td>${formatNumber(row.count)}</td><td class="${row.delta >= 0 ? 'positive' : 'negative'}">${row.delta > 0 ? '+' : ''}${formatNumber(row.delta)}</td><td><div class="share"><span><i style="width:${share}%"></i></span>${share}%</div></td></tr>`;
     }).join('');
+    updateSortIndicators(sortColumn, sortDirection);
 }
 
 function renderEvents(events) {

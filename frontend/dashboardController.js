@@ -8,6 +8,9 @@ const toMonthInput = document.querySelector('#to-month');
 let latestRequest = 0;
 let currentSource = 'longchau';
 let selectedProvince = '';
+let provinceRows = [];
+let sortColumn = 'count';
+let sortDirection = 'desc';
 
 function monthValue(date) {
     const year = date.getFullYear();
@@ -42,7 +45,8 @@ async function loadDashboard() {
         const table = await getStats(from, to, selectedProvince, currentSource);
         if (requestId !== latestRequest) return;
         renderChart('#daily-chart', table.daily, 'daily');
-        renderProvinceStats(table.byProvince);
+        provinceRows = table.byProvince;
+        renderProvinceStats(table.byProvince, sortColumn, sortDirection);
         const selectedProvinceName = table.provinces.find((item) => String(item.provinceId) === String(selectedProvince))?.provinceName;
         document.querySelector('#chart-scope').textContent = selectedProvinceName || 'Toàn quốc';
         document.querySelectorAll('#province-table tr[data-province-id]').forEach((row) => {
@@ -73,6 +77,7 @@ async function renderSyncStatus() {
 function switchModule(moduleName) {
     currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : moduleName === 'tiemchunglongchau' ? 'tiemchunglongchau' : 'longchau';
     selectedProvince = '';
+    provinceRows = [];
     document.querySelectorAll('[data-module]').forEach((button) => button.classList.toggle('active', button.dataset.module === moduleName));
     document.querySelectorAll('[data-module-view]').forEach((view) => { view.hidden = view.dataset.moduleView !== 'dashboard'; });
     const titles = {
@@ -102,11 +107,33 @@ async function initializeDashboard() {
     document.querySelector('#refresh-button').addEventListener('click', loadDashboard);
     fromMonthInput.addEventListener('change', loadDashboard);
     toMonthInput.addEventListener('change', loadDashboard);
-    document.querySelector('#province-table').addEventListener('click', (event) => {
-        const row = event.target.closest('tr[data-province-id]');
+    const provinceTableWrapper = document.querySelector('#province-table-wrapper');
+    const sortProvinceTable = (header) => {
+        const col = header.dataset.sort;
+        if (sortColumn === col) {
+            sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+        } else {
+            sortColumn = col;
+            sortDirection = col === 'province' ? 'asc' : 'desc';
+        }
+        if (provinceRows.length) renderProvinceStats(provinceRows, sortColumn, sortDirection);
+    };
+    provinceTableWrapper.addEventListener('click', (event) => {
+        const header = event.target.closest('th[data-sort]');
+        if (header) {
+            sortProvinceTable(header);
+            return;
+        }
+        const row = event.target.closest('#province-table tr[data-province-id]');
         if (!row) return;
         selectedProvince = row.dataset.provinceId;
         void loadDashboard();
+    });
+    provinceTableWrapper.addEventListener('keydown', (event) => {
+        if ((event.key === 'Enter' || event.key === ' ') && event.target.matches('th[data-sort]')) {
+            event.preventDefault();
+            sortProvinceTable(event.target);
+        }
     });
     switchModule('longchau');
 }
