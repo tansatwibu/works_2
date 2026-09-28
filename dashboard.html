@@ -54,20 +54,37 @@
 
       <section class="module-view" data-module-view="dashboard">
         <section class="charts-grid" aria-label="Biểu đồ thống kê cửa hàng">
+          <div class="chart-filter-panel" aria-label="Bộ lọc hiển thị biểu đồ">
+            <div class="chart-filter-mode">
+              <label for="chart-filter-mode">Hiển thị theo</label>
+              <select id="chart-filter-mode">
+                <option value="month">Tháng</option>
+                <option value="day">Ngày</option>
+              </select>
+            </div>
+            <div id="month-filter-options" class="chart-filter-options">
+              <label for="chart-month">Tháng</label>
+              <select id="chart-month" aria-label="Chọn tháng"></select>
+              <label for="chart-year">Năm</label>
+              <select id="chart-year" aria-label="Chọn năm"></select>
+            </div>
+            <div id="day-filter-options" class="chart-filter-options date-range-filter" hidden>
+              <label for="from-date">Từ ngày</label>
+              <input id="from-date" type="date">
+              <span class="filter-arrow" aria-hidden="true">→</span>
+              <label for="to-date">Đến ngày</label>
+              <input id="to-date" type="date">
+            </div>
+            <button id="refresh-button" class="refresh-button" aria-label="Cập nhật dữ liệu">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+            </button>
+          </div>
           <article class="chart-card">
             <div class="chart-card-header">
               <div class="chart-title-block">
                 <div class="chart-title">Tổng cửa hàng theo ngày crawl</div>
                 <div class="chart-subtitle">Số cửa hàng hiện có trong từng lần crawl</div>
                 <div class="chart-scope" id="chart-scope">Toàn quốc</div>
-              </div>
-              <div class="chart-controls" aria-label="Bộ lọc thời gian">
-                <label><span>Từ</span><input id="from-month" type="month"></label>
-                <span class="filter-arrow">→</span>
-                <label><span>Đến</span><input id="to-month" type="month"></label>
-                <button id="refresh-button" class="refresh-button" aria-label="Cập nhật dữ liệu">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
-                </button>
               </div>
             </div>
             <div class="chart-legend">

@@ -1,10 +1,15 @@
 import { getStats, getSyncStatus, getSnapshotRange } from './dashboardModel.js';
 import { renderChart, renderProvinceStats, setLoading } from './dashboardView.js';
-import { getMonthRange } from './chartUtils.js';
+import { getChartRange } from './chartUtils.js';
 
 const today = new Date();
-const fromMonthInput = document.querySelector('#from-month');
-const toMonthInput = document.querySelector('#to-month');
+const chartFilterMode = document.querySelector('#chart-filter-mode');
+const monthFilterOptions = document.querySelector('#month-filter-options');
+const monthInput = document.querySelector('#chart-month');
+const yearInput = document.querySelector('#chart-year');
+const dayFilterOptions = document.querySelector('#day-filter-options');
+const fromDateInput = document.querySelector('#from-date');
+const toDateInput = document.querySelector('#to-date');
 let latestRequest = 0;
 let currentSource = 'longchau';
 let selectedProvince = '';
@@ -18,22 +23,42 @@ function monthValue(date) {
     return `${year}-${month}`;
 }
 
+function setMonthYearOptions(minDate) {
+    const currentYear = today.getFullYear();
+    const firstYear = Math.min(minDate.getFullYear(), 2000);
+    const lastYear = currentYear + 5;
+    monthInput.innerHTML = Array.from({ length: 12 }, (_, index) => {
+        const month = String(index + 1).padStart(2, '0');
+        return `<option value="${month}">${month}</option>`;
+    }).join('');
+    yearInput.innerHTML = Array.from({ length: lastYear - firstYear + 1 }, (_, index) => {
+        const year = firstYear + index;
+        return `<option value="${year}">${year}</option>`;
+    }).join('');
+}
+
 async function setDates() {
     const currentMonth = monthValue(today);
     const range = await getSnapshotRange(currentSource);
     const minDate = range.minDate ? new Date(range.minDate) : new Date(today.getFullYear(), 0, 1);
-    const minMonth = monthValue(minDate);
-    fromMonthInput.value = minMonth;
-    toMonthInput.value = currentMonth;
+    const minDateValue = minDate.toISOString().slice(0, 10);
+    const todayValue = today.toISOString().slice(0, 10);
+    setMonthYearOptions(minDate);
+    monthInput.value = currentMonth.slice(5);
+    yearInput.value = currentMonth.slice(0, 4);
+    fromDateInput.value = minDateValue;
+    toDateInput.value = todayValue;
 }
 
 function rangeFilters() {
-    const fromRange = getMonthRange(fromMonthInput.value);
-    const toRange = getMonthRange(toMonthInput.value);
-    return {
-        from: fromRange.from || '',
-        to: toRange.to || ''
-    };
+    const selectedMonth = `${yearInput.value}-${monthInput.value}`;
+    return getChartRange(chartFilterMode.value === 'month' ? 'month' : 'range', selectedMonth, fromDateInput.value, toDateInput.value);
+}
+
+function updateChartFilterVisibility() {
+    const monthMode = chartFilterMode.value === 'month';
+    monthFilterOptions.hidden = !monthMode;
+    dayFilterOptions.hidden = monthMode;
 }
 
 async function loadDashboard() {
@@ -105,8 +130,11 @@ async function initializeDashboard() {
     document.querySelector('#sidebar-overlay').addEventListener('click', closeSidebar);
     document.querySelectorAll('[data-module]').forEach((button) => button.addEventListener('click', () => { switchModule(button.dataset.module); closeSidebar(); }));
     document.querySelector('#refresh-button').addEventListener('click', loadDashboard);
-    fromMonthInput.addEventListener('change', loadDashboard);
-    toMonthInput.addEventListener('change', loadDashboard);
+    chartFilterMode.addEventListener('change', () => { updateChartFilterVisibility(); void loadDashboard(); });
+    monthInput.addEventListener('change', loadDashboard);
+    yearInput.addEventListener('change', loadDashboard);
+    fromDateInput.addEventListener('change', loadDashboard);
+    toDateInput.addEventListener('change', loadDashboard);
     const provinceTableWrapper = document.querySelector('#province-table-wrapper');
     const sortProvinceTable = (header) => {
         const col = header.dataset.sort;
@@ -135,6 +163,7 @@ async function initializeDashboard() {
             sortProvinceTable(event.target);
         }
     });
+    updateChartFilterVisibility();
     switchModule('longchau');
 }
 

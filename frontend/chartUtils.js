@@ -40,6 +40,11 @@ export function getMonthRange(monthValue) {
     };
 }
 
+export function getChartRange(mode, monthValue, fromDate, toDate) {
+    if (mode === 'month') return getMonthRange(monthValue);
+    return { from: fromDate || '', to: toDate || '' };
+}
+
 export function getPeriodLabel(period) {
     return CHART_CONFIG[period]?.label || 'THEO NGÀY';
 }

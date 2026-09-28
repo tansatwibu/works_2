@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 process.env.TZ = 'Asia/Ho_Chi_Minh';
 
-import { aggregateByPeriod, resolveChartData, getPeriodLabel, getMonthRange } from './chartUtils.js';
+import { aggregateByPeriod, resolveChartData, getPeriodLabel, getMonthRange, getChartRange } from './chartUtils.js';
 
 test('aggregateByPeriod groups daily records into month buckets', () => {
   const rows = [
@@ -36,6 +36,11 @@ test('getMonthRange converts a month input into an inclusive month range', () =>
   assert.deepEqual(getMonthRange('2024-02'), { from: '2024-02-01', to: '2024-03-01' });
   assert.deepEqual(getMonthRange('2024-12'), { from: '2024-12-01', to: '2025-01-01' });
   assert.deepEqual(getMonthRange('2026-09'), { from: '2026-09-01', to: '2026-10-01' });
+});
+
+test('getChartRange returns the selected month or date range', () => {
+  assert.deepEqual(getChartRange('month', '2024-02', '', ''), { from: '2024-02-01', to: '2024-03-01' });
+  assert.deepEqual(getChartRange('range', '', '2024-02-10', '2024-02-20'), { from: '2024-02-10', to: '2024-02-20' });
 });
 
 test('getPeriodLabel returns the display text for each time unit', () => {
