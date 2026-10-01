@@ -71,8 +71,24 @@ function renderLineChart(selector, daily) {
     const labelStep = Math.ceil(daily.length / maxLabels);
     const shouldShowLabel = (index) => index % labelStep === 0 || index === daily.length - 1;
     const labelY = height - padding.bottom + 18;
-    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5"><title>${item.date}: ${item.count} cửa hàng (${item.delta >= 0 ? '+' : ''}${item.delta})</title></circle>${shouldShowLabel(index) ? `<text class="line-x-label" x="${x(index)}" y="${labelY}" text-anchor="middle">${labels[index]}</text>` : ''}`).join('');
-    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="16" y="${height / 2}" transform="rotate(-90 16 ${height / 2})" text-anchor="middle">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 4}" text-anchor="middle">Ngày crawl</text></svg>`;
+    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5" tabindex="0" data-count="${item.count}" aria-label="${formatNumber(item.count)} cửa hàng"></circle>${shouldShowLabel(index) ? `<text class="line-x-label" x="${x(index)}" y="${labelY}" text-anchor="middle">${labels[index]}</text>` : ''}`).join('');
+    chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="16" y="${height / 2}" transform="rotate(-90 16 ${height / 2})" text-anchor="middle">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 4}" text-anchor="middle">Ngày crawl</text></svg><div class="line-tooltip" role="status" aria-live="polite"></div>`;
+    const tooltip = chart.querySelector('.line-tooltip');
+    const showTooltip = (point) => {
+        tooltip.textContent = `${formatNumber(Number(point.dataset.count))} cửa hàng`;
+        const pointRect = point.getBoundingClientRect();
+        const chartRect = chart.getBoundingClientRect();
+        tooltip.style.left = `${pointRect.left - chartRect.left + pointRect.width / 2}px`;
+        tooltip.style.top = `${pointRect.top - chartRect.top - 10}px`;
+        tooltip.classList.add('visible');
+    };
+    const hideTooltip = () => tooltip.classList.remove('visible');
+    chart.querySelectorAll('.line-point').forEach((point) => {
+        point.addEventListener('mouseenter', () => showTooltip(point));
+        point.addEventListener('mouseleave', hideTooltip);
+        point.addEventListener('focus', () => showTooltip(point));
+        point.addEventListener('blur', hideTooltip);
+    });
 }
 
 const sortArrow = { asc: '▲', desc: '▼', none: '↕' };

@@ -29,9 +29,9 @@ async function getStats(from, to, province = '', source = 'longchau') {
         db.collection('pharmacy_daily_snapshots').aggregate([
             { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource } },
             { $group: { _id: { provinceId: '$provinceId', snapshotDate: '$snapshotDate' }, provinceName: { $first: '$provinceName' }, count: { $sum: 1 } } },
-            { $sort: { '_id.provinceId': 1, '_id.snapshotDate': -1 } },
-            { $group: { _id: '$_id.provinceId', provinceName: { $first: '$provinceName' }, counts: { $push: '$count' } } },
-            { $project: { _id: 1, provinceName: 1, count: { $arrayElemAt: ['$counts', 0] }, previousCount: { $ifNull: [{ $arrayElemAt: ['$counts', 1] }, 0] } } },
+            { $sort: { '_id.provinceId': 1, '_id.snapshotDate': 1 } },
+            { $group: { _id: '$_id.provinceId', provinceName: { $first: '$provinceName' }, firstCount: { $first: '$count' }, lastCount: { $last: '$count' } } },
+            { $project: { _id: 1, provinceName: 1, count: '$lastCount', delta: { $subtract: ['$lastCount', '$firstCount'] } } },
             { $sort: { count: -1 } }
         ]).toArray(),
         db.collection('pharmacy_daily_snapshots').aggregate([
@@ -51,7 +51,7 @@ async function getStats(from, to, province = '', source = 'longchau') {
         provinceId: item._id || 'unknown',
         provinceName: item.provinceName || 'Chưa xác định',
         count: item.count,
-        delta: item.count - item.previousCount
+        delta: item.delta
     }));
     const provinceOptions = provinces.map((item) => ({ provinceId: item._id.id || 'unknown', provinceName: item._id.name || 'Chưa xác định' }));
     const latestCount = daily.at(-1)?.count || 0;
