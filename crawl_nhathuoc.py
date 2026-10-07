@@ -47,47 +47,81 @@ async def fetch_payload(headless: bool) -> dict[str, Any]:
     from playwright.async_api import async_playwright
 
     async with async_playwright() as playwright:
-        request_context = await playwright.request.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-            extra_http_headers={
-                "accept": "application/json, text/plain, */*",
-                "accept-language": "vi-VN,vi;q=0.9,en;q=0.6",
-                "content-type": "application/json",
-                "order-channel": "1",
-                "x-channel": "EStore",
-            },
-            timeout=60_000,
+        browser = await playwright.chromium.launch(
+            headless=headless
         )
+
+        context = await browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/154.0.0.0 Safari/537.36"
+            ),
+            viewport={"width": 1280, "height": 720},
+            locale="vi-VN",
+        )
+
+        page = await context.new_page()
+
         try:
-            response = await request_context.post(
-                API_URL,
-                data={
-                    "maxResult": 3000,
-                    "skipCount": 0,
-                    "searchBy": {"byProvince": None, "byLocation": None},
-                },
+            await page.goto(
+                STORE_URL,
+                wait_until="domcontentloaded",
+                timeout=120_000,
             )
-            text = await response.text()
-            try:
-                result = {"ok": response.ok, "status": response.status, "data": json.loads(text)}
-            except json.JSONDecodeError:
-                result = {
-                    "ok": False,
-                    "status": response.status,
-                    "error": "Phản hồi không phải là JSON",
-                    "preview": text[:500],
-                }
+
+            # wait for cloudfare
+            await page.wait_for_timeout(15_000)
+
+            result = await page.evaluate(
+                """async (apiUrl) => {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'accept': 'application/json, text/plain, */*',
+                            'content-type': 'application/json',
+                            'order-channel': '1',
+                            'x-channel': 'EStore'
+                        },
+                        body: JSON.stringify({
+                            maxResult: 3000,
+                            skipCount: 0,
+                            searchBy: {
+                                byProvince: null,
+                                byLocation: null
+                            }
+                        })
+                    });
+
+                    const text = await response.text();
+
+                    return {
+                        ok: response.ok,
+                        status: response.status,
+                        text: text
+                    };
+                }""",
+                API_URL,
+            )
+
         finally:
-            await request_context.dispose()
+            await browser.close()
 
-    if not result.get("ok"):
-        detail = result.get("error") or f"HTTP {result.get('status')}"
-        if result.get("preview"):
-            detail += f"; preview: {result['preview']}"
-        raise RuntimeError(detail)
+    if not result["ok"]:
+        preview = result.get("text", "")[:500]
+        raise RuntimeError(
+            f"HTTP {result['status']}; preview: {preview}"
+        )
 
-    return validate_payload(result["data"])
+    try:
+        payload = json.loads(result["text"])
+    except json.JSONDecodeError:
+        raise RuntimeError(
+            "Phản hồi API không phải JSON; "
+            f"preview: {result['text'][:500]}"
+        )
 
+    return validate_payload(payload)
 
 def write_payload(payload: dict[str, Any]) -> None:
     RAW_PATH.parent.mkdir(parents=True, exist_ok=True)
