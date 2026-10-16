@@ -13,7 +13,8 @@ from sync_daily import sync_daily
 LOCATION_URL = "https://api.bachhoaxanh.com/gw/LocationV3/GetFull"
 STORES_URL = "https://api.bachhoaxanh.com/gw/Location/V2/GetStoresByLocation"
 RAW_PATH = Path(__file__).with_name("bachhoaxanh_raw.json")
-PAGE_SIZE = 100
+# The BHX store API returns incomplete/empty results for large page sizes.
+PAGE_SIZE = 75
 REQUEST_TIMEOUT = 60_000
 
 
