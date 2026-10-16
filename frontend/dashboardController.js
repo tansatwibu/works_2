@@ -100,7 +100,7 @@ async function renderSyncStatus() {
 }
 
 function switchModule(moduleName) {
-    currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : moduleName === 'tiemchunglongchau' ? 'tiemchunglongchau' : 'longchau';
+    currentSource = moduleName === 'bachhoaxanh' ? 'bachhoaxanh' : moduleName === 'tiemchunglongchau' ? 'tiemchunglongchau' : moduleName === 'fptshop' ? 'fptshop' : 'longchau';
     selectedProvince = '';
     provinceRows = [];
     document.querySelectorAll('[data-module]').forEach((button) => button.classList.toggle('active', button.dataset.module === moduleName));
@@ -108,7 +108,8 @@ function switchModule(moduleName) {
     const titles = {
         longchau: 'Nhà thuốc Long Châu',
         bachhoaxanh: 'Bách Hoá Xanh',
-        tiemchunglongchau: 'Tiêm chủng Long Châu'
+        tiemchunglongchau: 'Tiêm chủng Long Châu',
+        fptshop: 'FPT Shop'
     };
     document.querySelector('#page-title').textContent = titles[currentSource];
     void loadDashboard();

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">FPT Shop placeholder</title>
+  <desc id="desc">Placeholder logo for FPT Shop, ready to be replaced with another SVG.</desc>
+  <rect width="128" height="128" rx="24" fill="#0877C9"/>
+  <path d="M31 48h66l-5 50H36l-5-50Z" fill="#fff"/>
+  <path d="M47 49c0-12 7-21 17-21s17 9 17 21" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <path d="M42 67h44" stroke="#F58220" stroke-width="8" stroke-linecap="round"/>
+  <path d="M49 83h30" stroke="#0877C9" stroke-width="7" stroke-linecap="round"/>
+</svg>

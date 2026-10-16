@@ -1,7 +1,3 @@
-#!/bin/bash
-
-cd /root/works_2
-
 echo "===== Crawl started: $(date) ====="
 
 echo "===== Long Chau ====="
@@ -23,6 +19,13 @@ if .venv/bin/python crawl_tiemchung.py; then
     echo "Tiem Chung: SUCCESS"
 else
     echo "Tiem Chung: FAILED"
+fi
+
+echo "===== FPT Shop ====="
+if .venv/bin/python crawl_fptshop.py; then
+    echo "FPT Shop: SUCCESS"
+else
+    echo "FPT Shop: FAILED"
 fi
 
 echo "===== Crawl finished: $(date) ====="

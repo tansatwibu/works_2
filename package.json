@@ -10,7 +10,8 @@
     "start": "node server.js",
     "crawl": "py -3 crawl_nhathuoc.py",
     "crawl-bhx": "py -3 crawl_bhx.py",
-    "crawl-tiem-chung": "py -3 crawl_tiemchung.py"
+    "crawl-tiem-chung": "py -3 crawl_tiemchung.py",
+    "crawl-fpt-shop": "py -3 crawl_fptshop.py"
   },
   "dependencies": {
     "dotenv": "^18.0.0",
