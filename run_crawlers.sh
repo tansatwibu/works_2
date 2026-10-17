@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "===== Crawl started: $(date) ====="
 
 echo "===== Long Chau ====="
