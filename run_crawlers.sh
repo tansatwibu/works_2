@@ -29,4 +29,11 @@ else
     echo "FPT Shop: FAILED"
 fi
 
+echo "===== An Khang ====="
+if .venv/bin/python crawl_ankhang.py; then
+		echo "An Khang: SUCCESS"
+else
+		echo "An Khang: FAILED"
+fi
+
 echo "===== Crawl finished: $(date) ====="
