@@ -130,6 +130,7 @@ button, input, select { font: inherit; color: inherit; }
 .module-link img { width: 24px; height: 24px; flex-shrink: 0; border-radius: 50%; object-fit: cover; opacity: 0.7; }
 .module-link .logo-bhx { border-radius: 7px; }
 .module-link .logo-fptshop { border-radius: 7px; }
+.module-link .logo-ankhang { border-radius: 7px; }
 .module-link.active svg { opacity: 1; }
 .module-link.active img { opacity: 1; }
 

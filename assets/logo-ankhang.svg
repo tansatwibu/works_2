@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">An Khang placeholder</title>
+  <desc id="desc">Placeholder logo for Nhà thuốc An Khang, ready to be replaced with another SVG.</desc>
+  <rect width="128" height="128" rx="24" fill="#0B8F78"/>
+  <path d="M64 24c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40S86.1 24 64 24Z" fill="#fff"/>
+  <path d="M55 42h18v13h13v18H73v13H55V73H42V55h13V42Z" fill="#0B8F78"/>
+  <path d="M34 106h60" stroke="#F7C948" stroke-width="7" stroke-linecap="round"/>
+</svg>
