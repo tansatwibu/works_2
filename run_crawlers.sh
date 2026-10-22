@@ -36,4 +36,18 @@ else
 		echo "An Khang: FAILED"
 fi
 
+echo "===== Dien May Xanh ====="
+if .venv/bin/python crawl_dienmayxanh.py; then
+		echo "Dien May Xanh: SUCCESS"
+else
+		echo "Dien May Xanh: FAILED"
+fi
+
+echo "===== The Gioi Di Dong ====="
+if .venv/bin/python crawl_thegioididong.py; then
+		echo "The Gioi Di Dong: SUCCESS"
+else
+		echo "The Gioi Di Dong: FAILED"
+fi
+
 echo "===== Crawl finished: $(date) ====="
