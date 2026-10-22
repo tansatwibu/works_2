@@ -71,11 +71,19 @@ function renderLineChart(selector, daily) {
     const labelStep = Math.ceil(daily.length / maxLabels);
     const shouldShowLabel = (index) => index % labelStep === 0 || index === daily.length - 1;
     const labelY = height - padding.bottom + 18;
-    const dots = daily.map((item, index) => `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5" tabindex="0" data-count="${item.count}" aria-label="${formatNumber(item.count)} cửa hàng"></circle>${shouldShowLabel(index) ? `<text class="line-x-label" x="${x(index)}" y="${labelY}" text-anchor="middle">${labels[index]}</text>` : ''}`).join('');
+    const dots = daily.map((item, index) => {
+        const delta = index === 0 ? null : Number(item.delta || 0);
+        const deltaLabel = delta === null ? 'Mốc đầu tiên' : `${delta > 0 ? '+' : ''}${formatNumber(delta)}`;
+        const ariaLabel = `${formatNumber(item.count)} cửa hàng, delta ${deltaLabel}`;
+        return `<circle class="line-point" cx="${x(index)}" cy="${y(item.count)}" r="5" tabindex="0" data-count="${item.count}" data-delta="${delta ?? ''}" aria-label="${ariaLabel}"></circle>${shouldShowLabel(index) ? `<text class="line-x-label" x="${x(index)}" y="${labelY}" text-anchor="middle">${labels[index]}</text>` : ''}`;
+    }).join('');
     chart.innerHTML = `<svg class="line-chart-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Số cửa hàng theo ngày crawl"><text class="line-axis-title" x="16" y="${height / 2}" transform="rotate(-90 16 ${height / 2})" text-anchor="middle">Số cửa hàng</text>${grid}<line class="line-axis" x1="${padding.left}" x2="${width - padding.right}" y1="${y(domainMin)}" y2="${y(domainMin)}"/><polyline class="line-series" points="${points}"/>${dots}<text class="line-axis-title" x="${width / 2}" y="${height - 4}" text-anchor="middle">Ngày crawl</text></svg><div class="line-tooltip" role="status" aria-live="polite"></div>`;
     const tooltip = chart.querySelector('.line-tooltip');
     const showTooltip = (point) => {
-        tooltip.textContent = `${formatNumber(Number(point.dataset.count))} cửa hàng`;
+        const delta = point.dataset.delta === '' ? null : Number(point.dataset.delta);
+        const deltaLabel = delta === null ? '—' : `${delta > 0 ? '+' : ''}${formatNumber(delta)}`;
+        const deltaClass = delta > 0 ? 'positive' : delta < 0 ? 'negative' : 'neutral';
+        tooltip.innerHTML = `${formatNumber(Number(point.dataset.count))} cửa hàng<br><span class="line-tooltip-delta ${deltaClass}">${deltaLabel}</span>`;
         const pointRect = point.getBoundingClientRect();
         const chartRect = chart.getBoundingClientRect();
         tooltip.style.left = `${pointRect.left - chartRect.left + pointRect.width / 2}px`;
