@@ -32,6 +32,7 @@ Ba crawler được chạy theo thứ tự:
 1. Nhà thuốc Long Châu: `npm run crawl`
 2. Bách Hoá Xanh: `npm run crawl-bhx`
 3. Tiêm chủng Long Châu: `npm run crawl-tiem-chung`
+4. Điện Máy Xanh: `npm run crawl-dienmayxanh`
 
 Payload thô được lưu tại `longchau_raw.json`, `bachhoaxanh_raw.json` và `tiemchunglongchau_raw.json`. Các nguồn được tách trong MongoDB bằng trường `source`, nên chạy lại không trộn dữ liệu giữa các thương hiệu.
 
@@ -80,6 +81,10 @@ py -3 crawl_bhx.py --dry-run
 `py -3 crawl_bhx.py` là crawler Bách Hoá Xanh được sử dụng trong lịch tự động. `npm run crawl-bhx` cũng trỏ tới crawler Python này.
 
 `py -3 crawl_tiemchung.py` là crawler Tiêm chủng Long Châu, gọi trực tiếp API phân trang `search-stores` và không scrape HTML. Có thể kiểm tra bằng `--dry-run` hoặc `--validate-only`; `npm run crawl-tiem-chung` cũng trỏ tới crawler Python này.
+
+`py -3 crawl_dienmayxanh.py` là crawler Điện Máy Xanh, mặc định crawl toàn bộ tỉnh/thành từ trang danh mục, lưu `dienmayxanh_raw.json` và đồng bộ vào MongoDB với `source=dienmayxanh`. Có thể kiểm tra bằng `--dry-run` hoặc `--validate-only`; `npm run crawl-dienmayxanh` cũng trỏ tới crawler này.
+
+`py -3 crawl_thegioididong.py` là crawler Thế Giới Di Động, dùng API `Store/SuggestSearch` của Thế Giới Di Động nhưng chỉ giữ các cửa hàng có tên bắt đầu bằng `Thế giới di động`, lưu `thegioididong_raw.json` và đồng bộ với `source=thegioididong`. Có thể kiểm tra bằng `--dry-run` hoặc `--validate-only`; `npm run crawl-thegioididong` cũng trỏ tới crawler này.
 
 ## Cấu trúc MVC
 

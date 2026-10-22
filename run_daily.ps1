@@ -21,3 +21,13 @@ if ($LASTEXITCODE -ne 0) {
 if ($LASTEXITCODE -ne 0) {
     throw "Tiêm chủng Long Châu crawl failed with exit code $LASTEXITCODE. See $logPath"
 }
+
+& py -3 .\crawl_dienmayxanh.py >> $logPath 2>&1
+if ($LASTEXITCODE -ne 0) {
+    throw "Điện Máy Xanh crawl failed with exit code $LASTEXITCODE. See $logPath"
+}
+
+& py -3 .\crawl_thegioididong.py >> $logPath 2>&1
+if ($LASTEXITCODE -ne 0) {
+    throw "Thế Giới Di Động crawl failed with exit code $LASTEXITCODE. See $logPath"
+}

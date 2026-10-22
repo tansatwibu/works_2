@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Điện Máy Xanh</title>
+  <desc id="desc">Logo placeholder for Điện Máy Xanh</desc>
+  <rect width="128" height="128" rx="22" fill="#0875d1"/>
+  <path fill="#fff" d="M22 36h84v14H22zM22 58h84v14H22zM22 80h52v14H22z"/>
+  <circle cx="91" cy="87" r="11" fill="#f4d03f"/>
+</svg>

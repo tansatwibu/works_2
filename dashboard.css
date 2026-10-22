@@ -131,6 +131,8 @@ button, input, select { font: inherit; color: inherit; }
 .module-link .logo-bhx { border-radius: 7px; }
 .module-link .logo-fptshop { border-radius: 7px; }
 .module-link .logo-ankhang { border-radius: 7px; }
+.module-link .logo-dienmayxanh { border-radius: 7px; }
+.module-link .logo-thegioididong { border-radius: 7px; }
 .module-link.active svg { opacity: 1; }
 .module-link.active img { opacity: 1; }
 

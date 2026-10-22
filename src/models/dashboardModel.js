@@ -16,9 +16,9 @@ async function getStats(from, to, province = '', source = 'longchau') {
     const range = buildRange(from, to);
     const snapshotSource = source === 'longchau' ? { $in: ['longchau', null] } : source;
     const snapshotMatch = { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource };
-    if (province) snapshotMatch.provinceId = province;
+    if (province) snapshotMatch.$or = [{ provinceId: province }, { provinceId: null, provinceName: province }];
     const pharmacyMatch = { status: 'active', source };
-    if (province) pharmacyMatch['address.province.id'] = province;
+    if (province) pharmacyMatch.$or = [{ 'address.province.id': province }, { 'address.province.id': null, 'address.province.name': province }];
 
     const [snapshotDaily, snapshotByProvince, provinces, active] = await Promise.all([
         db.collection('pharmacy_daily_snapshots').aggregate([
@@ -28,7 +28,7 @@ async function getStats(from, to, province = '', source = 'longchau') {
         ]).toArray(),
         db.collection('pharmacy_daily_snapshots').aggregate([
             { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource } },
-            { $group: { _id: { provinceId: '$provinceId', snapshotDate: '$snapshotDate' }, provinceName: { $first: '$provinceName' }, count: { $sum: 1 } } },
+            { $group: { _id: { provinceId: { $ifNull: ['$provinceId', '$provinceName'] }, snapshotDate: '$snapshotDate' }, provinceName: { $first: '$provinceName' }, count: { $sum: 1 } } },
             { $sort: { '_id.provinceId': 1, '_id.snapshotDate': 1 } },
             { $group: { _id: '$_id.provinceId', provinceName: { $first: '$provinceName' }, firstCount: { $first: '$count' }, lastCount: { $last: '$count' } } },
             { $project: { _id: 1, provinceName: 1, count: '$lastCount', delta: { $subtract: ['$lastCount', '$firstCount'] } } },
@@ -36,7 +36,7 @@ async function getStats(from, to, province = '', source = 'longchau') {
         ]).toArray(),
         db.collection('pharmacy_daily_snapshots').aggregate([
             { $match: { snapshotDate: { $gte: range.start, $lt: range.end }, isPresent: true, source: snapshotSource } },
-            { $group: { _id: { id: '$provinceId', name: '$provinceName' } } },
+            { $group: { _id: { id: { $ifNull: ['$provinceId', '$provinceName'] }, name: '$provinceName' } } },
             { $sort: { '_id.name': 1 } }
         ]).toArray(),
         db.collection('pharmacies').countDocuments(pharmacyMatch)

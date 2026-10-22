@@ -11,7 +11,9 @@
     "crawl": "py -3 crawl_nhathuoc.py",
     "crawl-bhx": "py -3 crawl_bhx.py",
     "crawl-tiem-chung": "py -3 crawl_tiemchung.py",
-    "crawl-fpt-shop": "py -3 crawl_fptshop.py"
+    "crawl-fpt-shop": "py -3 crawl_fptshop.py",
+    "crawl-dienmayxanh": "py -3 crawl_dienmayxanh.py",
+    "crawl-thegioididong": "py -3 crawl_thegioididong.py"
   },
   "dependencies": {
     "dotenv": "^18.0.0",
